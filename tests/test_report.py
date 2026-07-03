@@ -1,10 +1,6 @@
-import yaml
-from pathlib import Path
 
-import pytest
-from app.report.trend import aggregate, load_decisions
 from app.report.cost import compute_cost_report
-
+from app.report.trend import aggregate
 
 SAMPLE_DECISIONS = [
     {"timestamp": "2026-07-01T00:00:00", "category": "flake", "action": "auto_rerun", "outcome": "resolved", "token_cost": 0.0},

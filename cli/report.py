@@ -1,7 +1,7 @@
 import click
 
-from app.report.trend import load_decisions, aggregate
 from app.report.cost import compute_cost_report
+from app.report.trend import aggregate, load_decisions
 
 
 @click.group()
@@ -24,15 +24,15 @@ def report(days: int, decisions_path: str, hourly_rate: int):
 
     click.echo(f"# ci-doctor Report -- Last {days} Days\n")
     click.echo("## Summary")
-    click.echo(f"| Metric | Value |")
-    click.echo(f"|---|---|")
+    click.echo("| Metric | Value |")
+    click.echo("|---|---|")
     click.echo(f"| Total failures | {trend['total']} |")
     click.echo(f"| Auto-resolved | {trend['auto_resolved']} ({trend['auto_resolve_rate']}%) |")
     click.echo(f"| Human-resolved | {trend['human_resolved']} |")
     click.echo()
     click.echo("## Failures by Category")
-    click.echo(f"| Category | Count |")
-    click.echo(f"|---|---|")
+    click.echo("| Category | Count |")
+    click.echo("|---|---|")
     for cat, count in sorted(trend["by_category"].items()):
         click.echo(f"| {cat} | {count} |")
     click.echo()
@@ -41,8 +41,8 @@ def report(days: int, decisions_path: str, hourly_rate: int):
         click.echo(f"{i}. {sig} -- {count} occurrences")
     click.echo()
     click.echo("## Cost vs Value")
-    click.echo(f"| Metric | Value |")
-    click.echo(f"|---|---|")
+    click.echo("| Metric | Value |")
+    click.echo("|---|---|")
     click.echo(f"| Token spend | ${cost['total_spend']:.2f} |")
     click.echo(f"| Engineer time saved | {cost['time_saved_minutes']} min |")
     click.echo(f"| Dollar value saved | ${cost['dollar_value']:.2f} |")

@@ -1,6 +1,6 @@
+from app.classifier.llm import classify_with_mlx
 from app.classifier.models import Classification
 from app.classifier.rules import load_rules, match_rules
-from app.classifier.llm import classify_with_mlx
 from app.knowledge.base import KnowledgeBase
 
 

@@ -6,19 +6,22 @@ from app.classifier.models import Classification
 
 
 async def classify_with_mlx(
-    log_snippet: str, endpoint: str, prompt_template: str | None = None
+    log_snippet: str, endpoint: str, prompt_template: str | None = None,
+    model: str = "llama-3.2-3b-instruct", api_key: str = "",
 ) -> Classification | None:
     if not prompt_template:
         prompt_template = _DEFAULT_PROMPT
 
     prompt = prompt_template.format(log_snippet=log_snippet)
+    headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
 
     try:
         async with httpx.AsyncClient(timeout=30) as client:
             r = await client.post(
                 f"{endpoint}/v1/chat/completions",
+                headers=headers,
                 json={
-                    "model": "llama-3.2-3b-instruct",
+                    "model": model,
                     "messages": [{"role": "user", "content": prompt}],
                     "temperature": 0.1,
                 },

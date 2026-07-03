@@ -1,7 +1,7 @@
 import datetime
+from pathlib import Path
 
 import yaml
-from pathlib import Path
 
 
 async def write_decision(

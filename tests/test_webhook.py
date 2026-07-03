@@ -1,9 +1,8 @@
 import hmac
 from hashlib import sha256
 
-import pytest
-from app.webhook.verifier import verify_signature
 from app.webhook.dedup import DedupSet
+from app.webhook.verifier import verify_signature
 
 
 class TestSignature:

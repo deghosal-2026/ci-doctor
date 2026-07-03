@@ -1,7 +1,4 @@
-import pytest
-from app.classifier.rules import load_rules, match_rules
-from app.classifier.models import Classification
-
+from app.classifier.rules import match_rules
 
 SEED_RULES = [
     {"category": "flake", "patterns": ["FAILED.*test", "flaky"], "confidence": 0.95},

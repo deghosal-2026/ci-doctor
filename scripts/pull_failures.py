@@ -175,10 +175,10 @@ def main():
 
     today = datetime.date.today()
     log(f"Starting download: rules={rules_target}, eval={eval_target}")
-    log(f"Already on disk:")
+    log("Already on disk:")
     for cat in CATEGORIES:
         log(f"  {cat}: {collected[cat]['rules']}R / {collected[cat]['eval']}E")
-    log(f"Running — Ctrl+C to stop, safe to restart\n")
+    log("Running — Ctrl+C to stop, safe to restart\n")
 
     # random walk: pick random (repo, day) pairs
     date_pool = [(today - datetime.timedelta(days=d)).isoformat() for d in range(30)]

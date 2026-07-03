@@ -1,43 +1,75 @@
 rules:
   - category: flake
     patterns:
-      - "FAILED .*re-run"
-      - "flaky test"
-      - "Test flaky"
-      - "assertion failed unexpectedly"
-    confidence: 0.95
+      - "FAILURE then SUCCESS"
+      - "Re-running \\d+ failed tests?"
+      - "rerun=\\d+"
+      - "FLAKY_TESTS|--flaky-tests|--measure-flakiness"
+      - "\\bflaky\\b"
+      - "rerunfailures|pytest-rerunfailures"
+      - "Too flaky on .+ due to"
+      - "ConnectTimeoutError|Connection to .+ timed out|Max retries exceeded"
+      - "Temporary failure in name resolution|NameResolutionError|Failed to resolve"
+    confidence: 0.92
 
   - category: lint
     patterns:
-      - "F401 .*imported but unused"
-      - "E501 line too long"
-      - "ruff .*error"
-      - "linter.*found.*error"
-    confidence: 0.90
+      - "F401|E501|E402|I001|E302|W291"
+      - "imported but unused"
+      - "line too long|line-too-long"
+      - "unused import"
+      - "Found \\d+ errors?\\."
+      - "--> .+\\.(py|pyi|rs|ts|js):\\d+:\\d+"
+      - "hook id: (ruff-check|ruff-format|end-of-file-fixer|trailing-whitespace)"
+      - "Run Ruff \\((lint|format)\\) on .*Failed"
+      - "make: \\*\\*\\* \\[.*lint.*\\] Error"
+      - "cargo (fmt --all --check|clippy .+ -- -D warnings)"
+      - "mypy .+ (error:|\\d+ errors?)"
+      - "pyright .+ (error:|\\d+ errors?)"
+      - "Rule `[A-Z]{1,4}\\d+` was removed"
+    confidence: 0.92
 
   - category: build
     patterns:
-      - "Compilation error"
-      - "ModuleNotFoundError"
-      - "ImportError"
+      - "make: \\*\\*\\* \\[.*\\] Error \\d+"
+      - "Fatal Python error"
+      - "Aborted \\(core dumped\\)"
+      - "Assertion .* failed"
+      - "npm error code EUSAGE"
+      - "npm error.*lock file.*does not satisfy"
+      - "##\\[error\\]Process completed with exit code [12]"
+      - "No url found for submodule path"
+      - "No such file or directory"
+      - "ModuleNotFoundError|ImportError"
       - "cannot find module"
-      - "build failed"
-    confidence: 0.90
+      - "Compilation error|build failed"
+      - "reference target not found.*\\[ref\\."
+    confidence: 0.92
 
   - category: dependency
     patterns:
+      - "package was not found"
+      - "Cache entry deserialization failed"
+      - "Bump .+ from .+ to"
+      - "uv (pip install|sync|lock)"
+      - "backtrack|backtracking"
+      - "new resolver|legacy-resolver|Fails on new resolver"
       - "version conflict"
-      - "package not found"
-      - "dependency resolution failed"
-      - "pip.*error"
       - "No matching distribution"
-    confidence: 0.90
+      - "Could not find a version"
+      - "dependency resolution failed"
+      - "pip.*(ERROR|error):"
+    confidence: 0.92
 
   - category: infra_timeout
     patterns:
+      - "operation was canceled"
+      - "A task was canceled"
+      - '"result"\\s*:\\s*"cancelled"'
+      - "deadline exceeded|context deadline exceeded"
+      - "timed out|timedout"
+      - "GitHub-hosted runners.*are busy"
+      - "execution timed out"
+      - "job timed out|runner.*timeout"
       - "The operation was canceled"
-      - "deadline exceeded"
-      - "context deadline exceeded"
-      - "job timed out"
-      - "runner.*timeout"
-    confidence: 0.95
+    confidence: 0.92

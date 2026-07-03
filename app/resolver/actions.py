@@ -1,8 +1,8 @@
 from app.classifier.models import Classification
 from app.config import Settings
 from app.knowledge.base import KnowledgeBase
-from app.resolver.github import GitHubClient
 from app.resolver.cloud_fix import generate_fix
+from app.resolver.github import GitHubClient
 from app.storage.decisions import write_decision
 
 

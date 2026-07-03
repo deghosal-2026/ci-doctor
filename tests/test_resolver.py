@@ -1,7 +1,4 @@
-import pytest
-from app.classifier.models import Classification
 from app.resolver.extract import extract_snippet
-
 
 SAMPLE_LOG = (
     "line 1: start\n"
