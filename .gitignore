@@ -205,6 +205,10 @@ tempCodeRunnerFile.py
 # Ruff stuff:
 .ruff_cache/
 
+# Large CI failure log fixtures (download via scripts/pull_failures.py)
+tests/fixtures/logs/**/*.txt
+tests/fixtures/logs/**/*.part.*
+
 # PyPI configuration file
 .pypirc
 
