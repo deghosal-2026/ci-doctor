@@ -1,0 +1,1156 @@
+﻿2026-06-27T23:53:44.8720260Z Current runner version: '2.335.1'
+2026-06-27T23:53:44.8744044Z ##[group]Runner Image Provisioner
+2026-06-27T23:53:44.8744864Z Hosted Compute Agent
+2026-06-27T23:53:44.8745468Z Version: 20260611.554
+2026-06-27T23:53:44.8746027Z Commit: 5e0782fdc9014723d3be820dd114dd31555c2bd1
+2026-06-27T23:53:44.8746676Z Build Date: 2026-06-11T21:40:46Z
+2026-06-27T23:53:44.8747293Z Worker ID: {54c2c181-9678-4cc0-9c0c-684aaeb0e11b}
+2026-06-27T23:53:44.8747955Z Azure Region: westus3
+2026-06-27T23:53:44.8748476Z ##[endgroup]
+2026-06-27T23:53:44.8749765Z ##[group]Operating System
+2026-06-27T23:53:44.8750297Z Ubuntu
+2026-06-27T23:53:44.8750800Z 24.04.4
+2026-06-27T23:53:44.8751277Z LTS
+2026-06-27T23:53:44.8751731Z ##[endgroup]
+2026-06-27T23:53:44.8752285Z ##[group]Runner Image
+2026-06-27T23:53:44.8752838Z Image: ubuntu-24.04
+2026-06-27T23:53:44.8753369Z Version: 20260622.220.1
+2026-06-27T23:53:44.8754624Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260622.220/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-27T23:53:44.8755991Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260622.220
+2026-06-27T23:53:44.8756841Z ##[endgroup]
+2026-06-27T23:53:44.8758010Z ##[group]GITHUB_TOKEN Permissions
+2026-06-27T23:53:44.8759901Z Contents: read
+2026-06-27T23:53:44.8760478Z Metadata: read
+2026-06-27T23:53:44.8760976Z PullRequests: write
+2026-06-27T23:53:44.8761502Z Statuses: write
+2026-06-27T23:53:44.8761998Z ##[endgroup]
+2026-06-27T23:53:44.8764240Z Secret source: Actions
+2026-06-27T23:53:44.8764939Z Prepare workflow directory
+2026-06-27T23:53:44.9077745Z Prepare all required actions
+2026-06-27T23:53:44.9117808Z Getting action download info
+2026-06-27T23:53:45.2224169Z Download action repository 'actions/checkout@v6' (SHA:df4cb1c069e1874edd31b4311f1884172cec0e10)
+2026-06-27T23:53:45.3014535Z Download action repository 'actions/setup-node@v6' (SHA:48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e)
+2026-06-27T23:53:45.3749999Z Download action repository 'actions/upload-artifact@v7' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-06-27T23:53:45.4395952Z Download action repository 'actions/github-script@v9' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+2026-06-27T23:53:46.1195570Z Complete job name: Screenshots & Tests
+2026-06-27T23:53:46.2029262Z ##[group]Run actions/checkout@v6
+2026-06-27T23:53:46.2030165Z with:
+2026-06-27T23:53:46.2030626Z   fetch-depth: 50
+2026-06-27T23:53:46.2031138Z   repository: microsoft/vscode
+2026-06-27T23:53:46.2035707Z   token: ***
+2026-06-27T23:53:46.2036171Z   ssh-strict: true
+2026-06-27T23:53:46.2036642Z   ssh-user: git
+2026-06-27T23:53:46.2037125Z   persist-credentials: true
+2026-06-27T23:53:46.2037650Z   clean: true
+2026-06-27T23:53:46.2038139Z   sparse-checkout-cone-mode: true
+2026-06-27T23:53:46.2038695Z   fetch-tags: false
+2026-06-27T23:53:46.2039173Z   show-progress: true
+2026-06-27T23:53:46.2039650Z   lfs: false
+2026-06-27T23:53:46.2040111Z   submodules: false
+2026-06-27T23:53:46.2040618Z   set-safe-directory: true
+2026-06-27T23:53:46.2041419Z ##[endgroup]
+2026-06-27T23:53:46.3025750Z Syncing repository: microsoft/vscode
+2026-06-27T23:53:46.3027634Z ##[group]Getting Git version info
+2026-06-27T23:53:46.3028465Z Working directory is '/home/runner/work/vscode/vscode'
+2026-06-27T23:53:46.3029782Z [command]/usr/bin/git version
+2026-06-27T23:53:46.3087447Z git version 2.54.0
+2026-06-27T23:53:46.3107384Z ##[endgroup]
+2026-06-27T23:53:46.3120918Z Temporarily overriding HOME='/home/runner/work/_temp/61918adc-ad14-4f14-81ca-2505339bd584' before making global git config changes
+2026-06-27T23:53:46.3122774Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-27T23:53:46.3126237Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/vscode/vscode
+2026-06-27T23:53:46.3174850Z Deleting the contents of '/home/runner/work/vscode/vscode'
+2026-06-27T23:53:46.3179214Z ##[group]Determining repository object format
+2026-06-27T23:53:46.3181494Z ##[endgroup]
+2026-06-27T23:53:46.3183051Z ##[group]Initializing the repository
+2026-06-27T23:53:46.3187619Z [command]/usr/bin/git init /home/runner/work/vscode/vscode
+2026-06-27T23:53:46.3297885Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-06-27T23:53:46.3299302Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-06-27T23:53:46.3300390Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-06-27T23:53:46.3301590Z hint: call:
+2026-06-27T23:53:46.3302370Z hint:
+2026-06-27T23:53:46.3303389Z hint: 	git config --global init.defaultBranch <name>
+2026-06-27T23:53:46.3304787Z hint:
+2026-06-27T23:53:46.3306006Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-06-27T23:53:46.3307821Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-06-27T23:53:46.3309256Z hint:
+2026-06-27T23:53:46.3310138Z hint: 	git branch -m <name>
+2026-06-27T23:53:46.3311055Z hint:
+2026-06-27T23:53:46.3312368Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-06-27T23:53:46.3314527Z Initialized empty Git repository in /home/runner/work/vscode/vscode/.git/
+2026-06-27T23:53:46.3317961Z [command]/usr/bin/git remote add origin https://github.com/microsoft/vscode
+2026-06-27T23:53:46.3360539Z ##[endgroup]
+2026-06-27T23:53:46.3362130Z ##[group]Disabling automatic garbage collection
+2026-06-27T23:53:46.3365132Z [command]/usr/bin/git config --local gc.auto 0
+2026-06-27T23:53:46.3390502Z ##[endgroup]
+2026-06-27T23:53:46.3391392Z ##[group]Setting up auth
+2026-06-27T23:53:46.3392111Z Removing SSH command configuration
+2026-06-27T23:53:46.3397712Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-27T23:53:46.3429433Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-27T23:53:46.3737596Z Removing HTTP extra header
+2026-06-27T23:53:46.3742730Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-27T23:53:46.3771272Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-27T23:53:46.3943022Z Removing includeIf entries pointing to credentials config files
+2026-06-27T23:53:46.3948936Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-27T23:53:46.3974795Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-27T23:53:46.4151086Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-06-27T23:53:46.4180882Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/vscode/vscode/.git.path /home/runner/work/_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:53:46.4204923Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:53:46.4230922Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:53:46.4254222Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:53:46.4277638Z ##[endgroup]
+2026-06-27T23:53:46.4278467Z ##[group]Fetching the repository
+2026-06-27T23:53:46.4285282Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=50 origin +3ed83a9bc1d6fabc68e9244b52d60d901c75f7b8:refs/remotes/origin/main
+2026-06-27T23:53:51.4985907Z From https://github.com/microsoft/vscode
+2026-06-27T23:53:51.4988316Z  * [new ref]           3ed83a9bc1d6fabc68e9244b52d60d901c75f7b8 -> origin/main
+2026-06-27T23:53:51.5036303Z [command]/usr/bin/git branch --list --remote origin/main
+2026-06-27T23:53:51.5062162Z   origin/main
+2026-06-27T23:53:51.5069936Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-06-27T23:53:51.5090561Z 3ed83a9bc1d6fabc68e9244b52d60d901c75f7b8
+2026-06-27T23:53:51.5093910Z ##[endgroup]
+2026-06-27T23:53:51.5094662Z ##[group]Determining the checkout info
+2026-06-27T23:53:51.5095533Z ##[endgroup]
+2026-06-27T23:53:51.5099982Z [command]/usr/bin/git sparse-checkout disable
+2026-06-27T23:53:51.5138957Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-06-27T23:53:51.5161336Z ##[group]Checking out the ref
+2026-06-27T23:53:51.5165592Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-06-27T23:53:52.5414122Z Updating files:  48% (7784/16035)
+2026-06-27T23:53:52.5664562Z Updating files:  49% (7858/16035)
+2026-06-27T23:53:52.5767744Z Updating files:  50% (8018/16035)
+2026-06-27T23:53:52.5857582Z Updating files:  51% (8178/16035)
+2026-06-27T23:53:52.5944581Z Updating files:  52% (8339/16035)
+2026-06-27T23:53:52.6044034Z Updating files:  53% (8499/16035)
+2026-06-27T23:53:52.6137946Z Updating files:  54% (8659/16035)
+2026-06-27T23:53:52.6178316Z Updating files:  55% (8820/16035)
+2026-06-27T23:53:52.6224114Z Updating files:  56% (8980/16035)
+2026-06-27T23:53:52.6328364Z Updating files:  57% (9140/16035)
+2026-06-27T23:53:52.6435658Z Updating files:  58% (9301/16035)
+2026-06-27T23:53:52.6537279Z Updating files:  59% (9461/16035)
+2026-06-27T23:53:52.6568104Z Updating files:  60% (9621/16035)
+2026-06-27T23:53:52.6598555Z Updating files:  61% (9782/16035)
+2026-06-27T23:53:52.6631616Z Updating files:  62% (9942/16035)
+2026-06-27T23:53:52.6764188Z Updating files:  63% (10103/16035)
+2026-06-27T23:53:52.6894230Z Updating files:  64% (10263/16035)
+2026-06-27T23:53:52.6998460Z Updating files:  65% (10423/16035)
+2026-06-27T23:53:52.7084181Z Updating files:  66% (10584/16035)
+2026-06-27T23:53:52.7172292Z Updating files:  67% (10744/16035)
+2026-06-27T23:53:52.7270387Z Updating files:  68% (10904/16035)
+2026-06-27T23:53:52.7368285Z Updating files:  69% (11065/16035)
+2026-06-27T23:53:52.7464065Z Updating files:  70% (11225/16035)
+2026-06-27T23:53:52.7600230Z Updating files:  71% (11385/16035)
+2026-06-27T23:53:52.7682624Z Updating files:  72% (11546/16035)
+2026-06-27T23:53:52.7795950Z Updating files:  73% (11706/16035)
+2026-06-27T23:53:52.7932068Z Updating files:  74% (11866/16035)
+2026-06-27T23:53:52.8031845Z Updating files:  75% (12027/16035)
+2026-06-27T23:53:52.8145356Z Updating files:  76% (12187/16035)
+2026-06-27T23:53:52.8258196Z Updating files:  77% (12347/16035)
+2026-06-27T23:53:52.8376580Z Updating files:  78% (12508/16035)
+2026-06-27T23:53:52.8489355Z Updating files:  79% (12668/16035)
+2026-06-27T23:53:52.8608267Z Updating files:  80% (12828/16035)
+2026-06-27T23:53:52.8690884Z Updating files:  81% (12989/16035)
+2026-06-27T23:53:52.8792697Z Updating files:  82% (13149/16035)
+2026-06-27T23:53:52.8890265Z Updating files:  83% (13310/16035)
+2026-06-27T23:53:52.8984921Z Updating files:  84% (13470/16035)
+2026-06-27T23:53:52.9077084Z Updating files:  85% (13630/16035)
+2026-06-27T23:53:52.9162600Z Updating files:  86% (13791/16035)
+2026-06-27T23:53:52.9277297Z Updating files:  87% (13951/16035)
+2026-06-27T23:53:52.9368837Z Updating files:  88% (14111/16035)
+2026-06-27T23:53:52.9489877Z Updating files:  89% (14272/16035)
+2026-06-27T23:53:52.9583294Z Updating files:  90% (14432/16035)
+2026-06-27T23:53:52.9671205Z Updating files:  91% (14592/16035)
+2026-06-27T23:53:52.9828726Z Updating files:  92% (14753/16035)
+2026-06-27T23:53:52.9944231Z Updating files:  93% (14913/16035)
+2026-06-27T23:53:53.0032795Z Updating files:  94% (15073/16035)
+2026-06-27T23:53:53.0140532Z Updating files:  95% (15234/16035)
+2026-06-27T23:53:53.0236259Z Updating files:  96% (15394/16035)
+2026-06-27T23:53:53.0347872Z Updating files:  97% (15554/16035)
+2026-06-27T23:53:53.0400231Z Updating files:  98% (15715/16035)
+2026-06-27T23:53:53.0461732Z Updating files:  99% (15875/16035)
+2026-06-27T23:53:53.0462169Z Updating files: 100% (16035/16035)
+2026-06-27T23:53:53.0462464Z Updating files: 100% (16035/16035), done.
+2026-06-27T23:53:53.0671250Z Switched to a new branch 'main'
+2026-06-27T23:53:53.0671780Z branch 'main' set up to track 'origin/main'.
+2026-06-27T23:53:53.1477384Z ##[endgroup]
+2026-06-27T23:53:53.1519082Z [command]/usr/bin/git log -1 --format=%H
+2026-06-27T23:53:53.1542452Z 3ed83a9bc1d6fabc68e9244b52d60d901c75f7b8
+2026-06-27T23:53:53.1753921Z ##[group]Run actions/setup-node@v6
+2026-06-27T23:53:53.1754190Z with:
+2026-06-27T23:53:53.1754405Z   node-version-file: .nvmrc
+2026-06-27T23:53:53.1754635Z   check-latest: false
+2026-06-27T23:53:53.1757364Z   token: ***
+2026-06-27T23:53:53.1757570Z   package-manager-cache: true
+2026-06-27T23:53:53.1757805Z ##[endgroup]
+2026-06-27T23:53:53.3213859Z Node version file is not JSON file
+2026-06-27T23:53:53.3216167Z Resolved .nvmrc as 24.15.0
+2026-06-27T23:53:53.3242734Z Attempting to download 24.15.0...
+2026-06-27T23:53:54.3232603Z Acquiring 24.15.0 - x64 from https://github.com/actions/node-versions/releases/download/24.15.0-24511264946/node-24.15.0-linux-x64.tar.gz
+2026-06-27T23:53:54.8579426Z Extracting ...
+2026-06-27T23:53:54.8690208Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/fbf5dc34-995f-4136-bdb0-37cb33be774c -f /home/runner/work/_temp/025bd75f-1ec6-416d-834b-cfd604f202c0
+2026-06-27T23:53:56.0074087Z Adding to the cache ...
+2026-06-27T23:53:57.2864909Z ##[group]Environment details
+2026-06-27T23:53:57.5116330Z node: v24.15.0
+2026-06-27T23:53:57.5116805Z npm: 11.12.1
+2026-06-27T23:53:57.5117187Z yarn: 1.22.22
+2026-06-27T23:53:57.5118045Z ##[endgroup]
+2026-06-27T23:53:57.5375444Z Prepare all required actions
+2026-06-27T23:53:57.5375892Z Getting action download info
+2026-06-27T23:53:57.6458539Z Download action repository 'actions/cache@v5' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-06-27T23:53:58.4891928Z ##[group]Run ./.github/actions/restore-node-modules
+2026-06-27T23:53:58.4892233Z with:
+2026-06-27T23:53:58.4892462Z   key-prefix: node_modules-component-fixtures
+2026-06-27T23:53:58.4892774Z   key-args: compile $(node -p process.arch)
+2026-06-27T23:53:58.4893049Z   lookup-only: false
+2026-06-27T23:53:58.4893274Z ##[endgroup]
+2026-06-27T23:53:58.5105246Z ##[group]Run mkdir -p .build && node build/azure-pipelines/common/computeNodeModulesCacheKey.ts compile $(node -p process.arch) > .build/packagelockhash
+2026-06-27T23:53:58.5106537Z [36;1mmkdir -p .build && node build/azure-pipelines/common/computeNodeModulesCacheKey.ts compile $(node -p process.arch) > .build/packagelockhash[0m
+2026-06-27T23:53:58.5275684Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-06-27T23:53:58.5276029Z ##[endgroup]
+2026-06-27T23:53:58.7026668Z ##[group]Run actions/cache/restore@v5
+2026-06-27T23:53:58.7026926Z with:
+2026-06-27T23:53:58.7027135Z   path: .build/node_modules_cache
+2026-06-27T23:53:58.7027639Z   key: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:53:58.7028140Z   lookup-only: false
+2026-06-27T23:53:58.7028355Z   enableCrossOsArchive: false
+2026-06-27T23:53:58.7028593Z   fail-on-cache-miss: false
+2026-06-27T23:53:58.7028810Z ##[endgroup]
+2026-06-27T23:53:59.0418224Z Cache hit for: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:54:00.2947346Z Received 20971520 of 635752407 (3.3%), 20.0 MBs/sec
+2026-06-27T23:54:01.2995500Z Received 130023424 of 635752407 (20.5%), 61.9 MBs/sec
+2026-06-27T23:54:02.2985266Z Received 247463936 of 635752407 (38.9%), 78.5 MBs/sec
+2026-06-27T23:54:03.3055408Z Received 394264576 of 635752407 (62.0%), 93.9 MBs/sec
+2026-06-27T23:54:04.3004481Z Received 536870912 of 635752407 (84.4%), 102.3 MBs/sec
+2026-06-27T23:54:05.0960946Z Received 635752407 of 635752407 (100.0%), 104.5 MBs/sec
+2026-06-27T23:54:05.0963062Z Cache Size: ~606 MB (635752407 B)
+2026-06-27T23:54:05.1002899Z [command]/usr/bin/tar -xf /home/runner/work/_temp/4033cbd8-927d-4d3e-9ddc-d898777bea8b/cache.tzst -P -C /home/runner/work/vscode/vscode --use-compress-program unzstd
+2026-06-27T23:54:05.6298781Z Cache restored successfully
+2026-06-27T23:54:05.6595890Z Cache restored from key: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:54:05.6707476Z ##[group]Run echo "NODE_MODULES_CACHE_KEY=node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f" >> "$GITHUB_ENV"
+2026-06-27T23:54:05.6708602Z [36;1mecho "NODE_MODULES_CACHE_KEY=node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f" >> "$GITHUB_ENV"[0m
+2026-06-27T23:54:05.6727805Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-06-27T23:54:05.6728146Z ##[endgroup]
+2026-06-27T23:54:05.7209227Z ##[group]Run ./.github/workflows/node_modules_cache/cache.sh extract
+2026-06-27T23:54:05.7209711Z [36;1m./.github/workflows/node_modules_cache/cache.sh extract[0m
+2026-06-27T23:54:05.7228418Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-06-27T23:54:05.7228762Z env:
+2026-06-27T23:54:05.7229288Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:54:05.7229864Z ##[endgroup]
+2026-06-27T23:54:09.9725426Z ##[group]Run cp node_modules/@vscode/codicons/dist/codicon.ttf src/vs/base/browser/ui/codicons/codicon/codicon.ttf
+2026-06-27T23:54:09.9726171Z [36;1mcp node_modules/@vscode/codicons/dist/codicon.ttf src/vs/base/browser/ui/codicons/codicon/codicon.ttf[0m
+2026-06-27T23:54:09.9745812Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:54:09.9746081Z env:
+2026-06-27T23:54:09.9746607Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:54:09.9747177Z ##[endgroup]
+2026-06-27T23:54:10.0692583Z ##[group]Run npm run transpile-client
+2026-06-27T23:54:10.0692978Z [36;1mnpm run transpile-client[0m
+2026-06-27T23:54:10.0713484Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:54:10.0713829Z env:
+2026-06-27T23:54:10.0714367Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:54:10.0714948Z ##[endgroup]
+2026-06-27T23:54:10.1917549Z npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:10.1919409Z npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:10.1921245Z npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:10.1923183Z npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:10.1925299Z npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:10.1927117Z npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:10.1998078Z 
+2026-06-27T23:54:10.1998640Z > code-oss-dev@1.127.0 transpile-client
+2026-06-27T23:54:10.1999284Z > node build/next/index.ts transpile
+2026-06-27T23:54:10.1999630Z 
+2026-06-27T23:54:11.0174773Z [clean] out
+2026-06-27T23:54:11.0243782Z [transpile] src → out
+2026-06-27T23:54:11.5007435Z [transpile] Found 7134 files
+2026-06-27T23:54:17.9651375Z [resources] Copying all non-TS files to out...
+2026-06-27T23:54:19.0154364Z [resources] Copied 1361 files
+2026-06-27T23:54:19.0155120Z [transpile] Done in 7991ms
+2026-06-27T23:54:19.0155788Z 
+2026-06-27T23:54:19.0156300Z ✓ Total: 7999ms
+2026-06-27T23:54:19.0705398Z ##[group]Run npx playwright install chromium
+2026-06-27T23:54:19.0706068Z [36;1mnpx playwright install chromium[0m
+2026-06-27T23:54:19.0735783Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:54:19.0736259Z env:
+2026-06-27T23:54:19.0737311Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:54:19.0738512Z ##[endgroup]
+2026-06-27T23:54:19.3527819Z npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:19.3529934Z npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:19.3531883Z npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:19.3534259Z npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:19.3536209Z npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:19.3538046Z npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-27T23:54:19.9101583Z Downloading Chromium 141.0.7390.37 (playwright build v1194) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1194/chromium-linux.zip
+2026-06-27T23:54:20.1380680Z |                                                                                |   0% of 173.9 MiB
+2026-06-27T23:54:20.2453293Z |■■■■■■■■                                                                        |  10% of 173.9 MiB
+2026-06-27T23:54:20.3024266Z |■■■■■■■■■■■■■■■■                                                                |  20% of 173.9 MiB
+2026-06-27T23:54:20.3631980Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 173.9 MiB
+2026-06-27T23:54:20.4164396Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 173.9 MiB
+2026-06-27T23:54:20.4848749Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 173.9 MiB
+2026-06-27T23:54:20.5374129Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 173.9 MiB
+2026-06-27T23:54:20.6020625Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 173.9 MiB
+2026-06-27T23:54:20.6748580Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 173.9 MiB
+2026-06-27T23:54:20.7286625Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 173.9 MiB
+2026-06-27T23:54:20.7727319Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 173.9 MiB
+2026-06-27T23:54:23.9636457Z Chromium 141.0.7390.37 (playwright build v1194) downloaded to /home/runner/.cache/ms-playwright/chromium-1194
+2026-06-27T23:54:23.9640887Z Downloading FFMPEG playwright build v1011 from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+2026-06-27T23:54:24.1707717Z |                                                                                |   0% of 2.3 MiB
+2026-06-27T23:54:24.1736086Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+2026-06-27T23:54:24.1758357Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+2026-06-27T23:54:24.1779797Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+2026-06-27T23:54:24.1790556Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+2026-06-27T23:54:24.1845140Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+2026-06-27T23:54:24.1857815Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+2026-06-27T23:54:24.1903448Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+2026-06-27T23:54:24.1919000Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+2026-06-27T23:54:24.1925096Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+2026-06-27T23:54:24.2132484Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+2026-06-27T23:54:24.2613203Z FFMPEG playwright build v1011 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+2026-06-27T23:54:24.2616545Z Downloading Chromium Headless Shell 141.0.7390.37 (playwright build v1194) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1194/chromium-headless-shell-linux.zip
+2026-06-27T23:54:24.4526368Z |                                                                                |   0% of 104.3 MiB
+2026-06-27T23:54:24.5169497Z |■■■■■■■■                                                                        |  10% of 104.3 MiB
+2026-06-27T23:54:24.5528093Z |■■■■■■■■■■■■■■■■                                                                |  20% of 104.3 MiB
+2026-06-27T23:54:24.5872515Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 104.3 MiB
+2026-06-27T23:54:24.6217133Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 104.3 MiB
+2026-06-27T23:54:24.6553851Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 104.3 MiB
+2026-06-27T23:54:24.6973971Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 104.3 MiB
+2026-06-27T23:54:24.7269997Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 104.3 MiB
+2026-06-27T23:54:24.7638381Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 104.3 MiB
+2026-06-27T23:54:24.7887359Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 104.3 MiB
+2026-06-27T23:54:24.8173021Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 104.3 MiB
+2026-06-27T23:54:26.4339046Z Chromium Headless Shell 141.0.7390.37 (playwright build v1194) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1194
+2026-06-27T23:54:26.5534339Z ##[group]Run npm ci
+2026-06-27T23:54:26.5534616Z [36;1mnpm ci[0m
+2026-06-27T23:54:26.5553336Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:54:26.5553915Z env:
+2026-06-27T23:54:26.5554441Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:54:26.5555045Z ##[endgroup]
+2026-06-27T23:54:27.3288090Z 
+2026-06-27T23:54:27.3288782Z added 6 packages, and audited 7 packages in 725ms
+2026-06-27T23:54:27.3295840Z 
+2026-06-27T23:54:27.3295996Z found 0 vulnerabilities
+2026-06-27T23:54:27.3382297Z ##[group]Run npx playwright install chromium
+2026-06-27T23:54:27.3382654Z [36;1mnpx playwright install chromium[0m
+2026-06-27T23:54:27.3402016Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:54:27.3402293Z env:
+2026-06-27T23:54:27.3402816Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:54:27.3403390Z ##[endgroup]
+2026-06-27T23:54:28.1659272Z Downloading Chrome for Testing 145.0.7632.6 (playwright chromium v1208) from https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-linux64.zip
+2026-06-27T23:54:28.4344248Z |                                                                                |   0% of 167.3 MiB
+2026-06-27T23:54:28.6089655Z |■■■■■■■■                                                                        |  10% of 167.3 MiB
+2026-06-27T23:54:28.6785691Z |■■■■■■■■■■■■■■■■                                                                |  20% of 167.3 MiB
+2026-06-27T23:54:28.7434642Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 167.3 MiB
+2026-06-27T23:54:28.8114144Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 167.3 MiB
+2026-06-27T23:54:28.8798504Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 167.3 MiB
+2026-06-27T23:54:28.9466143Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 167.3 MiB
+2026-06-27T23:54:29.0128614Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 167.3 MiB
+2026-06-27T23:54:29.0920085Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 167.3 MiB
+2026-06-27T23:54:29.1581400Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 167.3 MiB
+2026-06-27T23:54:29.2380148Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 167.3 MiB
+2026-06-27T23:54:31.6687116Z Chrome for Testing 145.0.7632.6 (playwright chromium v1208) downloaded to /home/runner/.cache/ms-playwright/chromium-1208
+2026-06-27T23:54:31.6692749Z Downloading Chrome Headless Shell 145.0.7632.6 (playwright chromium-headless-shell v1208) from https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-headless-shell-linux64.zip
+2026-06-27T23:54:31.9610139Z |                                                                                |   0% of 110.9 MiB
+2026-06-27T23:54:32.0980372Z |■■■■■■■■                                                                        |  10% of 110.9 MiB
+2026-06-27T23:54:32.1697559Z |■■■■■■■■■■■■■■■■                                                                |  20% of 110.9 MiB
+2026-06-27T23:54:32.2136827Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 110.9 MiB
+2026-06-27T23:54:32.2586624Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 110.9 MiB
+2026-06-27T23:54:32.3182438Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 110.9 MiB
+2026-06-27T23:54:32.3705910Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 110.9 MiB
+2026-06-27T23:54:32.4293193Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 110.9 MiB
+2026-06-27T23:54:32.4721228Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 110.9 MiB
+2026-06-27T23:54:32.5307368Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 110.9 MiB
+2026-06-27T23:54:32.5770322Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 110.9 MiB
+2026-06-27T23:54:34.3434307Z Chrome Headless Shell 145.0.7632.6 (playwright chromium-headless-shell v1208) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1208
+2026-06-27T23:54:34.3674575Z ##[group]Run npx playwright test
+2026-06-27T23:54:34.3674896Z [36;1mnpx playwright test[0m
+2026-06-27T23:54:34.3693916Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:54:34.3694203Z env:
+2026-06-27T23:54:34.3694770Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:54:34.3695352Z ##[endgroup]
+2026-06-27T23:54:37.5805352Z 
+2026-06-27T23:54:37.5806296Z Running 8 tests using 1 worker
+2026-06-27T23:55:30.5281003Z ········
+2026-06-27T23:55:30.5287140Z   8 passed (54.9s)
+2026-06-27T23:55:30.5545707Z ##[group]Run ./node_modules/.bin/component-explorer render --project ./test/componentFixtures/component-explorer.json
+2026-06-27T23:55:30.5546576Z [36;1m./node_modules/.bin/component-explorer render --project ./test/componentFixtures/component-explorer.json[0m
+2026-06-27T23:55:30.5565916Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:55:30.5566200Z env:
+2026-06-27T23:55:30.5566717Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:55:30.5567290Z ##[endgroup]
+2026-06-27T23:55:30.9163457Z Starting server...
+2026-06-27T23:55:31.6161877Z Server running at http://localhost:5124
+2026-06-27T23:55:38.5527511Z Found 534 fixture(s)
+2026-06-27T23:55:41.0260096Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/ZeroOfZero/Dark
+2026-06-27T23:55:41.1580050Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/ZeroOfZero/Light
+2026-06-27T23:55:41.2913074Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/SingleFeedback/Dark
+2026-06-27T23:55:41.4246091Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/SingleFeedback/Light
+2026-06-27T23:55:41.5578681Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/FirstOfThree/Dark
+2026-06-27T23:55:41.6915418Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/FirstOfThree/Light
+2026-06-27T23:55:41.8248994Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/ReviewOnlyTwoComments/Dark
+2026-06-27T23:55:41.9577673Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/ReviewOnlyTwoComments/Light
+2026-06-27T23:55:42.0913218Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/MiddleOfThree/Dark
+2026-06-27T23:55:42.2247395Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/MiddleOfThree/Light
+2026-06-27T23:55:42.3582471Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/MixedFourComments/Dark
+2026-06-27T23:55:42.4911580Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/MixedFourComments/Light
+2026-06-27T23:55:42.6244500Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/LastOfThree/Dark
+2026-06-27T23:55:42.7577644Z   ✓ sessions/agentFeedback/agentFeedbackEditorOverlayWidget/LastOfThree/Light
+2026-06-27T23:55:43.0244293Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/CollapsedSingleComment/Dark
+2026-06-27T23:55:43.2575988Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/CollapsedSingleComment/Light
+2026-06-27T23:55:43.4575764Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedSingleComment/Dark
+2026-06-27T23:55:43.6580745Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedSingleComment/Light
+2026-06-27T23:55:43.8581510Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/CollapsedMultiComment/Dark
+2026-06-27T23:55:44.0575656Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/CollapsedMultiComment/Light
+2026-06-27T23:55:44.2574906Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedMultiComment/Dark
+2026-06-27T23:55:44.4591966Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedMultiComment/Light
+2026-06-27T23:55:44.6742338Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedFocusedFeedback/Dark
+2026-06-27T23:55:44.8746469Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedFocusedFeedback/Light
+2026-06-27T23:55:45.0741626Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedReviewOnly/Dark
+2026-06-27T23:55:45.2741692Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedReviewOnly/Light
+2026-06-27T23:55:45.4747249Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedMixedComments/Dark
+2026-06-27T23:55:45.6742405Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedMixedComments/Light
+2026-06-27T23:55:45.8741713Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedFocusedReviewComment/Dark
+2026-06-27T23:55:46.0741596Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedFocusedReviewComment/Light
+2026-06-27T23:55:46.2745821Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedReviewSuggestion/Dark
+2026-06-27T23:55:46.4740424Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedReviewSuggestion/Light
+2026-06-27T23:55:46.6740312Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedPRReviewOnly/Dark
+2026-06-27T23:55:46.8741497Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedPRReviewOnly/Light
+2026-06-27T23:55:47.0907447Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedAllSourcesMixed/Dark
+2026-06-27T23:55:47.2908164Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedAllSourcesMixed/Light
+2026-06-27T23:55:47.4907135Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedFocusedPRReview/Dark
+2026-06-27T23:55:47.7074593Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedFocusedPRReview/Light
+2026-06-27T23:55:47.9074057Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedThreadedFeedback/Dark
+2026-06-27T23:55:48.1074085Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/ExpandedThreadedFeedback/Light
+2026-06-27T23:55:48.3074089Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/HiddenWidget/Dark
+2026-06-27T23:55:48.5079469Z   ✓ sessions/agentFeedback/agentFeedbackEditorWidget/HiddenWidget/Light
+2026-06-27T23:55:48.9082890Z   ✓ sessions/chat/input/chatInput/SessionsWindow/Dark
+2026-06-27T23:55:49.2575266Z   ✓ sessions/chat/input/chatInput/SessionsWindow/Light
+2026-06-27T23:55:49.6078157Z   ✓ sessions/chat/input/chatInput/SessionsWindowSelection/Dark
+2026-06-27T23:55:49.9579155Z   ✓ sessions/chat/input/chatInput/SessionsWindowSelection/Light
+2026-06-27T23:55:50.2243359Z   ✓ sessions/chat/newInput/newChatInput/Default/Dark
+2026-06-27T23:55:50.4739808Z   ✓ sessions/chat/newInput/newChatInput/Default/Light
+2026-06-27T23:55:50.7240689Z   ✓ sessions/chat/newInput/newChatInput/Selection/Dark
+2026-06-27T23:55:50.9740396Z   ✓ sessions/chat/newInput/newChatInput/Selection/Light
+2026-06-27T23:55:51.2427509Z   ✓ sessions/chat/newInput/newChatInput/SlashCommand/Dark
+2026-06-27T23:55:51.4909668Z   ✓ sessions/chat/newInput/newChatInput/SlashCommand/Light
+2026-06-27T23:55:51.7408084Z   ✓ sessions/chat/newInput/newChatInput/VariableReference/Dark
+2026-06-27T23:55:51.9906382Z   ✓ sessions/chat/newInput/newChatInput/VariableReference/Light
+2026-06-27T23:55:52.1240620Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceSelectedEmpty/Dark
+2026-06-27T23:55:52.2574021Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceSelectedEmpty/Light
+2026-06-27T23:55:52.3905052Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceSelectedCheckedEmpty/Dark
+2026-06-27T23:55:52.5239311Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceSelectedCheckedEmpty/Light
+2026-06-27T23:55:52.6576181Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceSelectedFilled/Dark
+2026-06-27T23:55:52.7905962Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceSelectedFilled/Light
+2026-06-27T23:55:52.9237795Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceSelectedCheckedFilled/Dark
+2026-06-27T23:55:53.0572655Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceSelectedCheckedFilled/Light
+2026-06-27T23:55:53.1908179Z   ✓ sessions/runScriptCustomTaskWidget/UserSelectedEmpty/Dark
+2026-06-27T23:55:53.3238618Z   ✓ sessions/runScriptCustomTaskWidget/UserSelectedEmpty/Light
+2026-06-27T23:55:53.4581441Z   ✓ sessions/runScriptCustomTaskWidget/UserSelectedCheckedEmpty/Dark
+2026-06-27T23:55:53.5912375Z   ✓ sessions/runScriptCustomTaskWidget/UserSelectedCheckedEmpty/Light
+2026-06-27T23:55:53.7244976Z   ✓ sessions/runScriptCustomTaskWidget/UserSelectedFilled/Dark
+2026-06-27T23:55:53.8572941Z   ✓ sessions/runScriptCustomTaskWidget/UserSelectedFilled/Light
+2026-06-27T23:55:53.9905257Z   ✓ sessions/runScriptCustomTaskWidget/UserSelectedCheckedFilled/Dark
+2026-06-27T23:55:54.1239986Z   ✓ sessions/runScriptCustomTaskWidget/UserSelectedCheckedFilled/Light
+2026-06-27T23:55:54.2573923Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceUnavailableEmpty/Dark
+2026-06-27T23:55:54.3904651Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceUnavailableEmpty/Light
+2026-06-27T23:55:54.5241587Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceUnavailableCheckedEmpty/Dark
+2026-06-27T23:55:54.6572434Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceUnavailableCheckedEmpty/Light
+2026-06-27T23:55:54.8078537Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceUnavailableFilled/Dark
+2026-06-27T23:55:54.9412839Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceUnavailableFilled/Light
+2026-06-27T23:55:55.0738243Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceUnavailableCheckedFilled/Dark
+2026-06-27T23:55:55.2071311Z   ✓ sessions/runScriptCustomTaskWidget/WorkspaceUnavailableCheckedFilled/Light
+2026-06-27T23:55:55.3405328Z   ✓ sessions/runScriptCustomTaskWidget/ExistingWorkspaceTaskLocked/Dark
+2026-06-27T23:55:55.4738372Z   ✓ sessions/runScriptCustomTaskWidget/ExistingWorkspaceTaskLocked/Light
+2026-06-27T23:55:55.6074184Z   ✓ sessions/runScriptCustomTaskWidget/ExistingUserTaskLockedChecked/Dark
+2026-06-27T23:55:55.7405546Z   ✓ sessions/runScriptCustomTaskWidget/ExistingUserTaskLockedChecked/Light
+2026-06-27T23:55:55.8740330Z   ✓ sessions/sessionsPolicyBlocked/PolicyBlocked/Dark
+2026-06-27T23:55:56.0071084Z   ✓ sessions/sessionsPolicyBlocked/PolicyBlocked/Light
+2026-06-27T23:55:56.1405341Z   ✓ sessions/sessionsPolicyBlocked/Loading/Dark
+2026-06-27T23:55:56.2738233Z   ✓ sessions/sessionsPolicyBlocked/Loading/Light
+2026-06-27T23:55:56.4071670Z   ✓ sessions/sessionsPolicyBlocked/AccountPolicyGate/Dark
+2026-06-27T23:55:56.5403915Z   ✓ sessions/sessionsPolicyBlocked/AccountPolicyGate/Light
+2026-06-27T23:55:56.6739672Z   ✓ sessions/sessionsPolicyBlocked/AccountPolicyGateNoAccount/Dark
+2026-06-27T23:55:56.8071247Z   ✓ sessions/sessionsPolicyBlocked/AccountPolicyGateNoAccount/Light
+2026-06-27T23:55:56.9408085Z   ✓ sessions/inputBanners/sessionInputBanners/CIFailures/Dark
+2026-06-27T23:55:57.0738015Z   ✓ sessions/inputBanners/sessionInputBanners/CIFailures/Light
+2026-06-27T23:55:57.2071448Z   ✓ sessions/inputBanners/sessionInputBanners/Comments/Dark
+2026-06-27T23:55:57.3405703Z   ✓ sessions/inputBanners/sessionInputBanners/Comments/Light
+2026-06-27T23:55:57.4737932Z   ✓ sessions/inputBanners/sessionInputBanners/PRComments/Dark
+2026-06-27T23:55:57.6071235Z   ✓ sessions/inputBanners/sessionInputBanners/PRComments/Light
+2026-06-27T23:55:57.7407715Z   ✓ sessions/inputBanners/sessionInputBanners/AgentComments/Dark
+2026-06-27T23:55:57.8739602Z   ✓ sessions/inputBanners/sessionInputBanners/AgentComments/Light
+2026-06-27T23:55:58.0071672Z   ✓ sessions/inputBanners/sessionInputBanners/Both/Dark
+2026-06-27T23:55:58.1402858Z   ✓ sessions/inputBanners/sessionInputBanners/Both/Light
+2026-06-27T23:55:58.2738096Z   ✓ sessions/inputBanners/sessionInputBanners/LongTextEllipsis/Dark
+2026-06-27T23:55:58.4074179Z   ✓ sessions/inputBanners/sessionInputBanners/LongTextEllipsis/Light
+2026-06-27T23:55:58.5571144Z   ✓ sessions/aiCustomizationShortcutsWidget/Expanded/Dark
+2026-06-27T23:55:58.6903323Z   ✓ sessions/aiCustomizationShortcutsWidget/Expanded/Light
+2026-06-27T23:55:58.8242324Z   ✓ sessions/aiCustomizationShortcutsWidget/MinimumHeight/Dark
+2026-06-27T23:55:58.9570593Z   ✓ sessions/aiCustomizationShortcutsWidget/MinimumHeight/Light
+2026-06-27T23:55:59.0906302Z   ✓ sessions/aiCustomizationShortcutsWidget/WithMcpServers/Dark
+2026-06-27T23:55:59.2237703Z   ✓ sessions/aiCustomizationShortcutsWidget/WithMcpServers/Light
+2026-06-27T23:55:59.3570473Z   ✓ sessions/aiCustomizationShortcutsWidget/MinimumHeightWithMcpServers/Dark
+2026-06-27T23:55:59.4902511Z   ✓ sessions/aiCustomizationShortcutsWidget/MinimumHeightWithMcpServers/Light
+2026-06-27T23:55:59.6239102Z   ✓ sessions/aiCustomizationShortcutsWidget/WithCounts/Dark
+2026-06-27T23:55:59.7569920Z   ✓ sessions/aiCustomizationShortcutsWidget/WithCounts/Light
+2026-06-27T23:55:59.9076551Z   ✓ sessions/chatCompositeBar/TwoChats/Dark
+2026-06-27T23:56:00.0403178Z   ✓ sessions/chatCompositeBar/TwoChats/Light
+2026-06-27T23:56:00.1903892Z   ✓ sessions/chatCompositeBar/MixedStatuses/Dark
+2026-06-27T23:56:00.3404452Z   ✓ sessions/chatCompositeBar/MixedStatuses/Light
+2026-06-27T23:56:00.4740148Z   ✓ sessions/chatCompositeBar/LongTitles/Dark
+2026-06-27T23:56:00.6069297Z   ✓ sessions/chatCompositeBar/LongTitles/Light
+2026-06-27T23:56:00.7569975Z   ✓ sessions/chatCompositeBar/Renaming/Dark
+2026-06-27T23:56:00.8905035Z   ✓ sessions/chatCompositeBar/Renaming/Light
+2026-06-27T23:56:01.0237626Z   ✓ sessions/chatCompositeBar/WithDraftChat/Dark
+2026-06-27T23:56:01.1568002Z   ✓ sessions/chatCompositeBar/WithDraftChat/Light
+2026-06-27T23:56:01.2903357Z   ✓ sessions/openPullRequest/OpenPullRequest_Open/Dark
+2026-06-27T23:56:01.4235386Z   ✓ sessions/openPullRequest/OpenPullRequest_Open/Light
+2026-06-27T23:56:01.5568307Z   ✓ sessions/openPullRequest/OpenPullRequest_Draft/Dark
+2026-06-27T23:56:01.6904642Z   ✓ sessions/openPullRequest/OpenPullRequest_Draft/Light
+2026-06-27T23:56:01.8237161Z   ✓ sessions/openPullRequest/OpenPullRequest_Hover/Dark
+2026-06-27T23:56:01.9569261Z   ✓ sessions/openPullRequest/OpenPullRequest_Hover/Light
+2026-06-27T23:56:02.0906952Z   ✓ sessions/sessionHeader/SessionHeader_Default/Dark
+2026-06-27T23:56:02.2236557Z   ✓ sessions/sessionHeader/SessionHeader_Default/Light
+2026-06-27T23:56:02.3735810Z   ✓ sessions/sessionHeader/SessionHeader_WithPullRequest/Dark
+2026-06-27T23:56:02.5238341Z   ✓ sessions/sessionHeader/SessionHeader_WithPullRequest/Light
+2026-06-27T23:56:02.6741096Z   ✓ sessions/sessionHeader/SessionHeader_InProgress/Dark
+2026-06-27T23:56:02.8238898Z   ✓ sessions/sessionHeader/SessionHeader_InProgress/Light
+2026-06-27T23:56:02.9569789Z   ✓ sessions/sessionHeader/SessionHeader_NeedsInput/Dark
+2026-06-27T23:56:03.0901831Z   ✓ sessions/sessionHeader/SessionHeader_NeedsInput/Light
+2026-06-27T23:56:03.2402302Z   ✓ sessions/sessionHeader/SessionHeader_LongTitle/Dark
+2026-06-27T23:56:03.3902406Z   ✓ sessions/sessionHeader/SessionHeader_LongTitle/Light
+2026-06-27T23:56:03.5235220Z   ✓ sessions/sessionHeader/SessionHeader_NoWorkspace/Dark
+2026-06-27T23:56:03.6568244Z   ✓ sessions/sessionHeader/SessionHeader_NoWorkspace/Light
+2026-06-27T23:56:03.7906296Z   ✓ sessions/viewAllChanges/ViewAllChanges_SingleFile/Dark
+2026-06-27T23:56:03.9235878Z   ✓ sessions/viewAllChanges/ViewAllChanges_SingleFile/Light
+2026-06-27T23:56:04.0567535Z   ✓ sessions/viewAllChanges/ViewAllChanges_MultipleFiles/Dark
+2026-06-27T23:56:04.1900513Z   ✓ sessions/viewAllChanges/ViewAllChanges_MultipleFiles/Light
+2026-06-27T23:56:04.3232976Z   ✓ sessions/viewAllChanges/ViewAllChanges_OnlyInsertions/Dark
+2026-06-27T23:56:04.4568576Z   ✓ sessions/viewAllChanges/ViewAllChanges_OnlyInsertions/Light
+2026-06-27T23:56:04.5900507Z   ✓ sessions/viewAllChanges/ViewAllChanges_OnlyDeletions/Dark
+2026-06-27T23:56:04.7233023Z   ✓ sessions/viewAllChanges/ViewAllChanges_OnlyDeletions/Light
+2026-06-27T23:56:04.8569912Z   ✓ sessions/viewAllChanges/ViewAllChanges_NoChanges/Dark
+2026-06-27T23:56:04.9902047Z   ✓ sessions/viewAllChanges/ViewAllChanges_NoChanges/Light
+2026-06-27T23:56:05.1239317Z   ✓ chat/aiStats/AiStatsHover/Dark
+2026-06-27T23:56:05.2566710Z   ✓ chat/aiStats/AiStatsHover/Light
+2026-06-27T23:56:05.3899858Z   ✓ chat/aiStats/AiStatsHoverNoData/Dark
+2026-06-27T23:56:05.5239855Z   ✓ chat/aiStats/AiStatsHoverNoData/Light
+2026-06-27T23:56:05.7071664Z   ✓ chat/chatAgentFeedbackReviewConfirmation/SingleComment/Dark
+2026-06-27T23:56:05.8735208Z   ✓ chat/chatAgentFeedbackReviewConfirmation/SingleComment/Light
+2026-06-27T23:56:06.0567607Z   ✓ chat/chatAgentFeedbackReviewConfirmation/MixedKinds/Dark
+2026-06-27T23:56:06.2403346Z   ✓ chat/chatAgentFeedbackReviewConfirmation/MixedKinds/Light
+2026-06-27T23:56:06.4234339Z   ✓ chat/chatAgentFeedbackReviewConfirmation/ManyComments/Dark
+2026-06-27T23:56:06.6066254Z   ✓ chat/chatAgentFeedbackReviewConfirmation/ManyComments/Light
+2026-06-27T23:56:06.7733037Z   ✓ chat/chatAgentFeedbackReviewConfirmation/LongComment/Dark
+2026-06-27T23:56:06.9400568Z   ✓ chat/chatAgentFeedbackReviewConfirmation/LongComment/Light
+2026-06-27T23:56:07.1067711Z   ✓ chat/chatAgentFeedbackReviewConfirmation/Empty/Dark
+2026-06-27T23:56:07.2734456Z   ✓ chat/chatAgentFeedbackReviewConfirmation/Empty/Light
+2026-06-27T23:56:07.4402583Z   ✓ chat/chatAgentFeedbackReviewConfirmation/Carousel/Dark
+2026-06-27T23:56:07.6237709Z   ✓ chat/chatAgentFeedbackReviewConfirmation/Carousel/Light
+2026-06-27T23:56:07.7901791Z   ✓ chat/artifacts/chatArtifacts/SingleArtifact/Dark
+2026-06-27T23:56:07.9399752Z   ✓ chat/artifacts/chatArtifacts/SingleArtifact/Light
+2026-06-27T23:56:08.1067523Z   ✓ chat/artifacts/chatArtifacts/MultipleArtifacts/Dark
+2026-06-27T23:56:08.2731749Z   ✓ chat/artifacts/chatArtifacts/MultipleArtifacts/Light
+2026-06-27T23:56:08.4400854Z   ✓ chat/artifacts/chatArtifacts/MultipleArtifactsCollapsed/Dark
+2026-06-27T23:56:08.6066803Z   ✓ chat/artifacts/chatArtifacts/MultipleArtifactsCollapsed/Light
+2026-06-27T23:56:08.7899089Z   ✓ chat/artifacts/chatArtifacts/MultiSourceExpanded/Dark
+2026-06-27T23:56:08.9738427Z   ✓ chat/artifacts/chatArtifacts/MultiSourceExpanded/Light
+2026-06-27T23:56:09.1899094Z   ✓ chat/artifacts/chatArtifacts/MultiSourceHoveredRow/Dark
+2026-06-27T23:56:09.3733146Z   ✓ chat/artifacts/chatArtifacts/MultiSourceHoveredRow/Light
+2026-06-27T23:56:09.6900576Z   ✓ chat/input/chatInput/Default/Dark
+2026-06-27T23:56:10.0066507Z   ✓ chat/input/chatInput/Default/Light
+2026-06-27T23:56:10.3232598Z   ✓ chat/input/chatInput/WithSandboxing/Dark
+2026-06-27T23:56:10.6399659Z   ✓ chat/input/chatInput/WithSandboxing/Light
+2026-06-27T23:56:11.0064540Z   ✓ chat/input/chatInput/WithArtifacts/Dark
+2026-06-27T23:56:11.3732054Z   ✓ chat/input/chatInput/WithArtifacts/Light
+2026-06-27T23:56:11.7399516Z   ✓ chat/input/chatInput/WithFileChanges/Dark
+2026-06-27T23:56:12.0898391Z   ✓ chat/input/chatInput/WithFileChanges/Light
+2026-06-27T23:56:12.4398809Z   ✓ chat/input/chatInput/WithTodos/Dark
+2026-06-27T23:56:12.7903629Z   ✓ chat/input/chatInput/WithTodos/Light
+2026-06-27T23:56:13.1734206Z   ✓ chat/input/chatInput/WithTodosAndFileChanges/Dark
+2026-06-27T23:56:13.5567992Z   ✓ chat/input/chatInput/WithTodosAndFileChanges/Light
+2026-06-27T23:56:13.9564179Z   ✓ chat/input/chatInput/WithArtifactsAndFileChanges/Dark
+2026-06-27T23:56:14.3569760Z   ✓ chat/input/chatInput/WithArtifactsAndFileChanges/Light
+2026-06-27T23:56:14.7732446Z   ✓ chat/input/chatInput/Full/Dark
+2026-06-27T23:56:15.1896226Z   ✓ chat/input/chatInput/Full/Light
+2026-06-27T23:56:15.3231891Z   ✓ chat/input/permissionPickerList/Default/Dark
+2026-06-27T23:56:15.4566903Z   ✓ chat/input/permissionPickerList/Default/Light
+2026-06-27T23:56:15.5897795Z   ✓ chat/input/permissionPickerList/SandboxToggleOff/Dark
+2026-06-27T23:56:15.7230765Z   ✓ chat/input/permissionPickerList/SandboxToggleOff/Light
+2026-06-27T23:56:15.8564363Z   ✓ chat/input/permissionPickerList/SandboxToggleOn/Dark
+2026-06-27T23:56:15.9902399Z   ✓ chat/input/permissionPickerList/SandboxToggleOn/Light
+2026-06-27T23:56:16.1230671Z   ✓ chat/chatProgressContentPart/WithSpinner/Dark
+2026-06-27T23:56:16.2564330Z   ✓ chat/chatProgressContentPart/WithSpinner/Light
+2026-06-27T23:56:16.3895792Z   ✓ chat/chatProgressContentPart/Completed/Dark
+2026-06-27T23:56:16.5234793Z   ✓ chat/chatProgressContentPart/Completed/Light
+2026-06-27T23:56:16.6562051Z   ✓ chat/chatProgressContentPart/WithCustomIcon/Dark
+2026-06-27T23:56:16.7906160Z   ✓ chat/chatProgressContentPart/WithCustomIcon/Light
+2026-06-27T23:56:16.9230552Z   ✓ chat/chatProgressContentPart/WithInlineCode/Dark
+2026-06-27T23:56:17.0565919Z   ✓ chat/chatProgressContentPart/WithInlineCode/Light
+2026-06-27T23:56:17.1898205Z   ✓ chat/chatProgressContentPart/LongMessage/Dark
+2026-06-27T23:56:17.3228396Z   ✓ chat/chatProgressContentPart/LongMessage/Light
+2026-06-27T23:56:17.4730152Z   ✓ chat/chatQuestionCarousel/SingleTextQuestion/Dark
+2026-06-27T23:56:17.6227824Z   ✓ chat/chatQuestionCarousel/SingleTextQuestion/Light
+2026-06-27T23:56:17.7897275Z   ✓ chat/chatQuestionCarousel/SingleSelectQuestion/Dark
+2026-06-27T23:56:17.9563395Z   ✓ chat/chatQuestionCarousel/SingleSelectQuestion/Light
+2026-06-27T23:56:18.1230981Z   ✓ chat/chatQuestionCarousel/MultiSelectQuestion/Dark
+2026-06-27T23:56:18.2899193Z   ✓ chat/chatQuestionCarousel/MultiSelectQuestion/Light
+2026-06-27T23:56:18.4397145Z   ✓ chat/chatQuestionCarousel/MultipleQuestions/Dark
+2026-06-27T23:56:18.5896653Z   ✓ chat/chatQuestionCarousel/MultipleQuestions/Light
+2026-06-27T23:56:18.7729100Z   ✓ chat/chatQuestionCarousel/NoSkip/Dark
+2026-06-27T23:56:18.9395396Z   ✓ chat/chatQuestionCarousel/NoSkip/Light
+2026-06-27T23:56:19.0728230Z   ✓ chat/chatQuestionCarousel/SubmittedSummary/Dark
+2026-06-27T23:56:19.2065238Z   ✓ chat/chatQuestionCarousel/SubmittedSummary/Light
+2026-06-27T23:56:19.3402677Z   ✓ chat/chatQuestionCarousel/SkippedSummary/Dark
+2026-06-27T23:56:19.4732167Z   ✓ chat/chatQuestionCarousel/SkippedSummary/Light
+2026-06-27T23:56:19.6066250Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran - simple command/Dark
+2026-06-27T23:56:19.7395985Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran - simple command/Light
+2026-06-27T23:56:19.8735393Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Running - simple command/Dark
+2026-06-27T23:56:20.0060850Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Running - simple command/Light
+2026-06-27T23:56:20.1395878Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran sandbox - simple command/Dark
+2026-06-27T23:56:20.2729230Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran sandbox - simple command/Light
+2026-06-27T23:56:20.4060408Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Running sandbox - simple command/Dark
+2026-06-27T23:56:20.5395117Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Running sandbox - simple command/Light
+2026-06-27T23:56:20.6728608Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran - special chars/Dark
+2026-06-27T23:56:20.8059480Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran - special chars/Light
+2026-06-27T23:56:20.9395849Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran sandbox - special chars/Dark
+2026-06-27T23:56:21.0729585Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran sandbox - special chars/Light
+2026-06-27T23:56:21.2063171Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran - backticks/Dark
+2026-06-27T23:56:21.3394477Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran - backticks/Light
+2026-06-27T23:56:21.4727743Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran sandbox - backticks/Dark
+2026-06-27T23:56:21.6065009Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran sandbox - backticks/Light
+2026-06-27T23:56:21.7394546Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran sandbox - powershell backticks/Dark
+2026-06-27T23:56:21.8726171Z   ✓ chat/terminalCollapsible/chatTerminalCollapsible/Ran sandbox - powershell backticks/Light
+2026-06-27T23:56:22.0061392Z   ✓ chat/chatToolRiskBadge/Loading/Dark
+2026-06-27T23:56:22.1411898Z   ✓ chat/chatToolRiskBadge/Loading/Light
+2026-06-27T23:56:22.2727692Z   ✓ chat/chatToolRiskBadge/Green/Dark
+2026-06-27T23:56:22.4064680Z   ✓ chat/chatToolRiskBadge/Green/Light
+2026-06-27T23:56:22.5393806Z   ✓ chat/chatToolRiskBadge/Orange/Dark
+2026-06-27T23:56:22.6728086Z   ✓ chat/chatToolRiskBadge/Orange/Light
+2026-06-27T23:56:22.8060934Z   ✓ chat/chatToolRiskBadge/Red/Dark
+2026-06-27T23:56:22.9396845Z   ✓ chat/chatToolRiskBadge/Red/Light
+2026-06-27T23:56:23.8726275Z   ✓ chat/chatToolRiskBadge/GreenInContext/Dark
+2026-06-27T23:56:24.7396264Z   ✓ chat/chatToolRiskBadge/GreenInContext/Light
+2026-06-27T23:56:25.5891806Z   ✓ chat/chatToolRiskBadge/OrangeInContext/Dark
+2026-06-27T23:56:26.4559148Z   ✓ chat/chatToolRiskBadge/OrangeInContext/Light
+2026-06-27T23:56:27.3225984Z   ✓ chat/chatToolRiskBadge/RedInContext/Dark
+2026-06-27T23:56:28.1893191Z   ✓ chat/chatToolRiskBadge/RedInContext/Light
+2026-06-27T23:56:29.0723953Z   ✓ chat/chatToolRiskBadge/LoadingInContext/Dark
+2026-06-27T23:56:29.9557602Z   ✓ chat/chatToolRiskBadge/LoadingInContext/Light
+2026-06-27T23:56:30.4227030Z   ✓ chat/chatToolRiskBadge/GreenElicitationInContext/Dark
+2026-06-27T23:56:30.9059138Z   ✓ chat/chatToolRiskBadge/GreenElicitationInContext/Light
+2026-06-27T23:56:31.3563402Z   ✓ chat/chatToolRiskBadge/OrangeElicitationInContext/Dark
+2026-06-27T23:56:31.8223460Z   ✓ chat/chatToolRiskBadge/OrangeElicitationInContext/Light
+2026-06-27T23:56:32.2891597Z   ✓ chat/chatToolRiskBadge/RedElicitationInContext/Dark
+2026-06-27T23:56:32.7562475Z   ✓ chat/chatToolRiskBadge/RedElicitationInContext/Light
+2026-06-27T23:56:33.2065065Z   ✓ chat/chatToolRiskBadge/LoadingElicitationInContext/Dark
+2026-06-27T23:56:33.6890431Z   ✓ chat/chatToolRiskBadge/LoadingElicitationInContext/Light
+2026-06-27T23:56:34.5723012Z   ✓ chat/chatToolRiskBadge/BadgeOffInContext/Dark
+2026-06-27T23:56:35.4554991Z   ✓ chat/chatToolRiskBadge/BadgeOffInContext/Light
+2026-06-27T23:56:36.3555328Z   ✓ chat/chatToolRiskBadge/BadgeOffWithDisclaimerInContext/Dark
+2026-06-27T23:56:37.2554176Z   ✓ chat/chatToolRiskBadge/BadgeOffWithDisclaimerInContext/Light
+2026-06-27T23:56:38.1554249Z   ✓ chat/chatToolRiskBadge/BadgeOffUnsandboxedInContext/Dark
+2026-06-27T23:56:39.0553451Z   ✓ chat/chatToolRiskBadge/BadgeOffUnsandboxedInContext/Light
+2026-06-27T23:56:39.9554079Z   ✓ chat/chatToolRiskBadge/BadgeOffUnsandboxedWithDisclaimerInContext/Dark
+2026-06-27T23:56:40.8553243Z   ✓ chat/chatToolRiskBadge/BadgeOffUnsandboxedWithDisclaimerInContext/Light
+2026-06-27T23:56:40.9887608Z   ✓ chat/chatToolRiskBadge/HoverPreviewNoDetails/Dark
+2026-06-27T23:56:41.1219961Z   ✓ chat/chatToolRiskBadge/HoverPreviewNoDetails/Light
+2026-06-27T23:56:41.2553714Z   ✓ chat/chatToolRiskBadge/HoverPreviewDisclaimer/Dark
+2026-06-27T23:56:41.3887439Z   ✓ chat/chatToolRiskBadge/HoverPreviewDisclaimer/Light
+2026-06-27T23:56:41.5220057Z   ✓ chat/chatToolRiskBadge/HoverPreviewUnsandboxed/Dark
+2026-06-27T23:56:41.6556356Z   ✓ chat/chatToolRiskBadge/HoverPreviewUnsandboxed/Light
+2026-06-27T23:56:41.7888842Z   ✓ chat/chatToolRiskBadge/HoverPreviewUnsandboxedWithDisclaimer/Dark
+2026-06-27T23:56:41.9220313Z   ✓ chat/chatToolRiskBadge/HoverPreviewUnsandboxedWithDisclaimer/Light
+2026-06-27T23:56:42.3890983Z   ✓ chat/widget/chatWidget/SimpleQA/Dark
+2026-06-27T23:56:42.8385897Z   ✓ chat/widget/chatWidget/SimpleQA/Light
+2026-06-27T23:56:43.2889548Z   ✓ chat/widget/chatWidget/Streaming/Dark
+2026-06-27T23:56:43.7385898Z   ✓ chat/widget/chatWidget/Streaming/Light
+2026-06-27T23:56:44.6554367Z   ✓ chat/widget/chatWidget/PendingToolApproval/Dark
+2026-06-27T23:56:45.5385607Z   ✓ chat/widget/chatWidget/PendingToolApproval/Light
+2026-06-27T23:56:46.4217983Z   ✓ chat/widget/chatWidget/bugs/issue-309796-missing-backslash/Dark
+2026-06-27T23:56:47.3055823Z   ✓ chat/widget/chatWidget/bugs/issue-309796-missing-backslash/Light
+2026-06-27T23:56:47.9217152Z   ✓ chat/widget/chatWidget/MultiTurn/Dark
+2026-06-27T23:56:48.5225010Z   ✓ chat/widget/chatWidget/MultiTurn/Light
+2026-06-27T23:56:48.8223739Z   ✓ chat/promptFilePickers/PromptFiles/Dark
+2026-06-27T23:56:49.1057999Z   ✓ chat/promptFilePickers/PromptFiles/Light
+2026-06-27T23:56:49.4055870Z   ✓ chat/promptFilePickers/InstructionFilesWithAgentInstructions/Dark
+2026-06-27T23:56:49.7057918Z   ✓ chat/promptFilePickers/InstructionFilesWithAgentInstructions/Light
+2026-06-27T23:56:49.9219504Z   ✓ chat/aiCustomizations/aiCustomizationListWidget/InstructionsTabWithItems/Dark
+2026-06-27T23:56:50.1384750Z   ✓ chat/aiCustomizations/aiCustomizationListWidget/InstructionsTabWithItems/Light
+2026-06-27T23:56:50.2889317Z   ✓ chat/aiCustomizations/aiCustomizationListWidget/InstructionsTabEmpty/Dark
+2026-06-27T23:56:50.4383095Z   ✓ chat/aiCustomizations/aiCustomizationListWidget/InstructionsTabEmpty/Light
+2026-06-27T23:56:51.4219075Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/WelcomePage/Dark
+2026-06-27T23:56:52.3716629Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/WelcomePage/Light
+2026-06-27T23:56:53.3883271Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/LocalHarness/Dark
+2026-06-27T23:56:54.3882096Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/LocalHarness/Light
+2026-06-27T23:56:55.3714761Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/Sessions/Dark
+2026-06-27T23:56:56.3381766Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/Sessions/Light
+2026-06-27T23:56:57.3049467Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/SessionsSkillsTab/Dark
+2026-06-27T23:56:58.2714543Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/SessionsSkillsTab/Light
+2026-06-27T23:56:59.2045383Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServersTab/Dark
+2026-06-27T23:57:00.1546548Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServersTab/Light
+2026-06-27T23:57:01.0878498Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServersTabActiveSession/Dark
+2026-06-27T23:57:02.0210588Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServersTabActiveSession/Light
+2026-06-27T23:57:02.9878619Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/AgentsTab/Dark
+2026-06-27T23:57:03.9569502Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/AgentsTab/Light
+2026-06-27T23:57:04.9377181Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/SkillsTab/Dark
+2026-06-27T23:57:05.9049517Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/SkillsTab/Light
+2026-06-27T23:57:06.8709465Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/InstructionsTab/Dark
+2026-06-27T23:57:07.8209993Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/InstructionsTab/Light
+2026-06-27T23:57:08.7874791Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/HooksTab/Dark
+2026-06-27T23:57:09.7542960Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/HooksTab/Light
+2026-06-27T23:57:10.7209606Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PromptsTab/Dark
+2026-06-27T23:57:11.7206973Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PromptsTab/Light
+2026-06-27T23:57:12.6373367Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginsTab/Dark
+2026-06-27T23:57:13.5541078Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginsTab/Light
+2026-06-27T23:57:13.7038495Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpBrowseMode/Dark
+2026-06-27T23:57:13.8538829Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpBrowseMode/Light
+2026-06-27T23:57:14.0540890Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginBrowseMode/Dark
+2026-06-27T23:57:14.2373233Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginBrowseMode/Light
+2026-06-27T23:57:14.4038900Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpDisabledByUser/Dark
+2026-06-27T23:57:14.5705814Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpDisabledByUser/Light
+2026-06-27T23:57:14.7379052Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpDisabledByPolicy/Dark
+2026-06-27T23:57:14.9040109Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpDisabledByPolicy/Light
+2026-06-27T23:57:15.0718328Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginsDisabledByUser/Dark
+2026-06-27T23:57:15.2372958Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginsDisabledByUser/Light
+2026-06-27T23:57:15.4044484Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginsDisabledByPolicy/Dark
+2026-06-27T23:57:15.5707034Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginsDisabledByPolicy/Light
+2026-06-27T23:57:16.5373645Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PromptsTabScrolled/Dark
+2026-06-27T23:57:17.5038376Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PromptsTabScrolled/Light
+2026-06-27T23:57:18.4373349Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServersTabScrolled/Dark
+2026-06-27T23:57:19.3870440Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServersTabScrolled/Light
+2026-06-27T23:57:20.3203635Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginsTabScrolled/Dark
+2026-06-27T23:57:21.2369909Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginsTabScrolled/Light
+2026-06-27T23:57:22.1537492Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServersTabNarrow/Dark
+2026-06-27T23:57:23.0703023Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServersTabNarrow/Light
+2026-06-27T23:57:24.0036379Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/AgentsTabNarrow/Dark
+2026-06-27T23:57:24.9213870Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/AgentsTabNarrow/Light
+2026-06-27T23:57:25.8876430Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/AgentsItemPreview/Dark
+2026-06-27T23:57:26.8535748Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/AgentsItemPreview/Light
+2026-06-27T23:57:27.8200013Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/AgentsItemRaw/Dark
+2026-06-27T23:57:28.7868140Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/AgentsItemRaw/Light
+2026-06-27T23:57:29.7533188Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/BuiltinSkillItemPreview/Dark
+2026-06-27T23:57:30.7199338Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/BuiltinSkillItemPreview/Light
+2026-06-27T23:57:31.6868202Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/BuiltinSkillItemRaw/Dark
+2026-06-27T23:57:32.6531261Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/BuiltinSkillItemRaw/Light
+2026-06-27T23:57:33.5698853Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServerDetail/Dark
+2026-06-27T23:57:34.4864650Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServerDetail/Light
+2026-06-27T23:57:35.4032597Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServerDetailNarrow/Dark
+2026-06-27T23:57:36.3038547Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/McpServerDetailNarrow/Light
+2026-06-27T23:57:37.2529381Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginDetail/Dark
+2026-06-27T23:57:38.1696486Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginDetail/Light
+2026-06-27T23:57:39.0704893Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginDetailNarrow/Dark
+2026-06-27T23:57:39.9697059Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/PluginDetailNarrow/Light
+2026-06-27T23:57:40.1029481Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedMcpDetailWorkspace/Dark
+2026-06-27T23:57:40.2360982Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedMcpDetailWorkspace/Light
+2026-06-27T23:57:40.3695690Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedMcpDetailUser/Dark
+2026-06-27T23:57:40.5028610Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedMcpDetailUser/Light
+2026-06-27T23:57:40.6363115Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedMcpDetailEmpty/Dark
+2026-06-27T23:57:40.7700031Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedMcpDetailEmpty/Light
+2026-06-27T23:57:40.9029740Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedPluginDetailInstalled/Dark
+2026-06-27T23:57:41.0368424Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedPluginDetailInstalled/Light
+2026-06-27T23:57:41.1697377Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedPluginDetailMarketplace/Dark
+2026-06-27T23:57:41.3034891Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedPluginDetailMarketplace/Light
+2026-06-27T23:57:41.4366007Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedPluginDetailEmpty/Dark
+2026-06-27T23:57:41.5695162Z   ✓ chat/aiCustomizations/aiCustomizationManagementEditor/EmbeddedPluginDetailEmpty/Light
+2026-06-27T23:57:41.7195539Z   ✓ chat/aiCustomizations/aiCustomizationWelcomePages/WelcomePage/Dark
+2026-06-27T23:57:41.8695007Z   ✓ chat/aiCustomizations/aiCustomizationWelcomePages/WelcomePage/Light
+2026-06-27T23:57:42.0029489Z   ✓ baseUI/Buttons/Dark
+2026-06-27T23:57:42.1361635Z   ✓ baseUI/Buttons/Light
+2026-06-27T23:57:42.2700614Z   ✓ baseUI/ButtonBar/Dark
+2026-06-27T23:57:42.4027995Z   ✓ baseUI/ButtonBar/Light
+2026-06-27T23:57:42.5362198Z   ✓ baseUI/Toggles/Dark
+2026-06-27T23:57:42.6698805Z   ✓ baseUI/Toggles/Light
+2026-06-27T23:57:42.8032546Z   ✓ baseUI/InputBoxes/Dark
+2026-06-27T23:57:42.9362962Z   ✓ baseUI/InputBoxes/Light
+2026-06-27T23:57:43.0860035Z   ✓ baseUI/CountBadges/Dark
+2026-06-27T23:57:43.2195798Z   ✓ baseUI/CountBadges/Light
+2026-06-27T23:57:43.3531148Z   ✓ baseUI/ActionBar/Dark
+2026-06-27T23:57:43.4863236Z   ✓ baseUI/ActionBar/Light
+2026-06-27T23:57:43.6194133Z   ✓ baseUI/ProgressBars/Dark
+2026-06-27T23:57:43.7527068Z   ✓ baseUI/ProgressBars/Light
+2026-06-27T23:57:43.8863386Z   ✓ baseUI/HighlightedLabels/Dark
+2026-06-27T23:57:44.0194601Z   ✓ baseUI/HighlightedLabels/Light
+2026-06-27T23:57:44.1863830Z   ✓ editor/codeActionList/GroupedCodeActions/Dark
+2026-06-27T23:57:44.3531602Z   ✓ editor/codeActionList/GroupedCodeActions/Light
+2026-06-27T23:57:44.4862914Z   ✓ editor/codeActionList/SimpleQuickFixes/Dark
+2026-06-27T23:57:44.6198378Z   ✓ editor/codeActionList/SimpleQuickFixes/Light
+2026-06-27T23:57:44.8030624Z   ✓ editor/codeEditor/CodeEditor/Dark
+2026-06-27T23:57:44.9859582Z   ✓ editor/codeEditor/CodeEditor/Light
+2026-06-27T23:57:45.2028334Z   ✓ editor/findWidget/Find/Dark
+2026-06-27T23:57:45.4380188Z   ✓ editor/findWidget/Find/Light
+2026-06-27T23:57:45.6528163Z   ✓ editor/findWidget/FindAndReplace/Dark
+2026-06-27T23:57:45.8699092Z   ✓ editor/findWidget/FindAndReplace/Light
+2026-06-27T23:57:46.0695930Z   ✓ editor/inlineChatAffordance/InlineChatAffordance/Dark
+2026-06-27T23:57:46.2694423Z   ✓ editor/inlineChatAffordance/InlineChatAffordance/Light
+2026-06-27T23:57:46.8364732Z   ✓ editor/inlineChatZoneWidget/InlineChatZoneWidget/Dark
+2026-06-27T23:57:47.4028172Z   ✓ editor/inlineChatZoneWidget/InlineChatZoneWidget/Light
+2026-06-27T23:57:47.9360862Z   ✓ editor/inlineChatZoneWidget/InlineChatZoneWidgetTerminated/Dark
+2026-06-27T23:57:48.4698271Z   ✓ editor/inlineChatZoneWidget/InlineChatZoneWidgetTerminated/Light
+2026-06-27T23:57:48.8199075Z   ✓ editor/inlineCompletions/other/HintsToolbar/Dark
+2026-06-27T23:57:49.1527187Z   ✓ editor/inlineCompletions/other/HintsToolbar/Light
+2026-06-27T23:57:49.4692995Z   ✓ editor/inlineCompletions/other/HintsToolbarHovered/Dark
+2026-06-27T23:57:49.7859686Z   ✓ editor/inlineCompletions/other/HintsToolbarHovered/Light
+2026-06-27T23:57:49.9875191Z   ✓ editor/inlineCompletions/other/JumpToHint/Dark
+2026-06-27T23:57:50.1692232Z   ✓ editor/inlineCompletions/other/JumpToHint/Light
+2026-06-27T23:57:50.9027594Z   ✓ editor/inlineCompletions/other/LongDistanceHint/Dark
+2026-06-27T23:57:51.6025934Z   ✓ editor/inlineCompletions/other/LongDistanceHint/Light
+2026-06-27T23:57:52.2361043Z   ✓ editor/inlineCompletions/other/NextFileEditSuggestion/Dark
+2026-06-27T23:57:52.8696983Z   ✓ editor/inlineCompletions/other/NextFileEditSuggestion/Light
+2026-06-27T23:57:53.0525603Z   ✓ editor/inlineCompletions/other/GutterMenu/Dark
+2026-06-27T23:57:53.2191230Z   ✓ editor/inlineCompletions/other/GutterMenu/Light
+2026-06-27T23:57:53.8525431Z   ✓ editor/inlineCompletions/views/SideBySideViewSmall/Dark
+2026-06-27T23:57:54.4859515Z   ✓ editor/inlineCompletions/views/SideBySideViewSmall/Light
+2026-06-27T23:57:55.1194249Z   ✓ editor/inlineCompletions/views/SideBySideViewWide/Dark
+2026-06-27T23:57:55.7523733Z   ✓ editor/inlineCompletions/views/SideBySideViewWide/Light
+2026-06-27T23:57:56.3859555Z   ✓ editor/inlineCompletions/views/WordReplacementView/Dark
+2026-06-27T23:57:57.0189092Z   ✓ editor/inlineCompletions/views/WordReplacementView/Light
+2026-06-27T23:57:57.6522713Z   ✓ editor/inlineCompletions/views/InsertionView/Dark
+2026-06-27T23:57:58.2855340Z   ✓ editor/inlineCompletions/views/InsertionView/Light
+2026-06-27T23:57:58.9022529Z   ✓ editor/inlineCompletions/views/DeletionView/Dark
+2026-06-27T23:57:59.5188692Z   ✓ editor/inlineCompletions/views/DeletionView/Light
+2026-06-27T23:58:00.1689766Z   ✓ editor/inlineCompletions/views/LineReplacementView/Dark
+2026-06-27T23:58:00.8026906Z   ✓ editor/inlineCompletions/views/LineReplacementView/Light
+2026-06-27T23:58:01.9194005Z   ✓ editor/multiDiffEditor/MultiDiffEditor/Dark
+2026-06-27T23:58:02.9855745Z   ✓ editor/multiDiffEditor/MultiDiffEditor/Light
+2026-06-27T23:58:03.6188605Z   ✓ editor/multiDiffEditor/MultiDiffEditorIncrementalPending/Dark
+2026-06-27T23:58:04.2521315Z   ✓ editor/multiDiffEditor/MultiDiffEditorIncrementalPending/Light
+2026-06-27T23:58:05.3355319Z   ✓ editor/multiDiffEditor/MultiDiffEditorIncrementalResolved/Dark
+2026-06-27T23:58:06.5354251Z   ✓ editor/multiDiffEditor/MultiDiffEditorIncrementalResolved/Light
+2026-06-27T23:58:06.7018583Z   ✓ editor/multiDiffEditor/MultiDiffEditorIncrementalResolvedRealtime/Dark
+2026-06-27T23:58:06.8684743Z   ✓ editor/multiDiffEditor/MultiDiffEditorIncrementalResolvedRealtime/Light
+2026-06-27T23:58:07.0355318Z   ✓ editor/multiDiffEditor/MultiDiffEditorDocumentSwapBefore/Dark
+2026-06-27T23:58:07.2184186Z   ✓ editor/multiDiffEditor/MultiDiffEditorDocumentSwapBefore/Light
+2026-06-27T23:58:08.8852803Z   ✓ editor/multiDiffEditor/MultiDiffEditorDocumentSwapAfter/Dark
+2026-06-27T23:58:10.5350857Z   ✓ editor/multiDiffEditor/MultiDiffEditorDocumentSwapAfter/Light
+2026-06-27T23:58:10.7016738Z   ✓ editor/multiDiffEditor/MultiDiffEditorDocumentSwapRealtime/Dark
+2026-06-27T23:58:10.8681822Z   ✓ editor/multiDiffEditor/MultiDiffEditorDocumentSwapRealtime/Light
+2026-06-27T23:58:11.0690745Z   ✓ editor/renameWidget/RenameVariable/Dark
+2026-06-27T23:58:11.2682917Z   ✓ editor/renameWidget/RenameVariable/Light
+2026-06-27T23:58:11.4685386Z   ✓ editor/renameWidget/RenameClass/Dark
+2026-06-27T23:58:11.6684721Z   ✓ editor/renameWidget/RenameClass/Light
+2026-06-27T23:58:12.0352078Z   ✓ editor/suggestWidget/MethodCompletions/Dark
+2026-06-27T23:58:12.4016979Z   ✓ editor/suggestWidget/MethodCompletions/Light
+2026-06-27T23:58:12.7183252Z   ✓ editor/suggestWidget/MixedKinds/Dark
+2026-06-27T23:58:13.0358672Z   ✓ editor/suggestWidget/MixedKinds/Light
+2026-06-27T23:58:13.3683692Z   ✓ peekReference/PeekReferences/Dark
+2026-06-27T23:58:13.7015864Z   ✓ peekReference/PeekReferences/Light
+2026-06-27T23:58:13.8353622Z   ✓ imageCarousel/imageCarousel/SingleSection/Dark
+2026-06-27T23:58:13.9686990Z   ✓ imageCarousel/imageCarousel/SingleSection/Light
+2026-06-27T23:58:14.1015544Z   ✓ imageCarousel/imageCarousel/SingleSectionMiddleImage/Dark
+2026-06-27T23:58:14.2347808Z   ✓ imageCarousel/imageCarousel/SingleSectionMiddleImage/Light
+2026-06-27T23:58:14.3681781Z   ✓ imageCarousel/imageCarousel/MultipleSections/Dark
+2026-06-27T23:58:14.5021595Z   ✓ imageCarousel/imageCarousel/MultipleSections/Light
+2026-06-27T23:58:14.6349764Z   ✓ imageCarousel/imageCarousel/SingleImage/Dark
+2026-06-27T23:58:14.7695114Z   ✓ imageCarousel/imageCarousel/SingleImage/Light
+2026-06-27T23:58:14.9019396Z   ✓ onboarding/spotlightOverlay/SpotlightOverlay/Dark
+2026-06-27T23:58:15.0347460Z   ✓ onboarding/spotlightOverlay/SpotlightOverlay/Light
+2026-06-27T23:58:15.1686119Z   ✓ agentSessionsViewer/CompletedRead/Dark
+2026-06-27T23:58:15.3015693Z   ✓ agentSessionsViewer/CompletedRead/Light
+2026-06-27T23:58:15.4353301Z   ✓ agentSessionsViewer/CompletedUnread/Dark
+2026-06-27T23:58:15.5682886Z   ✓ agentSessionsViewer/CompletedUnread/Light
+2026-06-27T23:58:15.7018481Z   ✓ agentSessionsViewer/InProgress/Dark
+2026-06-27T23:58:15.8347813Z   ✓ agentSessionsViewer/InProgress/Light
+2026-06-27T23:58:15.9681652Z   ✓ agentSessionsViewer/NeedsInput/Dark
+2026-06-27T23:58:16.1016564Z   ✓ agentSessionsViewer/NeedsInput/Light
+2026-06-27T23:58:16.2348545Z   ✓ agentSessionsViewer/FailedWithDuration/Dark
+2026-06-27T23:58:16.3682500Z   ✓ agentSessionsViewer/FailedWithDuration/Light
+2026-06-27T23:58:16.5018522Z   ✓ agentSessionsViewer/FailedWithoutDuration/Dark
+2026-06-27T23:58:16.6348679Z   ✓ agentSessionsViewer/FailedWithoutDuration/Light
+2026-06-27T23:58:16.7682748Z   ✓ agentSessionsViewer/WithDiffChanges/Dark
+2026-06-27T23:58:16.9015688Z   ✓ agentSessionsViewer/WithDiffChanges/Light
+2026-06-27T23:58:17.0352926Z   ✓ agentSessionsViewer/WithFileChangesList/Dark
+2026-06-27T23:58:17.1681666Z   ✓ agentSessionsViewer/WithFileChangesList/Light
+2026-06-27T23:58:17.3015976Z   ✓ agentSessionsViewer/WithBadge/Dark
+2026-06-27T23:58:17.4348777Z   ✓ agentSessionsViewer/WithBadge/Light
+2026-06-27T23:58:17.5681201Z   ✓ agentSessionsViewer/WithMarkdownBadge/Dark
+2026-06-27T23:58:17.7016058Z   ✓ agentSessionsViewer/WithMarkdownBadge/Light
+2026-06-27T23:58:17.8347205Z   ✓ agentSessionsViewer/WithDescription/Dark
+2026-06-27T23:58:17.9684685Z   ✓ agentSessionsViewer/WithDescription/Light
+2026-06-27T23:58:18.1023406Z   ✓ agentSessionsViewer/WithMarkdownDescription/Dark
+2026-06-27T23:58:18.2349663Z   ✓ agentSessionsViewer/WithMarkdownDescription/Light
+2026-06-27T23:58:18.3682862Z   ✓ agentSessionsViewer/WithBadgeAndDiff/Dark
+2026-06-27T23:58:18.5012808Z   ✓ agentSessionsViewer/WithBadgeAndDiff/Light
+2026-06-27T23:58:18.6355945Z   ✓ agentSessionsViewer/Archived/Dark
+2026-06-27T23:58:18.7680135Z   ✓ agentSessionsViewer/Archived/Light
+2026-06-27T23:58:18.9015415Z   ✓ agentSessionsViewer/ArchivedUnread/Dark
+2026-06-27T23:58:19.0345741Z   ✓ agentSessionsViewer/ArchivedUnread/Light
+2026-06-27T23:58:19.1678772Z   ✓ agentSessionsViewer/CloudProvider/Dark
+2026-06-27T23:58:19.3017122Z   ✓ agentSessionsViewer/CloudProvider/Light
+2026-06-27T23:58:19.4350840Z   ✓ agentSessionsViewer/BackgroundProvider/Dark
+2026-06-27T23:58:19.5685515Z   ✓ agentSessionsViewer/BackgroundProvider/Light
+2026-06-27T23:58:19.7013901Z   ✓ agentSessionsViewer/ClaudeProvider/Dark
+2026-06-27T23:58:19.8348727Z   ✓ agentSessionsViewer/ClaudeProvider/Light
+2026-06-27T23:58:19.9680351Z   ✓ agentSessionsViewer/CloudProviderInProgress/Dark
+2026-06-27T23:58:20.1013842Z   ✓ agentSessionsViewer/CloudProviderInProgress/Light
+2026-06-27T23:58:20.2349344Z   ✓ agentSessionsViewer/InProgressWithDescription/Dark
+2026-06-27T23:58:20.3680264Z   ✓ agentSessionsViewer/InProgressWithDescription/Light
+2026-06-27T23:58:20.5014597Z   ✓ agentSessionsViewer/SectionToday/Dark
+2026-06-27T23:58:20.6346823Z   ✓ agentSessionsViewer/SectionToday/Light
+2026-06-27T23:58:20.7680619Z   ✓ agentSessionsViewer/SectionYesterday/Dark
+2026-06-27T23:58:20.9013886Z   ✓ agentSessionsViewer/SectionYesterday/Light
+2026-06-27T23:58:21.0346912Z   ✓ agentSessionsViewer/SectionLastWeek/Dark
+2026-06-27T23:58:21.1680255Z   ✓ agentSessionsViewer/SectionLastWeek/Light
+2026-06-27T23:58:21.3019823Z   ✓ agentSessionsViewer/SectionOlder/Dark
+2026-06-27T23:58:21.4351994Z   ✓ agentSessionsViewer/SectionOlder/Light
+2026-06-27T23:58:21.5681185Z   ✓ agentSessionsViewer/SectionArchived/Dark
+2026-06-27T23:58:21.7023891Z   ✓ agentSessionsViewer/SectionArchived/Light
+2026-06-27T23:58:21.8353680Z   ✓ agentSessionsViewer/SectionMore/Dark
+2026-06-27T23:58:21.9680470Z   ✓ agentSessionsViewer/SectionMore/Light
+2026-06-27T23:58:22.1014096Z   ✓ agentSessionsViewer/ApprovalRowJson/Dark
+2026-06-27T23:58:22.2349330Z   ✓ agentSessionsViewer/ApprovalRowJson/Light
+2026-06-27T23:58:22.3680456Z   ✓ agentSessionsViewer/ApprovalRowBash/Dark
+2026-06-27T23:58:22.5012582Z   ✓ agentSessionsViewer/ApprovalRowBash/Light
+2026-06-27T23:58:22.6346847Z   ✓ agentSessionsViewer/ApprovalRowPowerShell/Dark
+2026-06-27T23:58:22.7680471Z   ✓ agentSessionsViewer/ApprovalRowPowerShell/Light
+2026-06-27T23:58:22.9013119Z   ✓ agentSessionsViewer/ApprovalRowLongLabel/Dark
+2026-06-27T23:58:23.0352235Z   ✓ agentSessionsViewer/ApprovalRowLongLabel/Light
+2026-06-27T23:58:23.1679683Z   ✓ agentSessionsViewer/ApprovalRow1Line/Dark
+2026-06-27T23:58:23.3012077Z   ✓ agentSessionsViewer/ApprovalRow1Line/Light
+2026-06-27T23:58:23.4345828Z   ✓ agentSessionsViewer/ApprovalRow2Lines/Dark
+2026-06-27T23:58:23.5678546Z   ✓ agentSessionsViewer/ApprovalRow2Lines/Light
+2026-06-27T23:58:23.7015897Z   ✓ agentSessionsViewer/ApprovalRow3Lines/Dark
+2026-06-27T23:58:23.8349711Z   ✓ agentSessionsViewer/ApprovalRow3Lines/Light
+2026-06-27T23:58:23.9679106Z   ✓ agentSessionsViewer/ApprovalRow4Lines/Dark
+2026-06-27T23:58:24.1012615Z   ✓ agentSessionsViewer/ApprovalRow4Lines/Light
+2026-06-27T23:58:24.2346177Z   ✓ agentSessionsViewer/ApprovalRow3LongLines/Dark
+2026-06-27T23:58:24.3683121Z   ✓ agentSessionsViewer/ApprovalRow3LongLines/Light
+2026-06-27T23:58:24.3888914Z 
+2026-06-27T23:58:24.3889402Z Rendered to .screenshots/current/
+2026-06-27T23:58:24.3890094Z   Manifest: /home/runner/work/vscode/vscode/test/componentFixtures/.screenshots/current/manifest.json
+2026-06-27T23:58:24.3890642Z   534 fixtures, 0 unique images
+2026-06-27T23:58:24.4925647Z ##[group]Run MANIFEST="test/componentFixtures/.screenshots/current/manifest.json"
+2026-06-27T23:58:24.4926273Z [36;1mMANIFEST="test/componentFixtures/.screenshots/current/manifest.json"[0m
+2026-06-27T23:58:24.4926672Z [36;1mif [ ! -f "$MANIFEST" ]; then[0m
+2026-06-27T23:58:24.4927052Z [36;1m  echo "::warning::No manifest found — render may have failed entirely"[0m
+2026-06-27T23:58:24.4927429Z [36;1m  exit 0[0m
+2026-06-27T23:58:24.4927627Z [36;1mfi[0m
+2026-06-27T23:58:24.4927934Z [36;1m# Log per-fixture errors but do not fail here — let later steps run[0m
+2026-06-27T23:58:24.4928387Z [36;1m# (artifact upload, diff, PR comment) so failures are debuggable.[0m
+2026-06-27T23:58:24.4928830Z [36;1m# The final "Fail if fixtures had errors" step turns this into a[0m
+2026-06-27T23:58:24.4929172Z [36;1m# job failure.[0m
+2026-06-27T23:58:24.4929400Z [36;1mif node -e "[0m
+2026-06-27T23:58:24.4929637Z [36;1m  const m = require('./$MANIFEST');[0m
+2026-06-27T23:58:24.4930020Z [36;1m  const errs = m.fixtures.filter(f => f.hasError);[0m
+2026-06-27T23:58:24.4930447Z [36;1m  if (!errs.length) { console.log('No fixture errors.'); process.exit(0); }[0m
+2026-06-27T23:58:24.4930892Z [36;1m  console.log(errs.length + ' fixture(s) with errors:');[0m
+2026-06-27T23:58:24.4931235Z [36;1m  for (const f of errs) {[0m
+2026-06-27T23:58:24.4931571Z [36;1m    const errorEvents = (f.events || []).filter(e => e.isError);[0m
+2026-06-27T23:58:24.4932038Z [36;1m    const msg = errorEvents.map(e => e.message).join('; ') || 'unknown error';[0m
+2026-06-27T23:58:24.4932479Z [36;1m    console.log('::error::' + f.fixtureId + ': ' + msg);[0m
+2026-06-27T23:58:24.4932827Z [36;1m    for (const e of errorEvents) {[0m
+2026-06-27T23:58:24.4933153Z [36;1m      if (e.stack) { console.log('  stack: ' + e.stack); }[0m
+2026-06-27T23:58:24.4933459Z [36;1m    }[0m
+2026-06-27T23:58:24.4933973Z [36;1m    const nonErrorEvents = (f.events || []).filter(e => !e.isError);[0m
+2026-06-27T23:58:24.4934484Z [36;1m    for (const e of nonErrorEvents) { console.log('  event: ' + JSON.stringify(e)); }[0m
+2026-06-27T23:58:24.4934898Z [36;1m  }[0m
+2026-06-27T23:58:24.4935114Z [36;1m  process.exit(1);[0m
+2026-06-27T23:58:24.4935342Z [36;1m"; then[0m
+2026-06-27T23:58:24.4935581Z [36;1m  echo "has_errors=false" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:24.4935860Z [36;1melse[0m
+2026-06-27T23:58:24.4936099Z [36;1m  echo "has_errors=true" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:24.4936379Z [36;1mfi[0m
+2026-06-27T23:58:24.4955653Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:58:24.4955911Z env:
+2026-06-27T23:58:24.4956431Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:58:24.4957002Z ##[endgroup]
+2026-06-27T23:58:24.5251031Z No fixture errors.
+2026-06-27T23:58:24.5291478Z ##[group]Run node build/lib/screenshotBlocksCi.ts \
+2026-06-27T23:58:24.5291887Z [36;1mnode build/lib/screenshotBlocksCi.ts \[0m
+2026-06-27T23:58:24.5292282Z [36;1m  test/componentFixtures/.screenshots/current/manifest.json \[0m
+2026-06-27T23:58:24.5292723Z [36;1m  test/componentFixtures/blocks-ci-screenshots.md \[0m
+2026-06-27T23:58:24.5293143Z [36;1m  https://hediet-screenshots.azurewebsites.net \[0m
+2026-06-27T23:58:24.5293906Z [36;1m  > /tmp/blocks-ci-updated.md 2>/tmp/blocks-ci-stderr.txt \[0m
+2026-06-27T23:58:24.5294437Z [36;1m  && echo "match=true" >> "$GITHUB_OUTPUT" \[0m
+2026-06-27T23:58:24.5294722Z [36;1m  || {[0m
+2026-06-27T23:58:24.5294966Z [36;1m    echo "match=false" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:24.5295276Z [36;1m    cat /tmp/blocks-ci-stderr.txt >&2[0m
+2026-06-27T23:58:24.5295598Z [36;1m    CONTENT=$(cat /tmp/blocks-ci-updated.md)[0m
+2026-06-27T23:58:24.5295943Z [36;1m    echo "content<<BLOCKS_CI_EOF" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:24.5296330Z [36;1m    echo "$CONTENT" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:24.5296637Z [36;1m    echo "BLOCKS_CI_EOF" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:24.5297145Z [36;1m    PATCH=$(diff -u test/componentFixtures/blocks-ci-screenshots.md /tmp/blocks-ci-updated.md || true)[0m
+2026-06-27T23:58:24.5297696Z [36;1m    echo "patch<<BLOCKS_CI_PATCH_EOF" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:24.5298038Z [36;1m    echo "$PATCH" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:24.5298364Z [36;1m    echo "BLOCKS_CI_PATCH_EOF" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:24.5298661Z [36;1m  }[0m
+2026-06-27T23:58:24.5317473Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:58:24.5317736Z env:
+2026-06-27T23:58:24.5318259Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:58:24.5318849Z ##[endgroup]
+2026-06-27T23:58:24.6080824Z ##[group]Run actions/upload-artifact@v7
+2026-06-27T23:58:24.6081200Z with:
+2026-06-27T23:58:24.6081404Z   name: screenshots
+2026-06-27T23:58:24.6081655Z   path: test/componentFixtures/.screenshots/current/
+2026-06-27T23:58:24.6081964Z   if-no-files-found: warn
+2026-06-27T23:58:24.6082206Z   compression-level: 6
+2026-06-27T23:58:24.6082421Z   overwrite: false
+2026-06-27T23:58:24.6082629Z   include-hidden-files: false
+2026-06-27T23:58:24.6082859Z   archive: true
+2026-06-27T23:58:24.6083039Z env:
+2026-06-27T23:58:24.6083866Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:58:24.6084460Z ##[endgroup]
+2026-06-27T23:58:24.8752327Z With the provided path, there will be 535 files uploaded
+2026-06-27T23:58:24.8756979Z Artifact name is valid!
+2026-06-27T23:58:24.8757454Z Root directory input is valid!
+2026-06-27T23:58:25.1509623Z Uploading artifact: screenshots.zip
+2026-06-27T23:58:25.1552928Z Beginning upload of artifact content to blob storage
+2026-06-27T23:58:26.3449156Z Uploaded bytes 8325616
+2026-06-27T23:58:26.3989987Z Finished uploading artifact content to blob storage!
+2026-06-27T23:58:26.3990924Z SHA256 digest of uploaded artifact is bbdf6b3639c01fc5e036a02ee343ce3d2c67e00b7c686950b0568b082451db9b
+2026-06-27T23:58:26.3991955Z Finalizing artifact upload
+2026-06-27T23:58:26.7224763Z Artifact screenshots successfully finalized. Artifact ID 7929273621
+2026-06-27T23:58:26.7225808Z Artifact screenshots has been successfully uploaded! Final size is 8325616 bytes. Artifact ID is 7929273621
+2026-06-27T23:58:26.7229763Z Artifact download URL: https://github.com/microsoft/vscode/actions/runs/28305609786/artifacts/7929273621
+2026-06-27T23:58:26.7391659Z ##[group]Run if [ "push" = "pull_request" ]; then
+2026-06-27T23:58:26.7392079Z [36;1mif [ "push" = "pull_request" ]; then[0m
+2026-06-27T23:58:26.7392515Z [36;1m  # For PRs, diff against the merge-base with the target branch.[0m
+2026-06-27T23:58:26.7392921Z [36;1m  TARGET_REF="origin/"[0m
+2026-06-27T23:58:26.7393250Z [36;1m  git fetch --no-tags --depth=50 origin ""[0m
+2026-06-27T23:58:26.7394224Z [36;1m  BASE_SHA=$(git merge-base "3ed83a9bc1d6fabc68e9244b52d60d901c75f7b8" "$TARGET_REF")[0m
+2026-06-27T23:58:26.7394704Z [36;1melse[0m
+2026-06-27T23:58:26.7395001Z [36;1m  # For push events, diff against the parent commit.[0m
+2026-06-27T23:58:26.7395516Z [36;1m  BASE_SHA=$(git rev-parse "3ed83a9bc1d6fabc68e9244b52d60d901c75f7b8^")[0m
+2026-06-27T23:58:26.7395921Z [36;1mfi[0m
+2026-06-27T23:58:26.7396198Z [36;1mecho "base_sha=$BASE_SHA" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:26.7396734Z [36;1mecho "Using base SHA: $BASE_SHA (base for 3ed83a9bc1d6fabc68e9244b52d60d901c75f7b8)"[0m
+2026-06-27T23:58:26.7417268Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:58:26.7417529Z env:
+2026-06-27T23:58:26.7418050Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:58:26.7418627Z ##[endgroup]
+2026-06-27T23:58:26.7474937Z Using base SHA: c94714755e2b19775e0148287c588e77390e40f8 (base for 3ed83a9bc1d6fabc68e9244b52d60d901c75f7b8)
+2026-06-27T23:58:26.7498228Z ##[group]Run TOKEN=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+2026-06-27T23:58:26.7498816Z [36;1mTOKEN=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \[0m
+2026-06-27T23:58:26.7499418Z [36;1m  "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://hediet-screenshots.azurewebsites.net" \[0m
+2026-06-27T23:58:26.7499878Z [36;1m  | jq -r .value)[0m
+2026-06-27T23:58:26.7500133Z [36;1mecho "::add-mask::$TOKEN"[0m
+2026-06-27T23:58:26.7500422Z [36;1mecho "token=$TOKEN" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:26.7518297Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:58:26.7518555Z env:
+2026-06-27T23:58:26.7519084Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:58:26.7519663Z ##[endgroup]
+2026-06-27T23:58:27.0010976Z ##[group]Run cd test/componentFixtures/.screenshots/current
+2026-06-27T23:58:27.0011496Z [36;1mcd test/componentFixtures/.screenshots/current[0m
+2026-06-27T23:58:27.0011871Z [36;1mzip -qr "$GITHUB_WORKSPACE/screenshots.zip" .[0m
+2026-06-27T23:58:27.0012182Z [36;1mset +e[0m
+2026-06-27T23:58:27.0012502Z [36;1mSTATUS=$(curl -sS -o /tmp/screenshot-upload.out -w '%{http_code}' \[0m
+2026-06-27T23:58:27.0013118Z [36;1m  -X POST "https://hediet-screenshots.azurewebsites.net/upload" \[0m
+2026-06-27T23:58:27.0013805Z [36;1m  -H "Content-Type: application/zip" \[0m
+2026-06-27T23:58:27.0014283Z [36;1m  -H "Authorization: ***" \[0m
+2026-06-27T23:58:27.0014613Z [36;1m  --data-binary @"$GITHUB_WORKSPACE/screenshots.zip")[0m
+2026-06-27T23:58:27.0014960Z [36;1mCURL_EXIT=$?[0m
+2026-06-27T23:58:27.0015193Z [36;1mset -e[0m
+2026-06-27T23:58:27.0015416Z [36;1mif [ "$CURL_EXIT" -ne 0 ]; then[0m
+2026-06-27T23:58:27.0015921Z [36;1m  echo "::warning::Screenshot service unreachable (curl exit $CURL_EXIT) -- skipping upload."[0m
+2026-06-27T23:58:27.0016393Z [36;1melif [ "${STATUS:0:1}" != "2" ]; then[0m
+2026-06-27T23:58:27.0017605Z [36;1m  echo "::warning::Screenshot service returned HTTP $STATUS -- skipping upload."[0m
+2026-06-27T23:58:27.0019859Z [36;1m  cat /tmp/screenshot-upload.out || true[0m
+2026-06-27T23:58:27.0020775Z [36;1melse[0m
+2026-06-27T23:58:27.0021053Z [36;1m  echo "Uploaded screenshots (HTTP $STATUS)."[0m
+2026-06-27T23:58:27.0021345Z [36;1mfi[0m
+2026-06-27T23:58:27.0041316Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:58:27.0041586Z env:
+2026-06-27T23:58:27.0042130Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:58:27.0083616Z   SCREENSHOT_SERVICE_TOKEN: ***
+2026-06-27T23:58:27.0083931Z ##[endgroup]
+2026-06-27T23:58:52.0934915Z Uploaded screenshots (HTTP 200).
+2026-06-27T23:58:52.0965174Z ##[group]Run BASE_MANIFEST=/tmp/base-manifest.json
+2026-06-27T23:58:52.0965648Z [36;1mBASE_MANIFEST=/tmp/base-manifest.json[0m
+2026-06-27T23:58:52.0966269Z [36;1mURL="https://hediet-screenshots.azurewebsites.net/commits/microsoft/vscode/$BASE_SHA"[0m
+2026-06-27T23:58:52.0966818Z [36;1mset +e[0m
+2026-06-27T23:58:52.0967186Z [36;1mSTATUS=$(curl -sS -o "$BASE_MANIFEST" -w '%{http_code}' "$URL")[0m
+2026-06-27T23:58:52.0967616Z [36;1mCURL_EXIT=$?[0m
+2026-06-27T23:58:52.0967881Z [36;1mset -e[0m
+2026-06-27T23:58:52.0968154Z [36;1mif [ "$CURL_EXIT" -ne 0 ]; then[0m
+2026-06-27T23:58:52.0968677Z [36;1m  echo "::warning::Screenshot service unreachable (curl exit $CURL_EXIT) -- skipping diff."[0m
+2026-06-27T23:58:52.0969226Z [36;1melif [ "$STATUS" = "200" ]; then[0m
+2026-06-27T23:58:52.0969761Z [36;1m  echo "path=$BASE_MANIFEST" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:52.0970177Z [36;1m  echo "Fetched base manifest for $BASE_SHA"[0m
+2026-06-27T23:58:52.0970559Z [36;1melse[0m
+2026-06-27T23:58:52.0970963Z [36;1m  echo "::warning::Base manifest unavailable (HTTP $STATUS) -- skipping diff."[0m
+2026-06-27T23:58:52.0971463Z [36;1m  cat "$BASE_MANIFEST" || true[0m
+2026-06-27T23:58:52.0971766Z [36;1mfi[0m
+2026-06-27T23:58:52.0991875Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:58:52.0992140Z env:
+2026-06-27T23:58:52.0992658Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:58:52.0993288Z   BASE_SHA: c94714755e2b19775e0148287c588e77390e40f8
+2026-06-27T23:58:52.0993851Z ##[endgroup]
+2026-06-27T23:58:53.1838920Z Fetched base manifest for c94714755e2b19775e0148287c588e77390e40f8
+2026-06-27T23:58:53.1866970Z ##[group]Run BODY=$(node build/lib/screenshotDiffReport.ts \
+2026-06-27T23:58:53.1867506Z [36;1mBODY=$(node build/lib/screenshotDiffReport.ts \[0m
+2026-06-27T23:58:53.1868031Z [36;1m  https://hediet-screenshots.azurewebsites.net \[0m
+2026-06-27T23:58:53.1868484Z [36;1m  "c94714755e2b19775e0148287c588e77390e40f8" \[0m
+2026-06-27T23:58:53.1868893Z [36;1m  3ed83a9bc1d6fabc68e9244b52d60d901c75f7b8 \[0m
+2026-06-27T23:58:53.1869281Z [36;1m  "/tmp/base-manifest.json" \[0m
+2026-06-27T23:58:53.1869735Z [36;1m  test/componentFixtures/.screenshots/current/manifest.json)[0m
+2026-06-27T23:58:53.1870182Z [36;1mif [ -n "$BODY" ]; then[0m
+2026-06-27T23:58:53.1870541Z [36;1m  echo "has_changes=true" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:53.1870959Z [36;1m  echo "body<<SCREENSHOT_EOF" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:53.1871354Z [36;1m  echo "$BODY" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:53.1871725Z [36;1m  echo "SCREENSHOT_EOF" >> "$GITHUB_OUTPUT"[0m
+2026-06-27T23:58:53.1872099Z [36;1melse[0m
+2026-06-27T23:58:53.1872391Z [36;1m  echo "No screenshot changes to report."[0m
+2026-06-27T23:58:53.1872726Z [36;1mfi[0m
+2026-06-27T23:58:53.1873038Z [36;1mif [ -f .tmp/screenshotDiffReport.json ]; then[0m
+2026-06-27T23:58:53.1873416Z [36;1m  echo "::group::Diff JSON"[0m
+2026-06-27T23:58:53.1874015Z [36;1m  cat .tmp/screenshotDiffReport.json[0m
+2026-06-27T23:58:53.1874373Z [36;1m  echo "::endgroup::"[0m
+2026-06-27T23:58:53.1874659Z [36;1mfi[0m
+2026-06-27T23:58:53.1895923Z shell: /usr/bin/bash -e {0}
+2026-06-27T23:58:53.1896239Z env:
+2026-06-27T23:58:53.1896871Z   NODE_MODULES_CACHE_KEY: node_modules-component-fixtures-744663bcf3a41a02fe14db81ddca3e23e692391895c50bee086dd33914869a2f
+2026-06-27T23:58:53.1897566Z ##[endgroup]
+2026-06-27T23:58:53.2792382Z Compare result: 0 changed, 0 added, 0 removed, 0 errored.
+2026-06-27T23:58:53.2801914Z No reportable changes.
+2026-06-27T23:58:53.2846222Z No screenshot changes to report.
+2026-06-27T23:58:53.2846981Z ##[group]Diff JSON
+2026-06-27T23:58:53.2855182Z {
+2026-06-27T23:58:53.2855550Z   "changed": [],
+2026-06-27T23:58:53.2857479Z   "added": [],
+2026-06-27T23:58:53.2858230Z   "removed": [],
+2026-06-27T23:58:53.2858654Z   "errored": []
+2026-06-27T23:58:53.2859013Z }::endgroup::
+2026-06-27T23:58:53.3013884Z Post job cleanup.
+2026-06-27T23:58:53.4280566Z Post job cleanup.
+2026-06-27T23:58:53.5238157Z [command]/usr/bin/git version
+2026-06-27T23:58:53.5273823Z git version 2.54.0
+2026-06-27T23:58:53.5311078Z Temporarily overriding HOME='/home/runner/work/_temp/c6c7efc4-f450-4e73-b62f-fa51abc6ecb7' before making global git config changes
+2026-06-27T23:58:53.5311891Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-27T23:58:53.5316157Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/vscode/vscode
+2026-06-27T23:58:53.5344387Z Removing SSH command configuration
+2026-06-27T23:58:53.5351234Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-27T23:58:53.5382998Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-27T23:58:53.5582530Z Removing HTTP extra header
+2026-06-27T23:58:53.5587993Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-27T23:58:53.5617842Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-27T23:58:53.5812758Z Removing includeIf entries pointing to credentials config files
+2026-06-27T23:58:53.5819742Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-27T23:58:53.5845584Z includeif.gitdir:/home/runner/work/vscode/vscode/.git.path
+2026-06-27T23:58:53.5846277Z includeif.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path
+2026-06-27T23:58:53.5846726Z includeif.gitdir:/github/workspace/.git.path
+2026-06-27T23:58:53.5847309Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-06-27T23:58:53.5853041Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/vscode/vscode/.git.path
+2026-06-27T23:58:53.5872913Z /home/runner/work/_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:58:53.5882081Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/vscode/vscode/.git.path /home/runner/work/_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:58:53.5910710Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path
+2026-06-27T23:58:53.5929577Z /home/runner/work/_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:58:53.5945734Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:58:53.5972024Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-06-27T23:58:53.5992094Z /github/runner_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:58:53.6000554Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:58:53.6030529Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-06-27T23:58:53.6050624Z /github/runner_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:58:53.6062055Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config
+2026-06-27T23:58:53.6094817Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-27T23:58:53.6304110Z Removing credentials config '/home/runner/work/_temp/git-credentials-d412d562-dd1a-4940-b229-b53e33324409.config'
+2026-06-27T23:58:53.6448701Z Cleaning up orphan processes
+2026-06-27T23:58:53.6843776Z Terminate orphan process: pid (2738) (MainThread)
+2026-06-27T23:58:53.7001095Z Terminate orphan process: pid (2748) (sh)
+2026-06-27T23:58:53.7153877Z Terminate orphan process: pid (2749) (npm run serve-out-rspack)
+2026-06-27T23:58:53.7312532Z Terminate orphan process: pid (2760) (sh)
+2026-06-27T23:58:53.7468541Z Terminate orphan process: pid (2761) (npm exec rspack serve --config rspack.serve-out.config.mts)
+2026-06-27T23:58:53.7627997Z Terminate orphan process: pid (2773) (sh)
+2026-06-27T23:58:53.7784506Z Terminate orphan process: pid (2774) (rspack-node)
+
+2026-06-27T23:53:35.7440000Z Requested labels: ubuntu-latest
+2026-06-27T23:53:35.7440000Z Job defined at: microsoft/vscode/.github/workflows/component-fixtures.yml@refs/heads/main
+2026-06-27T23:53:35.7440000Z Waiting for a runner to pick up this job...
+2026-06-27T23:53:35.7420000Z Evaluating screenshots.if
+2026-06-27T23:53:35.7420000Z Evaluating: success()
+2026-06-27T23:53:35.7420000Z Result: true
+2026-06-27T23:53:41.6290000Z Job is about to start running on the hosted runner: GitHub Actions 1043042102
+2026-06-27T23:53:41.6280000Z Job is waiting for a hosted runner to come online.

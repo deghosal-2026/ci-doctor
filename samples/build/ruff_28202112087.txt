@@ -1,0 +1,102 @@
+﻿2026-06-25T21:38:17.3077150Z Current runner version: '2.335.1'
+2026-06-25T21:38:17.3104315Z ##[group]Runner Image Provisioner
+2026-06-25T21:38:17.3105174Z Hosted Compute Agent
+2026-06-25T21:38:17.3105836Z Version: 20260520.533
+2026-06-25T21:38:17.3106469Z Commit: 189110e25284a9812c124fd27b339e2fb4f2f9db
+2026-06-25T21:38:17.3107238Z Build Date: 2026-05-20T17:44:04Z
+2026-06-25T21:38:17.3107928Z Worker ID: {3d15e1f2-55d1-48f8-b124-1ec41a995e63}
+2026-06-25T21:38:17.3108629Z Azure Region: centralus
+2026-06-25T21:38:17.3109213Z ##[endgroup]
+2026-06-25T21:38:17.3111197Z ##[group]VM Image
+2026-06-25T21:38:17.3111794Z - OS: Linux (x64)
+2026-06-25T21:38:17.3114455Z - Source: Docker
+2026-06-25T21:38:17.3115197Z - Name: ubuntu:24.04
+2026-06-25T21:38:17.3115857Z - Version: 20260526.57.1
+2026-06-25T21:38:17.3116454Z ##[endgroup]
+2026-06-25T21:38:17.3118073Z ##[group]GITHUB_TOKEN Permissions
+2026-06-25T21:38:17.3120451Z Metadata: read
+2026-06-25T21:38:17.3121081Z ##[endgroup]
+2026-06-25T21:38:17.3123522Z Secret source: Actions
+2026-06-25T21:38:17.3124571Z Prepare workflow directory
+2026-06-25T21:38:17.3857870Z Prepare all required actions
+2026-06-25T21:38:17.3940771Z Complete job name: all required checks passed
+2026-06-25T21:38:17.4922926Z ##[group]Run failing=$(echo "$NEEDS_JSON" | jq -r 'to_entries[] | select(.value.result != "success" and .value.result != "skipped") | "\(.key): \(.value.result)"')
+2026-06-25T21:38:17.4926914Z [36;1mfailing=$(echo "$NEEDS_JSON" | jq -r 'to_entries[] | select(.value.result != "success" and .value.result != "skipped") | "\(.key): \(.value.result)"')[0m
+2026-06-25T21:38:17.4928228Z [36;1mif [ -n "$failing" ]; then[0m
+2026-06-25T21:38:17.4928991Z [36;1m  echo "$failing"[0m
+2026-06-25T21:38:17.4931062Z [36;1m  exit 1[0m
+2026-06-25T21:38:17.4931690Z [36;1mfi[0m
+2026-06-25T21:38:17.7422883Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-06-25T21:38:17.7427687Z env:
+2026-06-25T21:38:17.7428322Z   CARGO_INCREMENTAL: 0
+2026-06-25T21:38:17.7430563Z   CARGO_NET_RETRY: 10
+2026-06-25T21:38:17.7431308Z   CARGO_TERM_COLOR: always
+2026-06-25T21:38:17.7432723Z   RUSTUP_MAX_RETRIES: 10
+2026-06-25T21:38:17.7433860Z   PACKAGE_NAME: ruff
+2026-06-25T21:38:17.7434528Z   PYTHON_VERSION: 3.14
+2026-06-25T21:38:17.7436145Z   NEXTEST_PROFILE: ci
+2026-06-25T21:38:17.7437245Z   MDTEST_EXTERNAL: 1
+2026-06-25T21:38:17.7443406Z   NEEDS_JSON: {
+  "cargo-fmt": {
+    "result": "cancelled",
+    "outputs": {}
+  },
+  "cargo-clippy": {
+    "result": "cancelled",
+    "outputs": {}
+  },
+  "cargo-test-linux": {
+    "result": "cancelled",
+    "outputs": {}
+  },
+  "cargo-test-wasm": {
+    "result": "cancelled",
+    "outputs": {}
+  },
+  "cargo-build-msrv": {
+    "result": "cancelled",
+    "outputs": {}
+  },
+  "shellcheck": {
+    "result": "cancelled",
+    "outputs": {}
+  },
+  "scripts": {
+    "result": "cancelled",
+    "outputs": {}
+  },
+  "prek": {
+    "result": "cancelled",
+    "outputs": {}
+  },
+  "docs": {
+    "result": "cancelled",
+    "outputs": {}
+  },
+  "python-package": {
+    "result": "cancelled",
+    "outputs": {}
+  }
+}
+2026-06-25T21:38:17.7466709Z ##[endgroup]
+2026-06-25T21:38:17.9978432Z cargo-fmt: cancelled
+2026-06-25T21:38:17.9979598Z cargo-clippy: cancelled
+2026-06-25T21:38:17.9980902Z cargo-test-linux: cancelled
+2026-06-25T21:38:17.9981638Z cargo-test-wasm: cancelled
+2026-06-25T21:38:17.9982259Z cargo-build-msrv: cancelled
+2026-06-25T21:38:17.9982938Z shellcheck: cancelled
+2026-06-25T21:38:17.9983498Z scripts: cancelled
+2026-06-25T21:38:17.9984074Z prek: cancelled
+2026-06-25T21:38:17.9984646Z docs: cancelled
+2026-06-25T21:38:17.9985189Z python-package: cancelled
+2026-06-25T21:38:18.0019230Z ##[error]Process completed with exit code 1.
+2026-06-25T21:38:18.0315389Z Cleaning up orphan processes
+
+2026-06-25T21:37:51.9560000Z Requested labels: ubuntu-slim
+2026-06-25T21:37:51.9560000Z Job defined at: astral-sh/ruff/.github/workflows/ci.yaml@refs/pull/25920/merge
+2026-06-25T21:37:51.9560000Z Waiting for a runner to pick up this job...
+2026-06-25T21:37:51.9540000Z Evaluating required-checks-passed.if
+2026-06-25T21:37:51.9540000Z Evaluating: always()
+2026-06-25T21:37:51.9540000Z Result: true
+2026-06-25T21:37:52.6990000Z Job is waiting for a hosted runner to come online.
+2026-06-25T21:37:52.7030000Z Job is about to start running on the hosted runner: GitHub Actions 1001671055

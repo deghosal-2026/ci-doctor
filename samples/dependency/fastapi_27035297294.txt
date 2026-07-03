@@ -1,0 +1,229 @@
+﻿2026-06-05T19:20:28.3456650Z Current runner version: '2.334.0'
+2026-06-05T19:20:28.3482311Z ##[group]Runner Image Provisioner
+2026-06-05T19:20:28.3483278Z Hosted Compute Agent
+2026-06-05T19:20:28.3483904Z Version: 20260520.533
+2026-06-05T19:20:28.3484662Z Commit: 189110e25284a9812c124fd27b339e2fb4f2f9db
+2026-06-05T19:20:28.3485735Z Build Date: 2026-05-20T17:44:04Z
+2026-06-05T19:20:28.3486502Z Worker ID: {2cd70e43-671a-4e85-804f-5d38f39ccfde}
+2026-06-05T19:20:28.3487305Z Azure Region: northcentralus
+2026-06-05T19:20:28.3487929Z ##[endgroup]
+2026-06-05T19:20:28.3489452Z ##[group]Operating System
+2026-06-05T19:20:28.3490209Z Ubuntu
+2026-06-05T19:20:28.3490728Z 24.04.4
+2026-06-05T19:20:28.3491268Z LTS
+2026-06-05T19:20:28.3491802Z ##[endgroup]
+2026-06-05T19:20:28.3492391Z ##[group]Runner Image
+2026-06-05T19:20:28.3493041Z Image: ubuntu-24.04
+2026-06-05T19:20:28.3493615Z Version: 20260525.161.1
+2026-06-05T19:20:28.3494925Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260525.161/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-05T19:20:28.3496833Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260525.161
+2026-06-05T19:20:28.3497874Z ##[endgroup]
+2026-06-05T19:20:28.3499151Z ##[group]GITHUB_TOKEN Permissions
+2026-06-05T19:20:28.3501164Z Contents: read
+2026-06-05T19:20:28.3501884Z Metadata: read
+2026-06-05T19:20:28.3502447Z PullRequests: write
+2026-06-05T19:20:28.3503140Z ##[endgroup]
+2026-06-05T19:20:28.3505319Z Secret source: Actions
+2026-06-05T19:20:28.3506652Z Prepare workflow directory
+2026-06-05T19:20:28.3949372Z Prepare all required actions
+2026-06-05T19:20:28.4005316Z Getting action download info
+2026-06-05T19:20:28.7675309Z Download action repository 'eps1lon/actions-label-merge-conflict@0273be72a0bbd58fcd71d0d6c02c209b50d1e5e1' (SHA:0273be72a0bbd58fcd71d0d6c02c209b50d1e5e1)
+2026-06-05T19:20:29.1908717Z Complete job name: main
+2026-06-05T19:20:29.2666285Z ##[group]Run eps1lon/actions-label-merge-conflict@0273be72a0bbd58fcd71d0d6c02c209b50d1e5e1
+2026-06-05T19:20:29.2667552Z with:
+2026-06-05T19:20:29.2668008Z   dirtyLabel: conflicts
+2026-06-05T19:20:29.2672226Z   repoToken: ***
+2026-06-05T19:20:29.2672941Z   commentOnDirty: This pull request has a merge conflict that needs to be resolved.
+2026-06-05T19:20:29.2673960Z ##[endgroup]
+2026-06-05T19:20:30.0254817Z for PR "♻️ Refactor `include_router` to mount sub-routers": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0257983Z Issue #4794 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0261132Z for PR "♻️ Refactor `jsonable_encoder` to optimize subclass encoder resolution using MRO": remove "conflicts"
+2026-06-05T19:20:30.0263481Z Issue #5718 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0266866Z for PR "🐛 Fix handling of empty value for `byte` file list parameter": remove "conflicts"
+2026-06-05T19:20:30.0268931Z Issue #9383 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0271534Z for PR "Add WebSocket handling support for HTTP security dependencies": remove "conflicts"
+2026-06-05T19:20:30.0273539Z Issue #10147 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0276664Z for PR "📝 Add OIDC - JWT Access Token validation tutorial": remove "conflicts"
+2026-06-05T19:20:30.0278460Z Issue #10278 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0281016Z for PR "fix: respect call localns at get_typed_signature": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0283537Z Issue #10647 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0286674Z for PR "📝 Add tips on relative url_for in templates docs": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0289455Z Issue #10742 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0292743Z for PR "✨ Allow superimposing an additional response's media type in openapi schema": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0296130Z Issue #11232 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0298999Z for PR "⚡️ Skip doing any work when sub dependant is already cached": remove "conflicts"
+2026-06-05T19:20:30.0301357Z Issue #11323 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0304251Z for PR "✨ Implement `OAuth2ClientCredentials` class": remove "conflicts"
+2026-06-05T19:20:30.0306176Z Issue #11560 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0309368Z for PR "📝 Add documentation on how to use the Django ORM inside FastAPI": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0312288Z Issue #11782 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0315718Z for PR "🐛 Fix deadlock that can occur when closing dependencies during response model validation": remove "conflicts"
+2026-06-05T19:20:30.0317998Z Issue #12066 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0320677Z for PR "🐛 Fix duplicate special dependency handling": remove "conflicts"
+2026-06-05T19:20:30.0322398Z Issue #12406 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0325924Z for PR "✨ Support for mixed and multiple Pydantic models for parameters using Query, Cookie and Header": remove "conflicts"
+2026-06-05T19:20:30.0328270Z Issue #12481 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0330982Z for PR "✨ Add `lifespan` dependency scope": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0333613Z Issue #12529 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0336619Z for PR "✨ Allow to have multiple Query parameter models": remove "conflicts"
+2026-06-05T19:20:30.0338373Z Issue #12944 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0341435Z for PR "✨ Raise error with clear error message when generator didn't yield anything": remove "conflicts"
+2026-06-05T19:20:30.0343532Z Issue #13264 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0346755Z for PR "📝 Add caveat about ContextVar in dependencies": remove "conflicts"
+2026-06-05T19:20:30.0348562Z Issue #13453 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0351232Z for PR "🐛 Don't prefill default values on form input": remove "conflicts"
+2026-06-05T19:20:30.0352947Z Issue #13464 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0356231Z for PR "🐛 Ensure handlers receive `fastapi.UploadFile` instances, not Starlette's": remove "conflicts"
+2026-06-05T19:20:30.0357490Z Issue #13605 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0359291Z for PR "✨ Accept multiple status codes or exceptions in `exception_handler`": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0360930Z Issue #13614 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0362615Z for PR "✨ Fix `APIKeyQuery` for WebSocket endpoints": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0364090Z Issue #13758 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0365907Z for PR "📝 Fix docs UI asset paths to respect `root_path` in Custom Docs code example": remove "conflicts"
+2026-06-05T19:20:30.0367069Z Issue #13825 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0368485Z for PR "✨ Improve JSON Parsing Error Messages": remove "conflicts"
+2026-06-05T19:20:30.0369373Z Issue #14089 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0371284Z for PR "📝 Fix CORS tutorial inconsistency with `allow_credentials=True` and wildcard values in `allow_methods`/`allow_headers`": remove "conflicts"
+2026-06-05T19:20:30.0372660Z Issue #14115 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0374261Z for PR "📝 Update the part of "Behind a proxy" section related to `root_path`": remove "conflicts"
+2026-06-05T19:20:30.0375333Z Issue #14238 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0377413Z for PR "🐛 Don't pre-fill form parameters with default values in `_get_multidict_value`": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0379100Z Issue #14283 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0381130Z for PR "📝 Clarify misleading "Required, can be `None`" section in `query-params-str-validations.md`": remove "conflicts"
+2026-06-05T19:20:30.0382336Z Issue #14322 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0383776Z for PR "📝 Add file upload validation and saving examples": remove "conflicts"
+2026-06-05T19:20:30.0384736Z Issue #14327 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0386423Z for PR "Fix: Merge background tasks from dependency and custom response": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0387870Z Issue #14386 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0389200Z for PR "🐛 Fix status code when malformed JSON": remove "conflicts"
+2026-06-05T19:20:30.0390083Z Issue #14400 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0391703Z for PR "🗑️ Deprecate `scopes` parameter in `Security` in favor of `oauth_scopes`": remove "conflicts"
+2026-06-05T19:20:30.0392856Z Issue #14407 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0394987Z for PR "⚡️Improve caching of callable inspection result": remove "conflicts"
+2026-06-05T19:20:30.0396253Z Issue #14441 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0398004Z for PR "♻️ Refactor `request_response` and `websocket_session` to avoid name shadowing": remove "conflicts"
+2026-06-05T19:20:30.0399147Z Issue #14476 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0400658Z for PR "🐛 Fix openapi for response model with nested computed field": remove "conflicts"
+2026-06-05T19:20:30.0402098Z Issue #14490 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0403463Z for PR "Security dependencies compatibility with websockets": remove "conflicts"
+2026-06-05T19:20:30.0404735Z Issue #14561 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0406440Z for PR "Fix: Preserve model_fields_set for Form models (issue #13399)": remove "conflicts"
+2026-06-05T19:20:30.0407501Z Issue #14574 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0409432Z for PR "📝 Clarify required but nullable request body fields": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0411020Z Issue #14653 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0412589Z for PR "Add support for Sentinel values": remove "conflicts"
+2026-06-05T19:20:30.0413540Z Issue #14655 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0417318Z for PR "✨ Allow including additional scripts to Swagger UI page and adding presets": remove "conflicts"
+2026-06-05T19:20:30.0418531Z Issue #14762 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0420048Z for PR "✅ Add tests for nullable parameters and defaults": remove "conflicts"
+2026-06-05T19:20:30.0421020Z Issue #14829 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0422486Z for PR "✨ Support Starlette 0.52.0+ generic `Request`": remove "conflicts"
+2026-06-05T19:20:30.0423437Z Issue #14863 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0426214Z for PR "🔥 Remove unnecessary `is_async_callable` check in `request_response`": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0429028Z Issue #14865 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0431409Z for PR "🐛 Fix handling sequences with nested Annotated types": remove "conflicts"
+2026-06-05T19:20:30.0433143Z Issue #14874 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0435776Z for PR "🐛 Fix implicit path params with converters": remove "conflicts"
+2026-06-05T19:20:30.0437401Z Issue #14883 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0440314Z for PR "Fix _endpoint_context_cache using id() which risks stale entries afte…": remove "conflicts"
+2026-06-05T19:20:30.0442357Z Issue #14928 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0445282Z for PR "📝 Update "Union or anyOf" section in `docs/en/docs/tutorial/extra-models.md`": remove "conflicts"
+2026-06-05T19:20:30.0447682Z Issue #14939 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0450018Z for PR "Add regression test for Annotated + ForwardRef OpenAPI ( #13056 )": remove "conflicts"
+2026-06-05T19:20:30.0451863Z Issue #14952 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0454198Z for PR "📝 Fix Typer logo in light/dark theme": remove "conflicts"
+2026-06-05T19:20:30.0456009Z Issue #14983 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0458187Z for PR "Fix Form model fields_set for omitted defaults": remove "conflicts"
+2026-06-05T19:20:30.0459787Z Issue #15027 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0462259Z for PR "Document Response subclasses declared in return annotations in OpenAPI": remove "conflicts"
+2026-06-05T19:20:30.0464217Z Issue #15040 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0467502Z for PR "🦖 Fix multiple upload file schema to be compatible with OAS 3.0 to make it work in Swagger UI": remove "conflicts"
+2026-06-05T19:20:30.0469731Z Issue #15069 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0471934Z for PR "🐛 Fix stream item type lost when using `include_router()`": remove "conflicts"
+2026-06-05T19:20:30.0473083Z Issue #15077 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0474756Z for PR "🚸 Add missing password format to `OAuth2PasswordRequestFormStrict`": remove "conflicts"
+2026-06-05T19:20:30.0476256Z Issue #15079 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0478147Z for PR "🐛 Fix `response_model_*` params ignored for non-generator endpoints with `Iterable[..]` return type": remove "conflicts"
+2026-06-05T19:20:30.0479625Z Issue #15093 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0481400Z for PR "feat: add dependency_scope="lifespan" for application-lifetime depend…": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0483037Z Issue #15097 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0484440Z for PR "Emit warning when Response.background discards injected BackgroundTasks": remove "conflicts"
+2026-06-05T19:20:30.0485858Z Issue #15112 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0487479Z for PR "📝 Improve grammar and clarity in features documentation": remove "conflicts"
+2026-06-05T19:20:30.0488492Z Issue #15135 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0489996Z for PR "✨ Make ServerSentEvent generic with typed data field": remove "conflicts"
+2026-06-05T19:20:30.0491004Z Issue #15191 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0492403Z for PR "docs: warn about BackgroundTasks + Response background interaction": remove "conflicts"
+2026-06-05T19:20:30.0493474Z Issue #15217 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0494844Z for PR "fix: treat empty bearer token as missing credentials in OAuth2 helpers": remove "conflicts"
+2026-06-05T19:20:30.0496299Z Issue #15220 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0497698Z for PR "🐛 Fix multipart version comparison": remove "conflicts"
+2026-06-05T19:20:30.0498560Z Issue #15226 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0500027Z for PR "Fix Annotated ForwardRef dependencies with postponed annotations": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0501480Z Issue #15234 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0502781Z for PR "Fix BaseModel parameter defaults to preserve omitted fields": remove "conflicts"
+2026-06-05T19:20:30.0503808Z Issue #15269 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0505682Z for PR "Raise clear NameError at route registration for unresolvable forward-reference annotations": add "conflicts", remove "nothing"
+2026-06-05T19:20:30.0507396Z Issue #15307 already has label 'conflicts'. No need to add.
+2026-06-05T19:20:30.0508801Z for PR "Fix/client disconnect as parsing error": remove "conflicts"
+2026-06-05T19:20:30.0509995Z Issue #15315 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0511756Z for PR "Fix `PydanticUserError` when a generic `BaseModel` with `Json[T]` field is specialized with `SerializeAsAny[SomeModel]`": remove "conflicts"
+2026-06-05T19:20:30.0513147Z Issue #15329 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0514375Z for PR "Reduce memory usage by `Dependant` by ~50%": remove "conflicts"
+2026-06-05T19:20:30.0515291Z Issue #15336 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0517339Z for PR "Automatically support HEAD method for all GET routes": remove "conflicts"
+2026-06-05T19:20:30.0518383Z Issue #15356 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0519744Z for PR "fix: resolve ForwardRef inside Annotated in get_typed_annotation": remove "conflicts"
+2026-06-05T19:20:30.0520814Z Issue #15364 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0522455Z for PR "🐛 fix deadlocks in depends by using a separate CapacityLimiter for teardown": remove "conflicts"
+2026-06-05T19:20:30.0523561Z Issue #15388 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0524927Z for PR "fix(deps): resolve Annotated forward refs with __future__ annotations": remove "conflicts"
+2026-06-05T19:20:30.0526471Z Issue #15411 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0527735Z for PR "Discard default lifespans before merging": remove "conflicts"
+2026-06-05T19:20:30.0528639Z Issue #15424 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0530189Z for PR "📝 Update ReDoc GitHub URLs from `Rebilly/ReDoc` to `Redocly/redoc`": remove "conflicts"
+2026-06-05T19:20:30.0531431Z Issue #15432 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0532816Z for PR "fix(routing): preserve SSE stream_item_type through include_router": remove "conflicts"
+2026-06-05T19:20:30.0533901Z Issue #15445 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0535982Z for PR "⚡ Skip `set(obj.keys())` allocation in `jsonable_encoder` when `include`/`exclude` are not set": remove "conflicts"
+2026-06-05T19:20:30.0537244Z Issue #15476 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0538779Z for PR "📝 Add diagram to "Multiple middleware execution order" docs": remove "conflicts"
+2026-06-05T19:20:30.0539812Z Issue #15480 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0541363Z for PR "🐛 Fix line splitting in `format_sse_event` to comply with SSE spec": remove "conflicts"
+2026-06-05T19:20:30.0542420Z Issue #15515 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0543861Z for PR "Fix Annotated forward ref resolution with from __future__ import annotations": remove "conflicts"
+2026-06-05T19:20:30.0544994Z Issue #15519 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0546724Z for PR "🌐 Enable Hindi docs translations": remove "conflicts"
+2026-06-05T19:20:30.0547601Z Issue #15554 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0548962Z for PR "📝 Fix typos in agent skills files": remove "conflicts"
+2026-06-05T19:20:30.0549817Z Issue #15561 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0551352Z for PR "📝 Add a note that Python 3.13+ venv creates `.gitignore` by default": remove "conflicts"
+2026-06-05T19:20:30.0552412Z Issue #15592 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0553978Z for PR "📝 Fix `format_sse_event` docstring rendering of `\n\n` terminator": remove "conflicts"
+2026-06-05T19:20:30.0555050Z Issue #15613 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0556977Z for PR "⚡️ Use `TypeAdapter.validate_json` instead of `json.loads`": remove "conflicts"
+2026-06-05T19:20:30.0558028Z Issue #15617 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0559679Z for PR "Fix jsonable_encoder crash on invalid UTF‑8 bytes": remove "conflicts"
+2026-06-05T19:20:30.0560675Z Issue #15641 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0562072Z for PR " Preserve `null` values in user-provided OpenAPI `example`/`examples`": remove "conflicts"
+2026-06-05T19:20:30.0563160Z Issue #15646 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0564501Z for PR "Fix broken `management-tasks.md` links in fastapi-people.md": remove "conflicts"
+2026-06-05T19:20:30.0566329Z Issue #15663 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0567866Z for PR "Forward exclude_defaults when jsonable_encoder recurses into dict values": remove "conflicts"
+2026-06-05T19:20:30.0569011Z Issue #15676 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0570302Z for PR "Fix typo: remove duplicate "for" in release-notes.md": remove "conflicts"
+2026-06-05T19:20:30.0571308Z Issue #15687 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0572548Z for PR "docs: fix typo in websockets reference page": remove "conflicts"
+2026-06-05T19:20:30.0573473Z Issue #15691 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0574936Z for PR "✏️ Fix grammar, typos, and broken links in docs": remove "conflicts"
+2026-06-05T19:20:30.0576231Z Issue #15694 does not have label 'conflicts'. No need to remove.
+2026-06-05T19:20:30.0685784Z Cleaning up orphan processes
+
+2026-06-05T19:20:24.9310000Z Evaluating main.if
+2026-06-05T19:20:24.9310000Z Evaluating: success()
+2026-06-05T19:20:24.9310000Z Result: true
+2026-06-05T19:20:24.9310000Z Requested labels: ubuntu-latest
+2026-06-05T19:20:24.9310000Z Job defined at: fastapi/fastapi/.github/workflows/detect-conflicts.yml@refs/heads/master
+2026-06-05T19:20:24.9310000Z Waiting for a runner to pick up this job...
+2026-06-05T19:20:25.7980000Z Job is waiting for a hosted runner to come online.
+2026-06-05T19:20:25.7980000Z Job is about to start running on the hosted runner: GitHub Actions 1000389321

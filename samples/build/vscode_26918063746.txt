@@ -1,0 +1,1051 @@
+﻿2026-06-03T22:52:26.3157647Z Current runner version: '2.334.0'
+2026-06-03T22:52:26.3193656Z ##[group]Runner Image Provisioner
+2026-06-03T22:52:26.3195014Z Hosted Compute Agent
+2026-06-03T22:52:26.3196094Z Version: 20260520.533
+2026-06-03T22:52:26.3197085Z Commit: 189110e25284a9812c124fd27b339e2fb4f2f9db
+2026-06-03T22:52:26.3198383Z Build Date: 2026-05-20T17:44:04Z
+2026-06-03T22:52:26.3199583Z Worker ID: {54c48bd1-1ecc-4f41-a185-ffbab2a2b115}
+2026-06-03T22:52:26.3200779Z Azure Region: eastus
+2026-06-03T22:52:26.3201828Z ##[endgroup]
+2026-06-03T22:52:26.3204358Z ##[group]Operating System
+2026-06-03T22:52:26.3205487Z Ubuntu
+2026-06-03T22:52:26.3206385Z 24.04.4
+2026-06-03T22:52:26.3207192Z LTS
+2026-06-03T22:52:26.3208151Z ##[endgroup]
+2026-06-03T22:52:26.3209091Z ##[group]Runner Image
+2026-06-03T22:52:26.3210093Z Image: ubuntu-24.04
+2026-06-03T22:52:26.3211105Z Version: 20260525.161.1
+2026-06-03T22:52:26.3213315Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260525.161/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-03T22:52:26.3216210Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260525.161
+2026-06-03T22:52:26.3218075Z ##[endgroup]
+2026-06-03T22:52:26.3219635Z ##[group]GITHUB_TOKEN Permissions
+2026-06-03T22:52:26.3222625Z Metadata: read
+2026-06-03T22:52:26.3223850Z ##[endgroup]
+2026-06-03T22:52:26.3226966Z Secret source: Actions
+2026-06-03T22:52:26.3228260Z Prepare workflow directory
+2026-06-03T22:52:26.3977555Z Prepare all required actions
+2026-06-03T22:52:26.4033785Z Getting action download info
+2026-06-03T22:52:26.7399092Z Download action repository 'actions/checkout@v6' (SHA:df4cb1c069e1874edd31b4311f1884172cec0e10)
+2026-06-03T22:52:26.9608372Z Download action repository 'actions/setup-node@v6' (SHA:48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e)
+2026-06-03T22:52:27.0491878Z Download action repository 'actions/cache@v5' (SHA:27d5ce7f107fe9357f9df03efb73ab90386fccae)
+2026-06-03T22:52:27.2495334Z Complete job name: Monaco Editor checks
+2026-06-03T22:52:27.3285684Z ##[group]Run actions/checkout@v6
+2026-06-03T22:52:27.3286715Z with:
+2026-06-03T22:52:27.3287205Z   lfs: true
+2026-06-03T22:52:27.3287691Z   persist-credentials: false
+2026-06-03T22:52:27.3288274Z   repository: microsoft/vscode
+2026-06-03T22:52:27.3292705Z   token: ***
+2026-06-03T22:52:27.3293192Z   ssh-strict: true
+2026-06-03T22:52:27.3293895Z   ssh-user: git
+2026-06-03T22:52:27.3294388Z   clean: true
+2026-06-03T22:52:27.3294883Z   sparse-checkout-cone-mode: true
+2026-06-03T22:52:27.3295458Z   fetch-depth: 1
+2026-06-03T22:52:27.3295964Z   fetch-tags: false
+2026-06-03T22:52:27.3296454Z   show-progress: true
+2026-06-03T22:52:27.3296950Z   submodules: false
+2026-06-03T22:52:27.3297448Z   set-safe-directory: true
+2026-06-03T22:52:27.3298252Z env:
+2026-06-03T22:52:27.3302563Z   GITHUB_TOKEN: ***
+2026-06-03T22:52:27.3303079Z ##[endgroup]
+2026-06-03T22:52:27.4419546Z Syncing repository: microsoft/vscode
+2026-06-03T22:52:27.4422920Z ##[group]Getting Git version info
+2026-06-03T22:52:27.4424796Z Working directory is '/home/runner/work/vscode/vscode'
+2026-06-03T22:52:27.4426898Z [command]/usr/bin/git version
+2026-06-03T22:52:27.4428097Z git version 2.54.0
+2026-06-03T22:52:27.4466016Z [command]/usr/bin/git lfs version
+2026-06-03T22:52:27.9249402Z git-lfs/3.7.1 (GitHub; linux amd64; go 1.24.4)
+2026-06-03T22:52:27.9267761Z ##[endgroup]
+2026-06-03T22:52:27.9285682Z Temporarily overriding HOME='/home/runner/work/_temp/b8057b0b-de8f-4f0a-98b6-5559aa55a8ab' before making global git config changes
+2026-06-03T22:52:27.9289214Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-03T22:52:27.9292579Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/vscode/vscode
+2026-06-03T22:52:27.9350922Z Deleting the contents of '/home/runner/work/vscode/vscode'
+2026-06-03T22:52:27.9355217Z ##[group]Determining repository object format
+2026-06-03T22:52:27.9357660Z ##[endgroup]
+2026-06-03T22:52:27.9359072Z ##[group]Initializing the repository
+2026-06-03T22:52:27.9362423Z [command]/usr/bin/git init /home/runner/work/vscode/vscode
+2026-06-03T22:52:27.9484962Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-06-03T22:52:27.9486962Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-06-03T22:52:27.9488743Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-06-03T22:52:27.9490713Z hint: call:
+2026-06-03T22:52:27.9491673Z hint:
+2026-06-03T22:52:27.9492649Z hint: 	git config --global init.defaultBranch <name>
+2026-06-03T22:52:27.9494318Z hint:
+2026-06-03T22:52:27.9496005Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-06-03T22:52:27.9498282Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-06-03T22:52:27.9500907Z hint:
+2026-06-03T22:52:27.9502155Z hint: 	git branch -m <name>
+2026-06-03T22:52:27.9503569Z hint:
+2026-06-03T22:52:27.9505245Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-06-03T22:52:27.9508046Z Initialized empty Git repository in /home/runner/work/vscode/vscode/.git/
+2026-06-03T22:52:27.9512441Z [command]/usr/bin/git remote add origin https://github.com/microsoft/vscode
+2026-06-03T22:52:27.9551147Z ##[endgroup]
+2026-06-03T22:52:27.9553910Z ##[group]Disabling automatic garbage collection
+2026-06-03T22:52:27.9555811Z [command]/usr/bin/git config --local gc.auto 0
+2026-06-03T22:52:27.9581282Z ##[endgroup]
+2026-06-03T22:52:27.9583249Z ##[group]Setting up auth
+2026-06-03T22:52:27.9584999Z Removing SSH command configuration
+2026-06-03T22:52:27.9588318Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-03T22:52:27.9622691Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-03T22:52:27.9881008Z Removing HTTP extra header
+2026-06-03T22:52:27.9888060Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-03T22:52:27.9919817Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-03T22:52:28.0132958Z Removing includeIf entries pointing to credentials config files
+2026-06-03T22:52:28.0138166Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-03T22:52:28.0171009Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-03T22:52:28.0398126Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-06-03T22:52:28.0434324Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/vscode/vscode/.git.path /home/runner/work/_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:28.0465869Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:28.0506293Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:28.0537362Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:28.0565367Z ##[endgroup]
+2026-06-03T22:52:28.0567531Z [command]/usr/bin/git lfs install --local
+2026-06-03T22:52:28.1105489Z Updated Git hooks.
+2026-06-03T22:52:28.1106777Z Git LFS initialized.
+2026-06-03T22:52:28.1118954Z ##[group]Fetching the repository
+2026-06-03T22:52:28.1128825Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +989a67c60eb5e6f47fec7a19dd06653ff6267c13:refs/remotes/pull/319822/merge
+2026-06-03T22:52:32.1005103Z From https://github.com/microsoft/vscode
+2026-06-03T22:52:32.1006196Z  * [new ref]           989a67c60eb5e6f47fec7a19dd06653ff6267c13 -> pull/319822/merge
+2026-06-03T22:52:32.1049966Z ##[endgroup]
+2026-06-03T22:52:32.1050631Z ##[group]Determining the checkout info
+2026-06-03T22:52:32.1051479Z ##[endgroup]
+2026-06-03T22:52:32.1052065Z ##[group]Fetching LFS objects
+2026-06-03T22:52:32.1057166Z [command]/usr/bin/git lfs fetch origin refs/remotes/pull/319822/merge
+2026-06-03T22:52:32.1284522Z Fetching reference refs/remotes/pull/319822/merge
+2026-06-03T22:52:34.0980550Z ##[endgroup]
+2026-06-03T22:52:34.0985993Z [command]/usr/bin/git sparse-checkout disable
+2026-06-03T22:52:34.1044628Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-06-03T22:52:34.1066447Z ##[group]Checking out the ref
+2026-06-03T22:52:34.1094602Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/319822/merge
+2026-06-03T22:52:35.1354910Z Updating files:  50% (7821/15548)
+2026-06-03T22:52:35.1464498Z Updating files:  51% (7930/15548)
+2026-06-03T22:52:35.1583020Z Updating files:  52% (8085/15548)
+2026-06-03T22:52:35.1705052Z Updating files:  53% (8241/15548)
+2026-06-03T22:52:35.1834692Z Updating files:  54% (8396/15548)
+2026-06-03T22:52:35.1958481Z Updating files:  55% (8552/15548)
+2026-06-03T22:52:35.2025579Z Updating files:  56% (8707/15548)
+2026-06-03T22:52:35.2103583Z Updating files:  57% (8863/15548)
+2026-06-03T22:52:35.2220812Z Updating files:  58% (9018/15548)
+2026-06-03T22:52:35.2394643Z Updating files:  59% (9174/15548)
+2026-06-03T22:52:35.2491935Z Updating files:  60% (9329/15548)
+2026-06-03T22:52:35.2546998Z Updating files:  61% (9485/15548)
+2026-06-03T22:52:35.2602031Z Updating files:  62% (9640/15548)
+2026-06-03T22:52:35.2692795Z Updating files:  63% (9796/15548)
+2026-06-03T22:52:35.2849589Z Updating files:  64% (9951/15548)
+2026-06-03T22:52:35.2999509Z Updating files:  65% (10107/15548)
+2026-06-03T22:52:35.3133479Z Updating files:  66% (10262/15548)
+2026-06-03T22:52:35.3260407Z Updating files:  67% (10418/15548)
+2026-06-03T22:52:35.3378857Z Updating files:  68% (10573/15548)
+2026-06-03T22:52:35.3498510Z Updating files:  69% (10729/15548)
+2026-06-03T22:52:35.3613206Z Updating files:  70% (10884/15548)
+2026-06-03T22:52:35.3751391Z Updating files:  71% (11040/15548)
+2026-06-03T22:52:35.3872149Z Updating files:  72% (11195/15548)
+2026-06-03T22:52:35.3994251Z Updating files:  73% (11351/15548)
+2026-06-03T22:52:35.4134256Z Updating files:  74% (11506/15548)
+2026-06-03T22:52:35.4257437Z Updating files:  75% (11661/15548)
+2026-06-03T22:52:35.4383781Z Updating files:  76% (11817/15548)
+2026-06-03T22:52:35.4538595Z Updating files:  77% (11972/15548)
+2026-06-03T22:52:35.4677205Z Updating files:  78% (12128/15548)
+2026-06-03T22:52:35.4817439Z Updating files:  79% (12283/15548)
+2026-06-03T22:52:35.4958323Z Updating files:  80% (12439/15548)
+2026-06-03T22:52:35.5062199Z Updating files:  81% (12594/15548)
+2026-06-03T22:52:35.5184137Z Updating files:  82% (12750/15548)
+2026-06-03T22:52:35.5317564Z Updating files:  83% (12905/15548)
+2026-06-03T22:52:35.5441781Z Updating files:  84% (13061/15548)
+2026-06-03T22:52:35.5561576Z Updating files:  85% (13216/15548)
+2026-06-03T22:52:35.5668597Z Updating files:  86% (13372/15548)
+2026-06-03T22:52:35.5812788Z Updating files:  87% (13527/15548)
+2026-06-03T22:52:35.5944387Z Updating files:  88% (13683/15548)
+2026-06-03T22:52:35.6072205Z Updating files:  89% (13838/15548)
+2026-06-03T22:52:35.6199893Z Updating files:  90% (13994/15548)
+2026-06-03T22:52:35.6319436Z Updating files:  91% (14149/15548)
+2026-06-03T22:52:35.7081032Z Updating files:  92% (14305/15548)
+2026-06-03T22:52:35.7231404Z Updating files:  93% (14460/15548)
+2026-06-03T22:52:35.7346897Z Updating files:  94% (14616/15548)
+2026-06-03T22:52:35.7471530Z Updating files:  95% (14771/15548)
+2026-06-03T22:52:35.7600978Z Updating files:  96% (14927/15548)
+2026-06-03T22:52:35.7720936Z Updating files:  97% (15082/15548)
+2026-06-03T22:52:35.7794713Z Updating files:  98% (15238/15548)
+2026-06-03T22:52:35.7882697Z Updating files:  99% (15393/15548)
+2026-06-03T22:52:35.7883163Z Updating files: 100% (15548/15548)
+2026-06-03T22:52:35.7883737Z Updating files: 100% (15548/15548), done.
+2026-06-03T22:52:35.9332631Z Note: switching to 'refs/remotes/pull/319822/merge'.
+2026-06-03T22:52:35.9333010Z 
+2026-06-03T22:52:35.9333331Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-06-03T22:52:35.9334432Z changes and commit them, and you can discard any commits you make in this
+2026-06-03T22:52:35.9335114Z state without impacting any branches by switching back to a branch.
+2026-06-03T22:52:35.9335515Z 
+2026-06-03T22:52:35.9335776Z If you want to create a new branch to retain commits you create, you may
+2026-06-03T22:52:35.9336409Z do so (now or later) by using -c with the switch command. Example:
+2026-06-03T22:52:35.9336789Z 
+2026-06-03T22:52:35.9337006Z   git switch -c <new-branch-name>
+2026-06-03T22:52:35.9337284Z 
+2026-06-03T22:52:35.9337464Z Or undo this operation with:
+2026-06-03T22:52:35.9337717Z 
+2026-06-03T22:52:35.9337846Z   git switch -
+2026-06-03T22:52:35.9338015Z 
+2026-06-03T22:52:35.9338316Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-06-03T22:52:35.9338750Z 
+2026-06-03T22:52:35.9339249Z HEAD is now at 989a67c6 Merge 70a8a30b2de255a94b6a3082d45a642a6a63ae83 into 84f87309fd85d2ca92d192ec8cf665c6eeb41b40
+2026-06-03T22:52:36.0431284Z ##[endgroup]
+2026-06-03T22:52:36.0476584Z [command]/usr/bin/git log -1 --format=%H
+2026-06-03T22:52:36.0502475Z 989a67c60eb5e6f47fec7a19dd06653ff6267c13
+2026-06-03T22:52:36.0513133Z ##[group]Removing auth
+2026-06-03T22:52:36.0522085Z Removing SSH command configuration
+2026-06-03T22:52:36.0524542Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-03T22:52:36.0552858Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-03T22:52:36.0788330Z Removing HTTP extra header
+2026-06-03T22:52:36.0794294Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-03T22:52:36.0830790Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-03T22:52:36.1069224Z Removing includeIf entries pointing to credentials config files
+2026-06-03T22:52:36.1073094Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-03T22:52:36.1103686Z includeif.gitdir:/home/runner/work/vscode/vscode/.git.path
+2026-06-03T22:52:36.1104814Z includeif.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path
+2026-06-03T22:52:36.1105892Z includeif.gitdir:/github/workspace/.git.path
+2026-06-03T22:52:36.1106728Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-06-03T22:52:36.1130375Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/vscode/vscode/.git.path
+2026-06-03T22:52:36.1150525Z /home/runner/work/_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:36.1164842Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/vscode/vscode/.git.path /home/runner/work/_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:36.1200200Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path
+2026-06-03T22:52:36.1226732Z /home/runner/work/_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:36.1237171Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/vscode/vscode/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:36.1268949Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-06-03T22:52:36.1289656Z /github/runner_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:36.1297290Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:36.1328140Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-06-03T22:52:36.1347945Z /github/runner_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:36.1355668Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config
+2026-06-03T22:52:36.1385871Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-03T22:52:36.1616193Z Removing credentials config '/home/runner/work/_temp/git-credentials-46a27c45-e02c-4bdd-a5fc-dd2e74deec7d.config'
+2026-06-03T22:52:36.1645211Z ##[endgroup]
+2026-06-03T22:52:36.1868080Z ##[group]Run actions/setup-node@v6
+2026-06-03T22:52:36.1868388Z with:
+2026-06-03T22:52:36.1868600Z   node-version-file: .nvmrc
+2026-06-03T22:52:36.1868859Z   check-latest: false
+2026-06-03T22:52:36.1871595Z   token: ***
+2026-06-03T22:52:36.1871822Z   package-manager-cache: true
+2026-06-03T22:52:36.1872077Z env:
+2026-06-03T22:52:36.1875052Z   GITHUB_TOKEN: ***
+2026-06-03T22:52:36.1875284Z ##[endgroup]
+2026-06-03T22:52:36.3367560Z Node version file is not JSON file
+2026-06-03T22:52:36.3369782Z Resolved .nvmrc as 24.15.0
+2026-06-03T22:52:36.3394455Z Attempting to download 24.15.0...
+2026-06-03T22:52:36.7087938Z Acquiring 24.15.0 - x64 from https://github.com/actions/node-versions/releases/download/24.15.0-24511264946/node-24.15.0-linux-x64.tar.gz
+2026-06-03T22:52:37.1609399Z Extracting ...
+2026-06-03T22:52:37.1748901Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/2418e27e-7335-466e-b11a-876695158c78 -f /home/runner/work/_temp/d5eaafae-c115-4228-8217-1e0a8edef3be
+2026-06-03T22:52:38.3439530Z Adding to the cache ...
+2026-06-03T22:52:40.2707896Z ##[group]Environment details
+2026-06-03T22:52:40.4960601Z node: v24.15.0
+2026-06-03T22:52:40.4960899Z npm: 11.12.1
+2026-06-03T22:52:40.4961108Z yarn: 1.22.22
+2026-06-03T22:52:40.4961571Z ##[endgroup]
+2026-06-03T22:52:40.5151599Z ##[group]Run echo "value=$(node build/azure-pipelines/common/computeNodeModulesCacheKey.ts)" >> $GITHUB_OUTPUT
+2026-06-03T22:52:40.5152564Z [36;1mecho "value=$(node build/azure-pipelines/common/computeNodeModulesCacheKey.ts)" >> $GITHUB_OUTPUT[0m
+2026-06-03T22:52:40.5186720Z shell: /usr/bin/bash -e {0}
+2026-06-03T22:52:40.5187004Z env:
+2026-06-03T22:52:40.5189827Z   GITHUB_TOKEN: ***
+2026-06-03T22:52:40.5190058Z ##[endgroup]
+2026-06-03T22:52:40.6216458Z ##[group]Run actions/cache@v5
+2026-06-03T22:52:40.6216766Z with:
+2026-06-03T22:52:40.6216975Z   path: **/node_modules
+2026-06-03T22:52:40.6217463Z   key: Linux-cacheNodeModules20-5dbd35aebddf45229c687e2fbaec0eea6398365f8ab0c872c09073211ed00da8
+2026-06-03T22:52:40.6218009Z   restore-keys: Linux-cacheNodeModules20-
+2026-06-03T22:52:40.6218310Z   enableCrossOsArchive: false
+2026-06-03T22:52:40.6218566Z   fail-on-cache-miss: false
+2026-06-03T22:52:40.6218804Z   lookup-only: false
+2026-06-03T22:52:40.6219021Z   save-always: false
+2026-06-03T22:52:40.6219225Z env:
+2026-06-03T22:52:40.6222018Z   GITHUB_TOKEN: ***
+2026-06-03T22:52:40.6222248Z ##[endgroup]
+2026-06-03T22:52:40.8318184Z Cache hit for: Linux-cacheNodeModules20-5dbd35aebddf45229c687e2fbaec0eea6398365f8ab0c872c09073211ed00da8
+2026-06-03T22:52:41.8747233Z Received 264241152 of 1657368688 (15.9%), 251.7 MBs/sec
+2026-06-03T22:52:42.8805176Z Received 536870912 of 1657368688 (32.4%), 255.2 MBs/sec
+2026-06-03T22:52:43.8810351Z Received 859832320 of 1657368688 (51.9%), 272.7 MBs/sec
+2026-06-03T22:52:44.8904917Z Received 1174405120 of 1657368688 (70.9%), 279.2 MBs/sec
+2026-06-03T22:52:45.9026544Z Received 1476395008 of 1657368688 (89.1%), 280.2 MBs/sec
+2026-06-03T22:52:46.5235990Z Received 1657368688 of 1657368688 (100.0%), 279.8 MBs/sec
+2026-06-03T22:52:46.5238197Z Cache Size: ~1581 MB (1657368688 B)
+2026-06-03T22:52:46.5347695Z [command]/usr/bin/tar -xf /home/runner/work/_temp/402ca30c-6ced-4188-b643-e8e1da396867/cache.tzst -P -C /home/runner/work/vscode/vscode --use-compress-program unzstd
+2026-06-03T22:53:05.7101916Z Cache restored successfully
+2026-06-03T22:53:05.7905131Z Cache restored from key: Linux-cacheNodeModules20-5dbd35aebddf45229c687e2fbaec0eea6398365f8ab0c872c09073211ed00da8
+2026-06-03T22:53:05.8098765Z ##[group]Run npm run playwright-install
+2026-06-03T22:53:05.8099162Z [36;1mnpm run playwright-install[0m
+2026-06-03T22:53:05.8129902Z shell: /usr/bin/bash -e {0}
+2026-06-03T22:53:05.8130179Z env:
+2026-06-03T22:53:05.8133118Z   GITHUB_TOKEN: ***
+2026-06-03T22:53:05.8133365Z ##[endgroup]
+2026-06-03T22:53:05.9931784Z npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:05.9933782Z npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:05.9935360Z npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:05.9936809Z npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:05.9938102Z npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:05.9939383Z npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.0018465Z 
+2026-06-03T22:53:06.0018960Z > code-oss-dev@1.124.0 playwright-install
+2026-06-03T22:53:06.0019371Z > npm exec playwright install
+2026-06-03T22:53:06.0019570Z 
+2026-06-03T22:53:06.3478589Z npm warn Unknown env config "ms-build-id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.3480583Z npm warn Unknown env config "build-from-source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.3482173Z npm warn Unknown env config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.3483614Z npm warn Unknown env config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.3485531Z npm warn Unknown env config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.3487641Z npm warn Unknown env config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.3489728Z npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.3491427Z npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.3492597Z npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.3494140Z npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.3495590Z npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.3496836Z npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:06.9540612Z Downloading Chromium 141.0.7390.37 (playwright build v1194) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1194/chromium-linux.zip
+2026-06-03T22:53:07.1214494Z |                                                                                |   0% of 173.9 MiB
+2026-06-03T22:53:07.2419186Z |■■■■■■■■                                                                        |  10% of 173.9 MiB
+2026-06-03T22:53:07.3489618Z |■■■■■■■■■■■■■■■■                                                                |  20% of 173.9 MiB
+2026-06-03T22:53:07.5265538Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 173.9 MiB
+2026-06-03T22:53:07.6427308Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 173.9 MiB
+2026-06-03T22:53:07.7933669Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 173.9 MiB
+2026-06-03T22:53:07.9258752Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 173.9 MiB
+2026-06-03T22:53:08.0588953Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 173.9 MiB
+2026-06-03T22:53:08.2368514Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 173.9 MiB
+2026-06-03T22:53:08.4277124Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 173.9 MiB
+2026-06-03T22:53:08.5983197Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 173.9 MiB
+2026-06-03T22:53:12.2450405Z Chromium 141.0.7390.37 (playwright build v1194) downloaded to /home/runner/.cache/ms-playwright/chromium-1194
+2026-06-03T22:53:12.2455533Z Downloading Chromium Headless Shell 141.0.7390.37 (playwright build v1194) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1194/chromium-headless-shell-linux.zip
+2026-06-03T22:53:12.3852356Z |                                                                                |   0% of 104.3 MiB
+2026-06-03T22:53:12.4753269Z |■■■■■■■■                                                                        |  10% of 104.3 MiB
+2026-06-03T22:53:12.5298134Z |■■■■■■■■■■■■■■■■                                                                |  20% of 104.3 MiB
+2026-06-03T22:53:12.5768946Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 104.3 MiB
+2026-06-03T22:53:12.6220783Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 104.3 MiB
+2026-06-03T22:53:12.6671767Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 104.3 MiB
+2026-06-03T22:53:12.7085151Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 104.3 MiB
+2026-06-03T22:53:12.7539074Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 104.3 MiB
+2026-06-03T22:53:12.8225979Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 104.3 MiB
+2026-06-03T22:53:12.8579332Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 104.3 MiB
+2026-06-03T22:53:12.9040970Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 104.3 MiB
+2026-06-03T22:53:14.8333309Z Chromium Headless Shell 141.0.7390.37 (playwright build v1194) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1194
+2026-06-03T22:53:14.8337375Z Downloading Firefox 142.0.1 (playwright build v1495) from https://cdn.playwright.dev/dbazure/download/playwright/builds/firefox/1495/firefox-ubuntu-24.04.zip
+2026-06-03T22:53:15.5043208Z |                                                                                |   0% of 96.7 MiB
+2026-06-03T22:53:15.7438394Z |■■■■■■■■                                                                        |  10% of 96.7 MiB
+2026-06-03T22:53:16.0309173Z |■■■■■■■■■■■■■■■■                                                                |  20% of 96.7 MiB
+2026-06-03T22:53:16.3194194Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 96.7 MiB
+2026-06-03T22:53:16.6117873Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 96.7 MiB
+2026-06-03T22:53:16.8692618Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 96.7 MiB
+2026-06-03T22:53:17.0120836Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 96.7 MiB
+2026-06-03T22:53:17.1349513Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 96.7 MiB
+2026-06-03T22:53:17.2291609Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 96.7 MiB
+2026-06-03T22:53:17.3780573Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 96.7 MiB
+2026-06-03T22:53:17.4529199Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 96.7 MiB
+2026-06-03T22:53:19.1168433Z Firefox 142.0.1 (playwright build v1495) downloaded to /home/runner/.cache/ms-playwright/firefox-1495
+2026-06-03T22:53:19.1172928Z Downloading Webkit 26.0 (playwright build v2215) from https://cdn.playwright.dev/dbazure/download/playwright/builds/webkit/2215/webkit-ubuntu-24.04.zip
+2026-06-03T22:53:19.2631042Z |                                                                                |   0% of 94.6 MiB
+2026-06-03T22:53:19.3393869Z |■■■■■■■■                                                                        |  10% of 94.6 MiB
+2026-06-03T22:53:19.3847982Z |■■■■■■■■■■■■■■■■                                                                |  20% of 94.6 MiB
+2026-06-03T22:53:19.4390358Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 94.6 MiB
+2026-06-03T22:53:19.4944986Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 94.6 MiB
+2026-06-03T22:53:19.5409296Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 94.6 MiB
+2026-06-03T22:53:19.5950775Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 94.6 MiB
+2026-06-03T22:53:19.6654488Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 94.6 MiB
+2026-06-03T22:53:19.7570766Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 94.6 MiB
+2026-06-03T22:53:19.7977557Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 94.6 MiB
+2026-06-03T22:53:19.8587992Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 94.6 MiB
+2026-06-03T22:53:21.5413704Z Webkit 26.0 (playwright build v2215) downloaded to /home/runner/.cache/ms-playwright/webkit-2215
+2026-06-03T22:53:21.5417358Z Downloading FFMPEG playwright build v1011 from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+2026-06-03T22:53:21.6900927Z |                                                                                |   0% of 2.3 MiB
+2026-06-03T22:53:21.6951158Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+2026-06-03T22:53:21.6991463Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+2026-06-03T22:53:21.7025206Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+2026-06-03T22:53:21.7079871Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+2026-06-03T22:53:21.7103706Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+2026-06-03T22:53:21.7122236Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+2026-06-03T22:53:21.7145602Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+2026-06-03T22:53:21.7167166Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+2026-06-03T22:53:21.7180284Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+2026-06-03T22:53:21.7193642Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+2026-06-03T22:53:21.7766858Z FFMPEG playwright build v1011 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+2026-06-03T22:53:22.5787665Z Playwright Host validation warning: 
+2026-06-03T22:53:22.5788607Z ╔══════════════════════════════════════════════════════╗
+2026-06-03T22:53:22.5789512Z ║ Host system is missing dependencies to run browsers. ║
+2026-06-03T22:53:22.5790028Z ║ Missing libraries:                                   ║
+2026-06-03T22:53:22.5790513Z ║     libgtk-4.so.1                                    ║
+2026-06-03T22:53:22.5790986Z ║     libgraphene-1.0.so.0                             ║
+2026-06-03T22:53:22.5791464Z ║     libwoff2dec.so.1.0.2                             ║
+2026-06-03T22:53:22.5791936Z ║     libvpx.so.9                                      ║
+2026-06-03T22:53:22.5792410Z ║     libevent-2.1.so.7                                ║
+2026-06-03T22:53:22.5792896Z ║     libopus.so.0                                     ║
+2026-06-03T22:53:22.5793668Z ║     libgstallocators-1.0.so.0                        ║
+2026-06-03T22:53:22.5794229Z ║     libgstapp-1.0.so.0                               ║
+2026-06-03T22:53:22.5794719Z ║     libgstpbutils-1.0.so.0                           ║
+2026-06-03T22:53:22.5795198Z ║     libgstaudio-1.0.so.0                             ║
+2026-06-03T22:53:22.5795684Z ║     libgsttag-1.0.so.0                               ║
+2026-06-03T22:53:22.5796159Z ║     libgstvideo-1.0.so.0                             ║
+2026-06-03T22:53:22.5796624Z ║     libgstgl-1.0.so.0                                ║
+2026-06-03T22:53:22.5797106Z ║     libgstcodecparsers-1.0.so.0                      ║
+2026-06-03T22:53:22.5797596Z ║     libgstfft-1.0.so.0                               ║
+2026-06-03T22:53:22.5798065Z ║     libflite.so.1                                    ║
+2026-06-03T22:53:22.5798531Z ║     libflite_usenglish.so.1                          ║
+2026-06-03T22:53:22.5799016Z ║     libflite_cmu_grapheme_lang.so.1                  ║
+2026-06-03T22:53:22.5799503Z ║     libflite_cmu_grapheme_lex.so.1                   ║
+2026-06-03T22:53:22.5799998Z ║     libflite_cmu_indic_lang.so.1                     ║
+2026-06-03T22:53:22.5800483Z ║     libflite_cmu_indic_lex.so.1                      ║
+2026-06-03T22:53:22.5800960Z ║     libflite_cmulex.so.1                             ║
+2026-06-03T22:53:22.5801438Z ║     libflite_cmu_time_awb.so.1                       ║
+2026-06-03T22:53:22.5801906Z ║     libflite_cmu_us_awb.so.1                         ║
+2026-06-03T22:53:22.5802358Z ║     libflite_cmu_us_kal16.so.1                       ║
+2026-06-03T22:53:22.5802798Z ║     libflite_cmu_us_kal.so.1                         ║
+2026-06-03T22:53:22.5803233Z ║     libflite_cmu_us_rms.so.1                         ║
+2026-06-03T22:53:22.5803951Z ║     libflite_cmu_us_slt.so.1                         ║
+2026-06-03T22:53:22.5804414Z ║     libavif.so.16                                    ║
+2026-06-03T22:53:22.5804872Z ║     libharfbuzz-icu.so.0                             ║
+2026-06-03T22:53:22.5805330Z ║     libsecret-1.so.0                                 ║
+2026-06-03T22:53:22.5805787Z ║     libhyphen.so.0                                   ║
+2026-06-03T22:53:22.5806241Z ║     libwayland-server.so.0                           ║
+2026-06-03T22:53:22.5806688Z ║     libmanette-0.2.so.0                              ║
+2026-06-03T22:53:22.5807356Z ║     libGLESv2.so.2                                   ║
+2026-06-03T22:53:22.5807840Z ║     libx264.so                                       ║
+2026-06-03T22:53:22.5808307Z ╚══════════════════════════════════════════════════════╝
+2026-06-03T22:53:22.5809149Z     at validateDependenciesLinux (/home/runner/work/vscode/vscode/node_modules/playwright/node_modules/playwright-core/lib/server/registry/dependencies.js:269:9)
+2026-06-03T22:53:22.5810111Z     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-06-03T22:53:22.5811257Z     at async Registry._validateHostRequirements (/home/runner/work/vscode/vscode/node_modules/playwright/node_modules/playwright-core/lib/server/registry/index.js:961:14)
+2026-06-03T22:53:22.5812801Z     at async Registry._validateHostRequirementsForExecutableIfNeeded (/home/runner/work/vscode/vscode/node_modules/playwright/node_modules/playwright-core/lib/server/registry/index.js:1083:7)
+2026-06-03T22:53:22.5814685Z     at async Registry.validateHostRequirementsForExecutablesIfNeeded (/home/runner/work/vscode/vscode/node_modules/playwright/node_modules/playwright-core/lib/server/registry/index.js:1072:7)
+2026-06-03T22:53:22.5816051Z     at async i.<anonymous> (/home/runner/work/vscode/vscode/node_modules/playwright/node_modules/playwright-core/lib/cli/program.js:217:7)
+2026-06-03T22:53:22.6442883Z ##[group]Run npm run monaco-compile-check
+2026-06-03T22:53:22.6443881Z [36;1mnpm run monaco-compile-check[0m
+2026-06-03T22:53:22.6481051Z shell: /usr/bin/bash -e {0}
+2026-06-03T22:53:22.6481494Z env:
+2026-06-03T22:53:22.6487259Z   GITHUB_TOKEN: ***
+2026-06-03T22:53:22.6487692Z ##[endgroup]
+2026-06-03T22:53:22.7343343Z npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:22.7345804Z npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:22.7347396Z npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:22.7348653Z npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:22.7349862Z npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:22.7351050Z npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:22.7494672Z 
+2026-06-03T22:53:22.7494951Z > code-oss-dev@1.124.0 monaco-compile-check
+2026-06-03T22:53:22.7495465Z > tsgo --project src/tsconfig.monaco.json --noEmit
+2026-06-03T22:53:22.7495735Z 
+2026-06-03T22:53:25.9299635Z ##[group]Run npm run gulp editor-distro
+2026-06-03T22:53:25.9300252Z [36;1mnpm run gulp editor-distro[0m
+2026-06-03T22:53:25.9338638Z shell: /usr/bin/bash -e {0}
+2026-06-03T22:53:25.9339106Z env:
+2026-06-03T22:53:25.9344869Z   GITHUB_TOKEN: ***
+2026-06-03T22:53:25.9345287Z ##[endgroup]
+2026-06-03T22:53:26.0234813Z npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:26.0237760Z npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:26.0239358Z npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:26.0240717Z npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:26.0242250Z npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:26.0243781Z npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:53:26.0387151Z 
+2026-06-03T22:53:26.0387478Z > code-oss-dev@1.124.0 gulp
+2026-06-03T22:53:26.0388264Z > node --experimental-strip-types --max-old-space-size=8192 ./node_modules/gulp/bin/gulp.js editor-distro
+2026-06-03T22:53:26.0388724Z 
+2026-06-03T22:53:27.8493386Z [22:53:27] Using gulpfile ~/work/vscode/vscode/gulpfile.mjs
+2026-06-03T22:53:27.8501831Z [22:53:27] Starting 'editor-distro'...
+2026-06-03T22:53:27.8514840Z [22:53:27] Starting [36mclean-out-editor-src[39m ...
+2026-06-03T22:53:27.8529166Z [22:53:27] Starting [36mclean-out-monaco-editor-core[39m ...
+2026-06-03T22:53:27.8547496Z [22:53:27] Finished [36mclean-out-editor-src[39m after [35m2 ms[39m
+2026-06-03T22:53:27.8549000Z [22:53:27] Finished [36mclean-out-monaco-editor-core[39m after [35m1 ms[39m
+2026-06-03T22:53:27.8550291Z [22:53:27] Starting [36mextract-editor-src[39m ...
+2026-06-03T22:53:37.3228109Z Running tree shaker with shakeLevel ClassMembers (2)
+2026-06-03T22:53:53.7049136Z Treeshaking - 2% - 100/3492 (3086, 306)
+2026-06-03T22:53:55.1722105Z Treeshaking - 5% - 200/3957 (3415, 342)
+2026-06-03T22:53:56.2945202Z Treeshaking - 6% - 300/4430 (3746, 384)
+2026-06-03T22:53:57.4596353Z Treeshaking - 8% - 400/4717 (3935, 382)
+2026-06-03T22:53:57.7874891Z Treeshaking - 10% - 500/4952 (4063, 389)
+2026-06-03T22:53:58.4982768Z Treeshaking - 11% - 600/5097 (4069, 428)
+2026-06-03T22:53:58.9671806Z Treeshaking - 13% - 700/5214 (4085, 429)
+2026-06-03T22:54:00.1330440Z Treeshaking - 14% - 800/5376 (4114, 462)
+2026-06-03T22:54:00.9609282Z Treeshaking - 16% - 900/5542 (4117, 525)
+2026-06-03T22:54:01.4680174Z Treeshaking - 17% - 1000/5800 (4138, 662)
+2026-06-03T22:54:02.0708261Z Treeshaking - 18% - 1100/5966 (4152, 714)
+2026-06-03T22:54:02.2234913Z Treeshaking - 19% - 1200/6066 (4152, 714)
+2026-06-03T22:54:02.5680278Z Treeshaking - 21% - 1300/6184 (4159, 725)
+2026-06-03T22:54:02.9852049Z Treeshaking - 22% - 1400/6299 (4174, 725)
+2026-06-03T22:54:03.2913985Z Treeshaking - 23% - 1500/6500 (4191, 809)
+2026-06-03T22:54:05.3849931Z Treeshaking - 23% - 1600/6687 (4228, 859)
+2026-06-03T22:54:05.6236492Z Treeshaking - 24% - 1700/6868 (4232, 936)
+2026-06-03T22:54:06.1093301Z Treeshaking - 25% - 1800/7014 (4274, 940)
+2026-06-03T22:54:06.9404393Z Treeshaking - 26% - 1900/7137 (4291, 946)
+2026-06-03T22:54:07.8519439Z Treeshaking - 27% - 2000/7274 (4317, 957)
+2026-06-03T22:54:08.7350068Z Treeshaking - 28% - 2100/7402 (4344, 958)
+2026-06-03T22:54:09.6215402Z Treeshaking - 28% - 2200/7716 (4515, 1001)
+2026-06-03T22:54:09.7162676Z Treeshaking - 29% - 2300/7758 (4457, 1001)
+2026-06-03T22:54:09.7531251Z Treeshaking - 30% - 2400/7768 (4367, 1001)
+2026-06-03T22:54:09.8100629Z Treeshaking - 32% - 2500/7784 (4283, 1001)
+2026-06-03T22:54:10.2090957Z Treeshaking - 33% - 2600/7862 (4298, 964)
+2026-06-03T22:54:10.2099720Z Treeshaking - 34% - 2700/7862 (4198, 964)
+2026-06-03T22:54:10.2106023Z Treeshaking - 35% - 2800/7862 (4098, 964)
+2026-06-03T22:54:10.2792933Z Treeshaking - 36% - 2900/7889 (4025, 964)
+2026-06-03T22:54:10.5331601Z Treeshaking - 37% - 3000/7986 (4014, 972)
+2026-06-03T22:54:11.4111114Z Treeshaking - 36% - 3100/8389 (4296, 993)
+2026-06-03T22:54:11.6858657Z Treeshaking - 37% - 3200/8508 (4305, 1003)
+2026-06-03T22:54:11.7861296Z Treeshaking - 38% - 3300/8626 (4308, 1018)
+2026-06-03T22:54:12.0342492Z Treeshaking - 38% - 3400/8768 (4341, 1027)
+2026-06-03T22:54:12.0891051Z Treeshaking - 39% - 3500/8843 (4314, 1029)
+2026-06-03T22:54:12.6893002Z Treeshaking - 39% - 3600/9163 (4492, 1071)
+2026-06-03T22:54:12.8741783Z Treeshaking - 40% - 3700/9243 (4468, 1075)
+2026-06-03T22:54:13.3266512Z Treeshaking - 40% - 3800/9471 (4554, 1117)
+2026-06-03T22:54:13.4841127Z Treeshaking - 40% - 3900/9529 (4512, 1117)
+2026-06-03T22:54:13.6003733Z Treeshaking - 41% - 4000/9571 (4453, 1118)
+2026-06-03T22:54:13.8723196Z Treeshaking - 42% - 4100/9665 (4445, 1120)
+2026-06-03T22:54:14.3644701Z Treeshaking - 42% - 4200/9819 (4481, 1138)
+2026-06-03T22:54:15.6855273Z Treeshaking - 42% - 4300/10026 (4585, 1141)
+2026-06-03T22:54:15.9058538Z Treeshaking - 43% - 4400/10080 (4551, 1129)
+2026-06-03T22:54:16.2599675Z Treeshaking - 44% - 4500/10196 (4567, 1129)
+2026-06-03T22:54:16.3943341Z Treeshaking - 44% - 4600/10378 (4652, 1126)
+2026-06-03T22:54:16.3968822Z Treeshaking - 45% - 4700/10378 (4552, 1126)
+2026-06-03T22:54:16.3996166Z Treeshaking - 46% - 4800/10382 (4456, 1126)
+2026-06-03T22:54:16.4024269Z Treeshaking - 47% - 4900/10388 (4362, 1126)
+2026-06-03T22:54:16.4042297Z Treeshaking - 48% - 5000/10396 (4270, 1126)
+2026-06-03T22:54:16.4269521Z Treeshaking - 49% - 5100/10407 (4181, 1126)
+2026-06-03T22:54:16.4279580Z Treeshaking - 49% - 5200/10409 (4083, 1126)
+2026-06-03T22:54:16.4286025Z Treeshaking - 50% - 5300/10410 (3984, 1126)
+2026-06-03T22:54:16.4291234Z Treeshaking - 51% - 5400/10414 (3888, 1126)
+2026-06-03T22:54:16.4300842Z Treeshaking - 52% - 5500/10419 (3793, 1126)
+2026-06-03T22:54:16.4305951Z Treeshaking - 53% - 5600/10422 (3696, 1126)
+2026-06-03T22:54:16.4313505Z Treeshaking - 54% - 5700/10424 (3598, 1126)
+2026-06-03T22:54:16.4323327Z Treeshaking - 55% - 5800/10425 (3499, 1126)
+2026-06-03T22:54:16.4341856Z Treeshaking - 56% - 5900/10427 (3401, 1126)
+2026-06-03T22:54:16.4843216Z Treeshaking - 57% - 6000/10452 (3326, 1126)
+2026-06-03T22:54:16.4855040Z Treeshaking - 58% - 6100/10460 (3234, 1126)
+2026-06-03T22:54:16.4869918Z Treeshaking - 59% - 6200/10471 (3145, 1126)
+2026-06-03T22:54:16.4899070Z Treeshaking - 60% - 6300/10475 (3049, 1126)
+2026-06-03T22:54:16.4932875Z Treeshaking - 61% - 6400/10479 (2953, 1126)
+2026-06-03T22:54:16.4990898Z Treeshaking - 61% - 6500/10489 (2863, 1126)
+2026-06-03T22:54:16.6264817Z Treeshaking - 62% - 6600/10595 (2866, 1129)
+2026-06-03T22:54:16.9909113Z Treeshaking - 62% - 6700/10749 (2896, 1153)
+2026-06-03T22:54:17.5022636Z Treeshaking - 62% - 6800/10847 (2892, 1155)
+2026-06-03T22:54:17.7108878Z Treeshaking - 63% - 6900/10877 (2827, 1150)
+2026-06-03T22:54:17.8854602Z Treeshaking - 64% - 7000/10913 (2753, 1160)
+2026-06-03T22:54:17.9590648Z Treeshaking - 64% - 7100/10976 (2715, 1161)
+2026-06-03T22:54:17.9999485Z Treeshaking - 65% - 7200/10996 (2636, 1160)
+2026-06-03T22:54:18.7208926Z Treeshaking - 65% - 7300/11184 (2712, 1172)
+2026-06-03T22:54:19.0548296Z Treeshaking - 65% - 7400/11311 (2722, 1189)
+2026-06-03T22:54:19.3253763Z Treeshaking - 65% - 7500/11403 (2712, 1191)
+2026-06-03T22:54:19.4767183Z Treeshaking - 66% - 7600/11461 (2672, 1189)
+2026-06-03T22:54:19.7037180Z Treeshaking - 66% - 7700/11577 (2681, 1196)
+2026-06-03T22:54:19.9428611Z Treeshaking - 67% - 7800/11640 (2647, 1193)
+2026-06-03T22:54:20.2826091Z Treeshaking - 67% - 7900/11789 (2695, 1194)
+2026-06-03T22:54:20.7770257Z Treeshaking - 66% - 8000/12003 (2773, 1230)
+2026-06-03T22:54:20.9054971Z Treeshaking - 66% - 8100/12103 (2764, 1239)
+2026-06-03T22:54:21.0768350Z Treeshaking - 67% - 8200/12136 (2699, 1237)
+2026-06-03T22:54:21.6295373Z Treeshaking - 67% - 8300/12277 (2739, 1238)
+2026-06-03T22:54:21.8396044Z Treeshaking - 67% - 8400/12357 (2717, 1240)
+2026-06-03T22:54:22.1870682Z Treeshaking - 68% - 8500/12425 (2686, 1239)
+2026-06-03T22:54:22.3954848Z Treeshaking - 68% - 8600/12538 (2701, 1237)
+2026-06-03T22:54:22.6572664Z Treeshaking - 68% - 8700/12653 (2702, 1251)
+2026-06-03T22:54:23.4964676Z Treeshaking - 67% - 8800/12947 (2854, 1293)
+2026-06-03T22:54:23.6965322Z Treeshaking - 67% - 8900/13120 (2910, 1310)
+2026-06-03T22:54:24.1600901Z Treeshaking - 67% - 9000/13325 (3019, 1306)
+2026-06-03T22:54:24.6400521Z Treeshaking - 67% - 9100/13497 (3066, 1331)
+2026-06-03T22:54:24.8844420Z Treeshaking - 67% - 9200/13612 (3054, 1358)
+2026-06-03T22:54:24.9808330Z Treeshaking - 68% - 9300/13659 (3001, 1358)
+2026-06-03T22:54:25.0705808Z Treeshaking - 68% - 9400/13702 (2943, 1359)
+2026-06-03T22:54:26.3791948Z Treeshaking - 68% - 9500/13820 (2953, 1367)
+2026-06-03T22:54:26.6527076Z Treeshaking - 69% - 9600/13865 (2894, 1371)
+2026-06-03T22:54:26.7008545Z Treeshaking - 69% - 9700/13889 (2817, 1372)
+2026-06-03T22:54:26.9349695Z Treeshaking - 70% - 9800/13915 (2748, 1367)
+2026-06-03T22:54:27.1972350Z Treeshaking - 70% - 9900/13984 (2715, 1369)
+2026-06-03T22:54:27.4857877Z Treeshaking - 71% - 10000/14075 (2727, 1348)
+2026-06-03T22:54:28.2329671Z Treeshaking - 70% - 10100/14235 (2781, 1354)
+2026-06-03T22:54:28.2987051Z Treeshaking - 71% - 10200/14303 (2743, 1360)
+2026-06-03T22:54:28.8904782Z Treeshaking - 70% - 10300/14510 (2824, 1386)
+2026-06-03T22:54:29.1367797Z Treeshaking - 71% - 10400/14647 (2860, 1387)
+2026-06-03T22:54:29.5253030Z Treeshaking - 70% - 10500/14795 (2902, 1393)
+2026-06-03T22:54:29.8493374Z Treeshaking - 70% - 10600/14971 (2971, 1400)
+2026-06-03T22:54:30.0456258Z Treeshaking - 70% - 10700/15113 (3013, 1400)
+2026-06-03T22:54:30.1483090Z Treeshaking - 71% - 10800/15151 (2954, 1397)
+2026-06-03T22:54:30.2871520Z Treeshaking - 71% - 10900/15204 (2904, 1400)
+2026-06-03T22:54:30.6874628Z Treeshaking - 71% - 11000/15289 (2887, 1402)
+2026-06-03T22:54:30.9478886Z Treeshaking - 72% - 11100/15379 (2879, 1400)
+2026-06-03T22:54:31.3302725Z Treeshaking - 72% - 11200/15503 (2902, 1401)
+2026-06-03T22:54:31.5183771Z Treeshaking - 72% - 11300/15557 (2855, 1402)
+2026-06-03T22:54:31.9990765Z Treeshaking - 72% - 11400/15644 (2840, 1404)
+2026-06-03T22:54:32.1834590Z Treeshaking - 73% - 11500/15752 (2847, 1405)
+2026-06-03T22:54:33.2732266Z Treeshaking - 72% - 11600/16054 (3024, 1430)
+2026-06-03T22:54:33.4067400Z Treeshaking - 72% - 11700/16128 (2983, 1445)
+2026-06-03T22:54:33.7100025Z Treeshaking - 72% - 11800/16189 (2936, 1453)
+2026-06-03T22:54:33.8209991Z Treeshaking - 73% - 11900/16238 (2884, 1454)
+2026-06-03T22:54:33.9131616Z Treeshaking - 73% - 12000/16304 (2848, 1456)
+2026-06-03T22:54:34.3700156Z Treeshaking - 73% - 12100/16458 (2882, 1476)
+2026-06-03T22:54:34.9067474Z Treeshaking - 72% - 12200/16725 (3082, 1443)
+2026-06-03T22:54:35.2929230Z Treeshaking - 73% - 12300/16826 (3084, 1442)
+2026-06-03T22:54:35.3457674Z Treeshaking - 73% - 12400/16864 (3023, 1441)
+2026-06-03T22:54:35.4933407Z Treeshaking - 73% - 12500/16917 (2976, 1441)
+2026-06-03T22:54:35.7169318Z Treeshaking - 74% - 12600/16971 (2925, 1446)
+2026-06-03T22:54:35.8010649Z Treeshaking - 74% - 12700/17011 (2864, 1447)
+2026-06-03T22:54:35.9118544Z Treeshaking - 74% - 12800/17069 (2819, 1450)
+2026-06-03T22:54:36.1492885Z Treeshaking - 75% - 12900/17138 (2781, 1457)
+2026-06-03T22:54:36.3309883Z Treeshaking - 75% - 13000/17196 (2742, 1454)
+2026-06-03T22:54:36.5571112Z Treeshaking - 75% - 13100/17403 (2747, 1556)
+2026-06-03T22:54:37.3728107Z Treeshaking - 75% - 13200/17579 (2827, 1552)
+2026-06-03T22:54:37.4176268Z Treeshaking - 75% - 13300/17633 (2781, 1552)
+2026-06-03T22:54:37.8590688Z Treeshaking - 75% - 13400/17704 (2751, 1553)
+2026-06-03T22:54:38.2160538Z Treeshaking - 75% - 13500/17813 (2755, 1558)
+2026-06-03T22:54:38.4583944Z Treeshaking - 75% - 13600/17931 (2773, 1558)
+2026-06-03T22:54:38.5654908Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/marked/marked.js
+2026-06-03T22:54:38.7131597Z Treeshaking - 75% - 13700/18057 (2799, 1558)
+2026-06-03T22:54:38.8415395Z Treeshaking - 76% - 13800/18103 (2747, 1556)
+2026-06-03T22:54:40.0648762Z Treeshaking - 75% - 13900/18469 (3009, 1560)
+2026-06-03T22:54:40.5969546Z Treeshaking - 75% - 14000/18654 (3065, 1589)
+2026-06-03T22:54:40.7069289Z Treeshaking - 75% - 14100/18692 (3004, 1588)
+2026-06-03T22:54:40.8611523Z Treeshaking - 75% - 14200/18769 (2979, 1590)
+2026-06-03T22:54:41.1381761Z Treeshaking - 75% - 14300/18871 (2981, 1590)
+2026-06-03T22:54:41.3250505Z Treeshaking - 75% - 14400/18966 (2956, 1610)
+2026-06-03T22:54:41.5326426Z Treeshaking - 76% - 14500/19018 (2909, 1609)
+2026-06-03T22:54:41.6028962Z Treeshaking - 76% - 14600/19078 (2866, 1612)
+2026-06-03T22:54:41.6651422Z Treeshaking - 76% - 14700/19121 (2808, 1613)
+2026-06-03T22:54:41.8897503Z Treeshaking - 77% - 14800/19195 (2785, 1610)
+2026-06-03T22:54:42.4919419Z Treeshaking - 77% - 14900/19349 (2832, 1617)
+2026-06-03T22:54:42.7374380Z Treeshaking - 77% - 15000/19454 (2827, 1627)
+2026-06-03T22:54:43.0463202Z Treeshaking - 77% - 15100/19554 (2833, 1621)
+2026-06-03T22:54:43.8121810Z Treeshaking - 76% - 15200/19816 (3001, 1615)
+2026-06-03T22:54:45.5959742Z Treeshaking - 76% - 15300/19978 (3055, 1623)
+2026-06-03T22:54:45.7052090Z Treeshaking - 76% - 15400/20025 (3004, 1621)
+2026-06-03T22:54:45.9334855Z Treeshaking - 77% - 15500/20104 (2975, 1629)
+2026-06-03T22:54:46.0969518Z Treeshaking - 77% - 15600/20138 (2906, 1632)
+2026-06-03T22:54:46.1640306Z Treeshaking - 77% - 15700/20183 (2851, 1632)
+2026-06-03T22:54:46.4418149Z Treeshaking - 78% - 15800/20227 (2801, 1626)
+2026-06-03T22:54:46.6712217Z Treeshaking - 78% - 15900/20311 (2773, 1638)
+2026-06-03T22:54:46.7396467Z Treeshaking - 78% - 16000/20356 (2716, 1640)
+2026-06-03T22:54:47.0349064Z Treeshaking - 78% - 16100/20451 (2711, 1640)
+2026-06-03T22:54:47.2766357Z Treeshaking - 78% - 16200/20551 (2712, 1639)
+2026-06-03T22:54:47.7976315Z Treeshaking - 78% - 16300/20781 (2839, 1642)
+2026-06-03T22:54:48.1707122Z Treeshaking - 78% - 16400/20897 (2840, 1657)
+2026-06-03T22:54:48.1942952Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/browser/dompurify/dompurify.js
+2026-06-03T22:54:48.2012419Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/browser/dompurify/dompurify.js
+2026-06-03T22:54:48.2014258Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/browser/dompurify/dompurify.js
+2026-06-03T22:54:48.2015692Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/browser/dompurify/dompurify.js
+2026-06-03T22:54:48.2017402Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/browser/dompurify/dompurify.js
+2026-06-03T22:54:48.2018713Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/browser/dompurify/dompurify.js
+2026-06-03T22:54:48.3567874Z Treeshaking - 78% - 16500/21003 (2844, 1659)
+2026-06-03T22:54:48.6603991Z Treeshaking - 78% - 16600/21097 (2841, 1656)
+2026-06-03T22:54:49.1668827Z Treeshaking - 78% - 16700/21321 (2955, 1666)
+2026-06-03T22:54:49.6242244Z Treeshaking - 78% - 16800/21503 (3027, 1676)
+2026-06-03T22:54:49.9979804Z Treeshaking - 78% - 16900/21587 (3007, 1680)
+2026-06-03T22:54:50.1729253Z Treeshaking - 78% - 17000/21653 (2948, 1705)
+2026-06-03T22:54:50.5803957Z Treeshaking - 78% - 17100/21734 (2922, 1712)
+2026-06-03T22:54:50.8173243Z Treeshaking - 78% - 17200/21867 (2943, 1724)
+2026-06-03T22:54:51.2401045Z Treeshaking - 78% - 17300/21997 (2966, 1731)
+2026-06-03T22:54:51.4938171Z Treeshaking - 78% - 17400/22114 (2956, 1758)
+2026-06-03T22:54:51.7045572Z Treeshaking - 78% - 17500/22176 (2910, 1766)
+2026-06-03T22:54:51.9482486Z Treeshaking - 78% - 17600/22289 (2921, 1768)
+2026-06-03T22:54:53.2579614Z Treeshaking - 78% - 17700/22582 (3113, 1769)
+2026-06-03T22:54:53.5402936Z Treeshaking - 78% - 17800/22725 (3151, 1774)
+2026-06-03T22:54:53.9202203Z Treeshaking - 78% - 17900/22817 (3147, 1770)
+2026-06-03T22:54:54.2231901Z Treeshaking - 78% - 18000/22934 (3153, 1781)
+2026-06-03T22:54:54.3333936Z Treeshaking - 78% - 18100/22974 (3101, 1773)
+2026-06-03T22:54:54.6951529Z Treeshaking - 78% - 18200/23145 (3175, 1770)
+2026-06-03T22:54:54.7900302Z Treeshaking - 78% - 18300/23220 (3145, 1775)
+2026-06-03T22:54:55.4753802Z Treeshaking - 78% - 18400/23380 (3202, 1778)
+2026-06-03T22:54:55.4980601Z Treeshaking - 79% - 18500/23412 (3131, 1781)
+2026-06-03T22:54:55.7842920Z Treeshaking - 78% - 18600/23631 (3210, 1821)
+2026-06-03T22:54:55.8844916Z Treeshaking - 79% - 18700/23664 (3141, 1823)
+2026-06-03T22:54:55.9758318Z Treeshaking - 79% - 18800/23699 (3075, 1824)
+2026-06-03T22:54:56.1183706Z Treeshaking - 79% - 18900/23774 (3041, 1833)
+2026-06-03T22:54:56.4946966Z Treeshaking - 79% - 19000/23895 (3052, 1843)
+2026-06-03T22:54:56.8001343Z Treeshaking - 79% - 19100/24093 (3148, 1845)
+2026-06-03T22:54:57.0681659Z Treeshaking - 79% - 19200/24164 (3119, 1845)
+2026-06-03T22:54:57.1486574Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/browser/dompurify/dompurify.js
+2026-06-03T22:54:57.1551326Z Treeshaking - 79% - 19300/24231 (3078, 1853)
+2026-06-03T22:54:57.2720056Z Treeshaking - 79% - 19400/24278 (3024, 1854)
+2026-06-03T22:54:57.4622335Z Treeshaking - 80% - 19500/24331 (2969, 1862)
+2026-06-03T22:54:57.6004992Z Treeshaking - 80% - 19600/24411 (2939, 1872)
+2026-06-03T22:54:57.9972155Z Treeshaking - 80% - 19700/24542 (2937, 1905)
+2026-06-03T22:54:58.3499844Z Treeshaking - 80% - 19800/24668 (2955, 1913)
+2026-06-03T22:54:58.6953920Z Treeshaking - 80% - 19900/24741 (2930, 1911)
+2026-06-03T22:54:58.8258827Z Treeshaking - 80% - 20000/24797 (2878, 1919)
+2026-06-03T22:54:59.1480333Z Treeshaking - 80% - 20100/24943 (2912, 1931)
+2026-06-03T22:54:59.2047417Z Treeshaking - 80% - 20200/24998 (2867, 1931)
+2026-06-03T22:54:59.2406067Z Treeshaking - 81% - 20300/25026 (2794, 1932)
+2026-06-03T22:54:59.8556963Z Treeshaking - 81% - 20400/25185 (2828, 1957)
+2026-06-03T22:55:00.1013166Z Treeshaking - 81% - 20500/25275 (2813, 1962)
+2026-06-03T22:55:00.5083391Z Treeshaking - 81% - 20600/25426 (2864, 1962)
+2026-06-03T22:55:00.7908052Z Treeshaking - 81% - 20700/25554 (2893, 1961)
+2026-06-03T22:55:01.0097139Z Treeshaking - 81% - 20800/25594 (2834, 1960)
+2026-06-03T22:55:01.0724341Z Treeshaking - 81% - 20900/25632 (2772, 1960)
+2026-06-03T22:55:01.2027052Z Treeshaking - 81% - 21000/25684 (2722, 1962)
+2026-06-03T22:55:01.3900743Z Treeshaking - 81% - 21100/25751 (2688, 1963)
+2026-06-03T22:55:01.5122837Z Treeshaking - 82% - 21200/25829 (2659, 1970)
+2026-06-03T22:55:01.9281895Z Treeshaking - 82% - 21300/25900 (2632, 1968)
+2026-06-03T22:55:02.2369181Z Treeshaking - 82% - 21400/25984 (2622, 1962)
+2026-06-03T22:55:02.3696395Z Treeshaking - 82% - 21500/26041 (2575, 1966)
+2026-06-03T22:55:02.4851600Z Treeshaking - 82% - 21600/26100 (2536, 1964)
+2026-06-03T22:55:02.6102381Z Treeshaking - 82% - 21700/26157 (2490, 1967)
+2026-06-03T22:55:02.8261430Z Treeshaking - 83% - 21800/26213 (2424, 1989)
+2026-06-03T22:55:02.9841185Z Treeshaking - 83% - 21900/26273 (2383, 1990)
+2026-06-03T22:55:03.3014172Z Treeshaking - 83% - 22000/26332 (2341, 1991)
+2026-06-03T22:55:03.5684612Z Treeshaking - 83% - 22100/26443 (2353, 1990)
+2026-06-03T22:55:03.6852446Z Treeshaking - 83% - 22200/26512 (2324, 1988)
+2026-06-03T22:55:03.7378313Z Treeshaking - 83% - 22300/26561 (2273, 1988)
+2026-06-03T22:55:03.8642611Z Treeshaking - 84% - 22400/26611 (2219, 1992)
+2026-06-03T22:55:03.9714950Z Treeshaking - 84% - 22500/26676 (2178, 1998)
+2026-06-03T22:55:04.0797550Z Treeshaking - 84% - 22600/26726 (2125, 2001)
+2026-06-03T22:55:04.1799574Z Treeshaking - 84% - 22700/26814 (2108, 2006)
+2026-06-03T22:55:04.1816531Z Cannot find source file @vscode/tree-sitter-wasm.js
+2026-06-03T22:55:04.1819937Z Cannot find source file @vscode/tree-sitter-wasm.js
+2026-06-03T22:55:04.1820713Z Cannot find source file @vscode/tree-sitter-wasm.js
+2026-06-03T22:55:04.1909555Z Cannot find source file @vscode/tree-sitter-wasm.js
+2026-06-03T22:55:04.4953705Z Treeshaking - 84% - 22800/26959 (2157, 2002)
+2026-06-03T22:55:04.5736497Z Treeshaking - 84% - 22900/27002 (2097, 2005)
+2026-06-03T22:55:04.7527919Z Treeshaking - 85% - 23000/27053 (2049, 2004)
+2026-06-03T22:55:04.7940114Z Treeshaking - 85% - 23100/27122 (2018, 2004)
+2026-06-03T22:55:04.8701754Z Treeshaking - 85% - 23200/27155 (1951, 2004)
+2026-06-03T22:55:04.9411231Z Treeshaking - 85% - 23300/27188 (1876, 2012)
+2026-06-03T22:55:05.3117068Z Treeshaking - 85% - 23400/27358 (1941, 2017)
+2026-06-03T22:55:05.4169651Z Treeshaking - 85% - 23500/27451 (1925, 2026)
+2026-06-03T22:55:05.9048301Z Treeshaking - 85% - 23600/27649 (2015, 2034)
+2026-06-03T22:55:06.3661472Z Treeshaking - 85% - 23700/27743 (1999, 2044)
+2026-06-03T22:55:06.8275676Z Treeshaking - 85% - 23800/27872 (2007, 2065)
+2026-06-03T22:55:07.1566042Z Treeshaking - 85% - 23900/27995 (1992, 2103)
+2026-06-03T22:55:07.6034584Z Treeshaking - 85% - 24000/28056 (1946, 2110)
+2026-06-03T22:55:07.6994932Z Treeshaking - 85% - 24100/28098 (1879, 2119)
+2026-06-03T22:55:07.9641313Z Treeshaking - 85% - 24200/28166 (1841, 2125)
+2026-06-03T22:55:08.1819441Z Treeshaking - 85% - 24300/28261 (1823, 2138)
+2026-06-03T22:55:08.5064356Z Treeshaking - 85% - 24400/28373 (1834, 2139)
+2026-06-03T22:55:08.6587571Z Treeshaking - 86% - 24500/28445 (1802, 2143)
+2026-06-03T22:55:08.9240089Z Treeshaking - 86% - 24600/28520 (1772, 2148)
+2026-06-03T22:55:09.1510991Z Treeshaking - 86% - 24700/28577 (1729, 2148)
+2026-06-03T22:55:09.4216068Z Treeshaking - 86% - 24800/28627 (1677, 2150)
+2026-06-03T22:55:09.4376818Z Cannot find source file @vscode/tree-sitter-wasm.js
+2026-06-03T22:55:09.4468244Z Cannot find source file @vscode/tree-sitter-wasm.js
+2026-06-03T22:55:09.8118669Z Treeshaking - 86% - 24900/28705 (1657, 2148)
+2026-06-03T22:55:10.2771337Z Treeshaking - 86% - 25000/28789 (1632, 2157)
+2026-06-03T22:55:10.3772375Z Treeshaking - 86% - 25100/28870 (1605, 2165)
+2026-06-03T22:55:10.5604738Z Treeshaking - 87% - 25200/28946 (1559, 2187)
+2026-06-03T22:55:10.9693989Z Treeshaking - 87% - 25300/29080 (1586, 2194)
+2026-06-03T22:55:11.2836798Z Treeshaking - 86% - 25400/29219 (1606, 2213)
+2026-06-03T22:55:11.3017701Z Treeshaking - 87% - 25500/29244 (1530, 2214)
+2026-06-03T22:55:11.3869402Z Treeshaking - 87% - 25600/29324 (1500, 2224)
+2026-06-03T22:55:12.5599848Z Treeshaking - 86% - 25700/29663 (1499, 2464)
+2026-06-03T22:55:12.6043841Z Treeshaking - 86% - 25800/29697 (1432, 2465)
+2026-06-03T22:55:12.6534794Z Treeshaking - 87% - 25900/29763 (1398, 2465)
+2026-06-03T22:55:12.7961733Z Treeshaking - 87% - 26000/29819 (1358, 2461)
+2026-06-03T22:55:13.0741241Z Treeshaking - 87% - 26100/29920 (1359, 2461)
+2026-06-03T22:55:13.4601568Z Treeshaking - 87% - 26200/29982 (1322, 2460)
+2026-06-03T22:55:13.6269782Z Treeshaking - 87% - 26300/30035 (1269, 2466)
+2026-06-03T22:55:13.7458180Z Treeshaking - 87% - 26400/30113 (1246, 2467)
+2026-06-03T22:55:14.1019259Z Treeshaking - 87% - 26500/30230 (1256, 2474)
+2026-06-03T22:55:14.3380481Z Treeshaking - 87% - 26600/30302 (1228, 2474)
+2026-06-03T22:55:14.4379120Z Treeshaking - 87% - 26700/30353 (1178, 2475)
+2026-06-03T22:55:14.4661652Z Treeshaking - 88% - 26800/30378 (1096, 2482)
+2026-06-03T22:55:14.5276795Z Treeshaking - 88% - 26900/30414 (1028, 2486)
+2026-06-03T22:55:14.5969372Z Treeshaking - 88% - 27000/30448 (961, 2487)
+2026-06-03T22:55:14.7980596Z Treeshaking - 88% - 27100/30535 (949, 2486)
+2026-06-03T22:55:14.9787775Z Treeshaking - 88% - 27200/30574 (890, 2484)
+2026-06-03T22:55:15.3780688Z Treeshaking - 88% - 27300/30699 (906, 2493)
+2026-06-03T22:55:15.5126208Z Treeshaking - 89% - 27400/30766 (875, 2491)
+2026-06-03T22:55:16.0348452Z Cannot find source file @vscode/diff.js
+2026-06-03T22:55:16.0357928Z Cannot find source file @vscode/diff.js
+2026-06-03T22:55:16.0760720Z Treeshaking - 89% - 27500/30867 (876, 2491)
+2026-06-03T22:55:16.2645958Z Treeshaking - 89% - 27600/30952 (867, 2485)
+2026-06-03T22:55:16.3812809Z Treeshaking - 89% - 27700/31021 (827, 2494)
+2026-06-03T22:55:16.5844002Z Treeshaking - 89% - 27800/31082 (784, 2498)
+2026-06-03T22:55:16.6467464Z Treeshaking - 89% - 27900/31128 (722, 2506)
+2026-06-03T22:55:16.8088207Z Treeshaking - 89% - 28000/31212 (694, 2518)
+2026-06-03T22:55:16.8528893Z Treeshaking - 89% - 28100/31238 (620, 2518)
+2026-06-03T22:55:17.2992412Z Treeshaking - 90% - 28200/31324 (602, 2522)
+2026-06-03T22:55:17.3677068Z Treeshaking - 90% - 28300/31374 (551, 2523)
+2026-06-03T22:55:17.3800585Z Cannot find source file @vscode/diff.js
+2026-06-03T22:55:17.3802034Z Cannot find source file @vscode/diff.js
+2026-06-03T22:55:17.3802966Z Cannot find source file @vscode/diff.js
+2026-06-03T22:55:17.3833286Z Treeshaking - 90% - 28400/31395 (469, 2526)
+2026-06-03T22:55:17.4830347Z Treeshaking - 90% - 28500/31452 (424, 2528)
+2026-06-03T22:55:17.5091161Z Cannot find source file @vscode/tree-sitter-wasm.js
+2026-06-03T22:55:17.6165607Z Treeshaking - 90% - 28600/31509 (369, 2540)
+2026-06-03T22:55:17.7238975Z Treeshaking - 91% - 28700/31532 (292, 2540)
+2026-06-03T22:55:17.7966079Z Treeshaking - 91% - 28800/31616 (269, 2547)
+2026-06-03T22:55:17.8864473Z Cannot find source file @vscode/diff.js
+2026-06-03T22:55:18.0718659Z Treeshaking - 91% - 28900/31683 (233, 2550)
+2026-06-03T22:55:18.1702090Z Treeshaking - 91% - 29000/31731 (181, 2550)
+2026-06-03T22:55:18.1995364Z Treeshaking - 91% - 29100/31763 (111, 2552)
+2026-06-03T22:55:18.3228938Z Treeshaking - 91% - 29200/31824 (62, 2562)
+2026-06-03T22:55:18.4370265Z Treeshaking - 91% - 29300/31899 (34, 2565)
+2026-06-03T22:55:18.8696478Z Treeshaking - 91% - 29400/31982 (2108, 474)
+2026-06-03T22:55:19.1830209Z Treeshaking - 91% - 29500/32076 (2093, 483)
+2026-06-03T22:55:19.2683738Z Treeshaking - 92% - 29600/32107 (2022, 485)
+2026-06-03T22:55:19.3062327Z Treeshaking - 92% - 29700/32134 (1948, 486)
+2026-06-03T22:55:19.4692154Z Treeshaking - 92% - 29800/32219 (1920, 499)
+2026-06-03T22:55:19.6446455Z Treeshaking - 92% - 29900/32293 (1874, 519)
+2026-06-03T22:55:20.0424838Z Treeshaking - 92% - 30000/32358 (1836, 522)
+2026-06-03T22:55:20.3355395Z Treeshaking - 92% - 30100/32499 (1862, 537)
+2026-06-03T22:55:20.5879488Z Treeshaking - 92% - 30200/32611 (1830, 581)
+2026-06-03T22:55:21.3236693Z Treeshaking - 92% - 30300/32796 (1879, 617)
+2026-06-03T22:55:21.7711905Z Treeshaking - 92% - 30400/32913 (1884, 629)
+2026-06-03T22:55:21.9589748Z Treeshaking - 92% - 30500/33002 (1869, 633)
+2026-06-03T22:55:22.1289580Z Treeshaking - 92% - 30600/33054 (1813, 641)
+2026-06-03T22:55:22.3075425Z Treeshaking - 92% - 30700/33102 (1751, 651)
+2026-06-03T22:55:22.3199896Z Cannot find source file @vscode/tree-sitter-wasm.js
+2026-06-03T22:55:22.3200588Z Cannot find source file @vscode/tree-sitter-wasm.js
+2026-06-03T22:55:22.3201380Z Cannot find source file @vscode/tree-sitter-wasm.js
+2026-06-03T22:55:22.3202650Z Cannot find source file @vscode/tree-sitter-wasm.js
+2026-06-03T22:55:22.3890316Z Treeshaking - 92% - 30800/33143 (1679, 664)
+2026-06-03T22:55:22.5946886Z Treeshaking - 92% - 30900/33255 (1672, 683)
+2026-06-03T22:55:23.0031747Z Treeshaking - 92% - 31000/33359 (1671, 688)
+2026-06-03T22:55:23.4714636Z Treeshaking - 92% - 31100/33503 (1705, 698)
+2026-06-03T22:55:23.4892467Z Treeshaking - 93% - 31200/33523 (1625, 698)
+2026-06-03T22:55:23.5254235Z Treeshaking - 93% - 31300/33542 (1543, 699)
+2026-06-03T22:55:24.0974147Z Treeshaking - 93% - 31400/33640 (1538, 702)
+2026-06-03T22:55:24.7638561Z Treeshaking - 92% - 31500/33894 (1621, 773)
+2026-06-03T22:55:24.9655306Z Treeshaking - 93% - 31600/33954 (1577, 777)
+2026-06-03T22:55:25.0117638Z Treeshaking - 93% - 31700/33989 (1507, 782)
+2026-06-03T22:55:25.2268570Z Treeshaking - 93% - 31800/34043 (1459, 784)
+2026-06-03T22:55:25.3795339Z Treeshaking - 93% - 31900/34122 (1435, 787)
+2026-06-03T22:55:25.6122844Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:25.6131957Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:25.6133145Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:25.6344651Z Treeshaking - 93% - 32000/34191 (1400, 791)
+2026-06-03T22:55:25.9502581Z Treeshaking - 93% - 32100/34272 (1377, 795)
+2026-06-03T22:55:26.0607445Z Treeshaking - 93% - 32200/34345 (1336, 809)
+2026-06-03T22:55:26.2315261Z Treeshaking - 93% - 32300/34403 (1291, 812)
+2026-06-03T22:55:26.3714900Z Treeshaking - 93% - 32400/34517 (1297, 820)
+2026-06-03T22:55:26.4546557Z Treeshaking - 93% - 32500/34589 (1266, 823)
+2026-06-03T22:55:26.5572147Z Treeshaking - 94% - 32600/34652 (1229, 823)
+2026-06-03T22:55:26.6596355Z Treeshaking - 94% - 32700/34689 (1163, 826)
+2026-06-03T22:55:27.0009401Z Treeshaking - 94% - 32800/34747 (1121, 826)
+2026-06-03T22:55:27.2810931Z Treeshaking - 94% - 32900/34825 (1097, 828)
+2026-06-03T22:55:27.4536599Z Treeshaking - 94% - 33000/34875 (1038, 837)
+2026-06-03T22:55:27.4790332Z Treeshaking - 94% - 33100/34919 (980, 839)
+2026-06-03T22:55:27.5036397Z Treeshaking - 94% - 33200/34962 (921, 841)
+2026-06-03T22:55:27.6187745Z Treeshaking - 95% - 33300/35035 (895, 840)
+2026-06-03T22:55:27.7665621Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:27.7668213Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:27.9148791Z Treeshaking - 95% - 33400/35095 (847, 848)
+2026-06-03T22:55:28.1879943Z Treeshaking - 95% - 33500/35158 (809, 849)
+2026-06-03T22:55:28.2331521Z Treeshaking - 95% - 33600/35205 (754, 851)
+2026-06-03T22:55:28.2995350Z Treeshaking - 95% - 33700/35244 (691, 853)
+2026-06-03T22:55:28.3792259Z Treeshaking - 95% - 33800/35296 (649, 847)
+2026-06-03T22:55:28.5567498Z Treeshaking - 95% - 33900/35399 (645, 854)
+2026-06-03T22:55:28.7275369Z Treeshaking - 95% - 34000/35442 (582, 860)
+2026-06-03T22:55:29.1789623Z Treeshaking - 95% - 34100/35599 (642, 857)
+2026-06-03T22:55:29.6774316Z Treeshaking - 95% - 34200/35709 (645, 864)
+2026-06-03T22:55:29.7756225Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:29.7758699Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:29.8010354Z Treeshaking - 95% - 34300/35761 (588, 873)
+2026-06-03T22:55:29.8168454Z Treeshaking - 96% - 34400/35777 (504, 873)
+2026-06-03T22:55:30.0896771Z Treeshaking - 96% - 34500/35851 (486, 865)
+2026-06-03T22:55:30.1502061Z Treeshaking - 96% - 34600/35892 (421, 871)
+2026-06-03T22:55:30.2601234Z Treeshaking - 96% - 34700/36044 (465, 879)
+2026-06-03T22:55:30.4714936Z Treeshaking - 96% - 34800/36126 (438, 888)
+2026-06-03T22:55:30.5295563Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:30.5299520Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:30.5301411Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:30.5303166Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:30.5958173Z Treeshaking - 96% - 34900/36172 (382, 890)
+2026-06-03T22:55:30.6699916Z Treeshaking - 96% - 35000/36194 (303, 891)
+2026-06-03T22:55:30.7201864Z Treeshaking - 96% - 35100/36234 (244, 890)
+2026-06-03T22:55:31.4706361Z Treeshaking - 96% - 35200/36358 (290, 868)
+2026-06-03T22:55:31.7959386Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:31.8026576Z Treeshaking - 97% - 35300/36389 (221, 868)
+2026-06-03T22:55:32.0699767Z Treeshaking - 97% - 35400/36468 (203, 865)
+2026-06-03T22:55:32.1731726Z Treeshaking - 97% - 35500/36521 (156, 865)
+2026-06-03T22:55:32.4056542Z Treeshaking - 97% - 35600/36564 (101, 863)
+2026-06-03T22:55:32.4831613Z Treeshaking - 97% - 35700/36591 (28, 863)
+2026-06-03T22:55:32.7028395Z Treeshaking - 97% - 35800/36650 (552, 298)
+2026-06-03T22:55:32.9980593Z Treeshaking - 97% - 35900/36741 (537, 304)
+2026-06-03T22:55:33.0680220Z Cannot find source file /home/runner/work/vscode/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerApi.js
+2026-06-03T22:55:33.1636293Z Treeshaking - 97% - 36000/36812 (498, 314)
+2026-06-03T22:55:33.3231774Z Treeshaking - 97% - 36100/36914 (490, 324)
+2026-06-03T22:55:33.4794692Z Treeshaking - 97% - 36200/36992 (458, 334)
+2026-06-03T22:55:33.5347924Z Treeshaking - 98% - 36300/37020 (385, 335)
+2026-06-03T22:55:33.5838806Z Treeshaking - 98% - 36400/37068 (329, 339)
+2026-06-03T22:55:33.6012789Z Treeshaking - 98% - 36500/37091 (252, 339)
+2026-06-03T22:55:33.7963028Z Treeshaking - 98% - 36600/37170 (222, 348)
+2026-06-03T22:55:34.0062860Z Treeshaking - 98% - 36700/37255 (202, 353)
+2026-06-03T22:55:34.0952442Z Treeshaking - 98% - 36800/37316 (159, 357)
+2026-06-03T22:55:34.1251682Z Treeshaking - 98% - 36900/37344 (87, 357)
+2026-06-03T22:55:34.3554419Z Treeshaking - 98% - 37000/37413 (50, 363)
+2026-06-03T22:55:34.3927803Z Treeshaking - 99% - 37100/37462 (115, 247)
+2026-06-03T22:55:34.6508371Z Treeshaking - 99% - 37200/37532 (73, 259)
+2026-06-03T22:55:34.7693782Z Treeshaking - 99% - 37300/37615 (38, 277)
+2026-06-03T22:55:34.8812814Z Treeshaking - 99% - 37400/37682 (26, 256)
+2026-06-03T22:55:35.2312143Z Treeshaking - 99% - 37500/37783 (30, 253)
+2026-06-03T22:55:36.0367035Z [22:55:36] Finished [36mextract-editor-src[39m after [35m128182 ms[39m
+2026-06-03T22:55:36.0367865Z [22:55:36] Starting [36mcompile-editor-esm[39m ...
+2026-06-03T22:55:36.0610332Z [22:55:36] Starting [32mcompilation[39m...
+2026-06-03T22:56:03.4662218Z (node:3575) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+2026-06-03T22:56:03.4663383Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-06-03T22:56:10.4302410Z [22:56:10] [32m[i18n][39m No VS Code localization repository found. Looking at /home/runner/work/vscode/vscode-loc/i18n
+2026-06-03T22:56:10.4304779Z [22:56:10] [32m[i18n][39m To bundle translations please check out the vscode-loc repository as a sibling of the vscode repository.
+2026-06-03T22:56:10.4385337Z [22:56:10] Finished [32mcompilation[39m with 0 errors after [35m34378 ms[39m
+2026-06-03T22:56:10.4781864Z [22:56:10] Finished [36mcompile-editor-esm[39m after [35m34441 ms[39m
+2026-06-03T22:56:10.4782530Z [22:56:10] Starting [36mfinal-editor-resources[39m ...
+2026-06-03T22:56:10.5001926Z [22:56:10] Finished [36mfinal-editor-resources[39m after [35m22 ms[39m
+2026-06-03T22:56:10.5010221Z [22:56:10] Finished 'editor-distro' after 2.7 min
+2026-06-03T22:56:10.7158783Z ##[group]Run npm run esm-check
+2026-06-03T22:56:10.7159116Z [36;1mnpm run esm-check[0m
+2026-06-03T22:56:10.7186940Z shell: /usr/bin/bash -e {0}
+2026-06-03T22:56:10.7187215Z env:
+2026-06-03T22:56:10.7190096Z   GITHUB_TOKEN: ***
+2026-06-03T22:56:10.7190344Z ##[endgroup]
+2026-06-03T22:56:10.8128420Z npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:56:10.8260210Z 
+2026-06-03T22:56:10.8260647Z > test-monaco@1.0.0 esm-check
+2026-06-03T22:56:10.8261222Z > node esm-check/esm-check.js
+2026-06-03T22:56:10.8261436Z 
+2026-06-03T22:56:12.3324505Z [esm-check] Navigating to http://127.0.0.1:8562/index.html
+2026-06-03T22:56:13.6242880Z [esm-check] All appears good.
+2026-06-03T22:56:13.6949578Z ##[group]Run mkdir typings-test
+2026-06-03T22:56:13.6949922Z [36;1mmkdir typings-test[0m
+2026-06-03T22:56:13.6976014Z shell: /usr/bin/bash -e {0}
+2026-06-03T22:56:13.6976288Z env:
+2026-06-03T22:56:13.6979053Z   GITHUB_TOKEN: ***
+2026-06-03T22:56:13.6979291Z ##[endgroup]
+2026-06-03T22:56:13.7064329Z ##[group]Run npm init -yp
+2026-06-03T22:56:13.7064658Z [36;1mnpm init -yp[0m
+2026-06-03T22:56:13.7064923Z [36;1m../node_modules/.bin/tsc --init[0m
+2026-06-03T22:56:13.7065281Z [36;1mecho "import '../out-monaco-editor-core';" > a.ts[0m
+2026-06-03T22:56:13.7065645Z [36;1m../node_modules/.bin/tsc --noEmit[0m
+2026-06-03T22:56:13.7089131Z shell: /usr/bin/bash -e {0}
+2026-06-03T22:56:13.7089418Z env:
+2026-06-03T22:56:13.7092226Z   GITHUB_TOKEN: ***
+2026-06-03T22:56:13.7092465Z ##[endgroup]
+2026-06-03T22:56:13.9435686Z npm warn Unknown project config "disturl". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:56:13.9437969Z npm warn Unknown project config "target". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:56:13.9440270Z npm warn Unknown project config "ms_build_id". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:56:13.9442474Z npm warn Unknown project config "runtime". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:56:13.9445011Z npm warn Unknown project config "build_from_source". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:56:13.9447607Z npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:56:13.9714008Z Wrote to /home/runner/work/vscode/vscode/typings-test/package.json:
+2026-06-03T22:56:13.9714673Z 
+2026-06-03T22:56:13.9714860Z {
+2026-06-03T22:56:13.9715272Z   "name": "typings-test",
+2026-06-03T22:56:13.9715759Z   "version": "1.0.0",
+2026-06-03T22:56:13.9716210Z   "description": "",
+2026-06-03T22:56:13.9716654Z   "main": "index.js",
+2026-06-03T22:56:13.9717091Z   "scripts": {
+2026-06-03T22:56:13.9717668Z     "test": "echo \"Error: no test specified\" && exit 1"
+2026-06-03T22:56:13.9718267Z   },
+2026-06-03T22:56:13.9718657Z   "keywords": [],
+2026-06-03T22:56:13.9719070Z   "author": "",
+2026-06-03T22:56:13.9719476Z   "license": "ISC",
+2026-06-03T22:56:13.9719887Z   "type": "commonjs"
+2026-06-03T22:56:13.9720290Z }
+2026-06-03T22:56:13.9720476Z 
+2026-06-03T22:56:13.9720490Z 
+2026-06-03T22:56:14.1183328Z 
+2026-06-03T22:56:14.1185869Z Created a new tsconfig.json
+2026-06-03T22:56:14.1186231Z 
+2026-06-03T22:56:14.1186603Z You can learn more at https://aka.ms/tsconfig
+2026-06-03T22:56:14.6229569Z ##[group]Run npm run bundle-webpack
+2026-06-03T22:56:14.6229979Z [36;1mnpm run bundle-webpack[0m
+2026-06-03T22:56:14.6259451Z shell: /usr/bin/bash -e {0}
+2026-06-03T22:56:14.6259731Z env:
+2026-06-03T22:56:14.6262491Z   GITHUB_TOKEN: ***
+2026-06-03T22:56:14.6262728Z ##[endgroup]
+2026-06-03T22:56:14.7194443Z npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:56:14.7331534Z 
+2026-06-03T22:56:14.7332836Z > test-monaco@1.0.0 bundle-webpack
+2026-06-03T22:56:14.7333904Z > webpack --config ./webpack.config.js --bail
+2026-06-03T22:56:14.7334380Z 
+2026-06-03T22:56:21.3614265Z chunk (runtime: core) [1m[32mcore.bundle.js[39m[22m (core) 10.4 MiB (javascript) 590 bytes (asset) 2.36 KiB (runtime) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+2026-06-03T22:56:21.3615886Z chunk (runtime: editorWebWorkerMain) [1m[32meditorWebWorkerMain.bundle.js[39m[22m (editorWebWorkerMain) 925 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+2026-06-03T22:56:21.3616825Z orphan modules 9.77 MiB [1m[33m[orphan][39m[22m 1055 modules
+2026-06-03T22:56:21.3617245Z runtime modules 2.36 KiB 7 modules
+2026-06-03T22:56:21.3617512Z + 114 modules
+2026-06-03T22:56:21.3617644Z 
+2026-06-03T22:56:21.3618258Z [1m[33mWARNING[39m[22m in [1masset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+2026-06-03T22:56:21.3618854Z This can impact web performance.
+2026-06-03T22:56:21.3619121Z Assets: 
+2026-06-03T22:56:21.3619392Z   core.bundle.js (9.92 MiB)
+2026-06-03T22:56:21.3619787Z   editorWebWorkerMain.bundle.js (919 KiB)[39m[22m
+2026-06-03T22:56:21.3620026Z 
+2026-06-03T22:56:21.3620854Z [1m[33mWARNING[39m[22m in [1mentrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+2026-06-03T22:56:21.3621622Z Entrypoints:
+2026-06-03T22:56:21.3621835Z   core (9.92 MiB)
+2026-06-03T22:56:21.3622061Z       core.bundle.js
+2026-06-03T22:56:21.3622328Z   editorWebWorkerMain (919 KiB)
+2026-06-03T22:56:21.3622630Z       editorWebWorkerMain.bundle.js
+2026-06-03T22:56:21.3622923Z [39m[22m
+2026-06-03T22:56:21.3623037Z 
+2026-06-03T22:56:21.3623365Z [1m[33mWARNING[39m[22m in [1mwebpack performance recommendations: 
+2026-06-03T22:56:21.3624639Z You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+2026-06-03T22:56:21.3625476Z For more info visit https://webpack.js.org/guides/code-splitting/[39m[22m
+2026-06-03T22:56:21.3625797Z 
+2026-06-03T22:56:21.4885588Z ##[group]Run npm run compile
+2026-06-03T22:56:21.4886172Z [36;1mnpm run compile[0m
+2026-06-03T22:56:21.4912945Z shell: /usr/bin/bash -e {0}
+2026-06-03T22:56:21.4913218Z env:
+2026-06-03T22:56:21.4916552Z   GITHUB_TOKEN: ***
+2026-06-03T22:56:21.4916799Z ##[endgroup]
+2026-06-03T22:56:21.5767348Z npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:56:21.5895443Z 
+2026-06-03T22:56:21.5895903Z > test-monaco@1.0.0 compile
+2026-06-03T22:56:21.5896369Z > node ../../node_modules/typescript/bin/tsc
+2026-06-03T22:56:21.5896628Z 
+2026-06-03T22:56:22.7767573Z ##[group]Run npm run test
+2026-06-03T22:56:22.7767895Z [36;1mnpm run test[0m
+2026-06-03T22:56:22.7794001Z shell: /usr/bin/bash -e {0}
+2026-06-03T22:56:22.7794278Z env:
+2026-06-03T22:56:22.7797048Z   GITHUB_TOKEN: ***
+2026-06-03T22:56:22.7797285Z ##[endgroup]
+2026-06-03T22:56:22.8636511Z npm warn Unknown project config "timeout". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+2026-06-03T22:56:22.8763127Z 
+2026-06-03T22:56:22.8763640Z > test-monaco@1.0.0 test
+2026-06-03T22:56:22.8764109Z > node runner.js
+2026-06-03T22:56:22.8764281Z 
+2026-06-03T22:56:23.4221683Z 
+2026-06-03T22:56:23.4225469Z 
+2026-06-03T22:56:23.4231601Z Starting browser: chromium
+2026-06-03T22:56:23.4774813Z   API Integration Tests
+2026-06-03T22:56:24.1833885Z     ✔ `monaco` is not exposed as global
+2026-06-03T22:56:24.8965559Z     ✔ Focus and Type (43ms)
+2026-06-03T22:56:25.5914942Z     ✔ Type and Undo
+2026-06-03T22:56:27.2885476Z     ✔ Multi Cursor (1027ms)
+2026-06-03T22:56:27.2929344Z     Accessibility
+2026-06-03T22:56:28.3781722Z       ✔ Editor should not have critical accessibility violations (180ms)
+2026-06-03T22:56:29.4121575Z       ✔ Editor should not have color contrast accessibility violations (119ms)
+2026-06-03T22:56:30.3466683Z       ✔ Monaco editor container should have an ARIA role
+2026-06-03T22:56:31.2461773Z       ✔ Monaco editor should have an ARIA label
+2026-06-03T22:56:32.1807282Z       ✔ All toolbar buttons should have accessible names
+2026-06-03T22:56:32.1850294Z 
+2026-06-03T22:56:32.2078140Z 
+2026-06-03T22:56:32.2079883Z   9 passing (9s)
+2026-06-03T22:56:32.2080228Z 
+2026-06-03T22:56:32.7275216Z 
+2026-06-03T22:56:32.7278793Z 
+2026-06-03T22:56:32.7284999Z Starting browser: firefox
+2026-06-03T22:56:33.2134683Z   API Integration Tests
+2026-06-03T22:56:34.8485469Z     ✔ `monaco` is not exposed as global
+2026-06-03T22:56:35.7064618Z     ✔ Focus and Type
+2026-06-03T22:56:36.5591112Z     ✔ Type and Undo
+2026-06-03T22:56:38.4440164Z     ✔ Multi Cursor (1038ms)
+2026-06-03T22:56:38.4494393Z     Accessibility
+2026-06-03T22:56:40.2915671Z       ✔ Editor should not have critical accessibility violations (270ms)
+2026-06-03T22:56:41.9335109Z       ✔ Editor should not have color contrast accessibility violations (147ms)
+2026-06-03T22:56:43.5206512Z       ✔ Monaco editor container should have an ARIA role
+2026-06-03T22:56:45.0410607Z       ✔ Monaco editor should have an ARIA label
+2026-06-03T22:56:46.5513373Z       ✔ All toolbar buttons should have accessible names
+2026-06-03T22:56:46.5562137Z 
+2026-06-03T22:56:47.0661294Z 
+2026-06-03T22:56:47.0662753Z   9 passing (14s)
+2026-06-03T22:56:47.0662969Z 
+2026-06-03T22:56:47.0830794Z All good
+2026-06-03T22:56:47.0971572Z Post job cleanup.
+2026-06-03T22:56:47.2239434Z Cache hit occurred on the primary key Linux-cacheNodeModules20-5dbd35aebddf45229c687e2fbaec0eea6398365f8ab0c872c09073211ed00da8, not saving cache.
+2026-06-03T22:56:47.2356685Z Post job cleanup.
+2026-06-03T22:56:47.3690850Z Post job cleanup.
+2026-06-03T22:56:47.4521638Z [command]/usr/bin/git version
+2026-06-03T22:56:47.4590569Z git version 2.54.0
+2026-06-03T22:56:47.4631112Z Temporarily overriding HOME='/home/runner/work/_temp/c3f1ea2e-7713-498a-bbdd-e0566ec6b6d9' before making global git config changes
+2026-06-03T22:56:47.4632624Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-03T22:56:47.4636785Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/vscode/vscode
+2026-06-03T22:56:47.4666340Z Removing SSH command configuration
+2026-06-03T22:56:47.4672630Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-03T22:56:47.4707636Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-03T22:56:47.4942398Z Removing HTTP extra header
+2026-06-03T22:56:47.4947795Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-03T22:56:47.4981395Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-03T22:56:47.5215436Z Removing includeIf entries pointing to credentials config files
+2026-06-03T22:56:47.5222297Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-03T22:56:47.5252553Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-03T22:56:47.5617899Z Cleaning up orphan processes
+
+2026-06-03T22:52:11.9880000Z Evaluating main.if
+2026-06-03T22:52:11.9880000Z Evaluating: success()
+2026-06-03T22:52:11.9880000Z Result: true
+2026-06-03T22:52:11.9900000Z Requested labels: ubuntu-latest
+2026-06-03T22:52:11.9900000Z Job defined at: microsoft/vscode/.github/workflows/monaco-editor.yml@refs/pull/319822/merge
+2026-06-03T22:52:11.9900000Z Waiting for a runner to pick up this job...
+2026-06-03T22:52:24.4370000Z Job is waiting for a hosted runner to come online.
+2026-06-03T22:52:24.4380000Z Job is about to start running on the hosted runner: GitHub Actions 1038910386

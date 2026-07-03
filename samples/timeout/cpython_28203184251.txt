@@ -1,0 +1,228 @@
+﻿2026-06-25T22:00:08.8244026Z ##[debug]Starting: add-header
+2026-06-25T22:00:08.8269241Z ##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+2026-06-25T22:00:08.8420556Z ##[debug]Starting: Set up job
+2026-06-25T22:00:08.8422323Z Current runner version: '2.335.1'
+2026-06-25T22:00:08.8446521Z ##[group]Runner Image Provisioner
+2026-06-25T22:00:08.8447403Z Hosted Compute Agent
+2026-06-25T22:00:08.8448061Z Version: 20260611.554
+2026-06-25T22:00:08.8448712Z Commit: 5e0782fdc9014723d3be820dd114dd31555c2bd1
+2026-06-25T22:00:08.8449475Z Build Date: 2026-06-11T21:40:46Z
+2026-06-25T22:00:08.8450465Z Worker ID: {0150fbd4-8a1d-41e0-9a1f-4d44180abec2}
+2026-06-25T22:00:08.8451240Z Azure Region: eastus
+2026-06-25T22:00:08.8451789Z ##[endgroup]
+2026-06-25T22:00:08.8453339Z ##[group]Operating System
+2026-06-25T22:00:08.8454043Z Ubuntu
+2026-06-25T22:00:08.8454637Z 24.04.4
+2026-06-25T22:00:08.8455175Z LTS
+2026-06-25T22:00:08.8455675Z ##[endgroup]
+2026-06-25T22:00:08.8456292Z ##[group]Runner Image
+2026-06-25T22:00:08.8457320Z Image: ubuntu-24.04
+2026-06-25T22:00:08.8458233Z Version: 20260622.220.1
+2026-06-25T22:00:08.8459559Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260622.220/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-25T22:00:08.8461273Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260622.220
+2026-06-25T22:00:08.8462281Z ##[endgroup]
+2026-06-25T22:00:08.8463482Z ##[group]GITHUB_TOKEN Permissions
+2026-06-25T22:00:08.8465630Z Issues: write
+2026-06-25T22:00:08.8466352Z Metadata: read
+2026-06-25T22:00:08.8466919Z ##[endgroup]
+2026-06-25T22:00:08.8470276Z Secret source: Actions
+2026-06-25T22:00:08.8471344Z ##[debug]Primary repository: python/cpython
+2026-06-25T22:00:08.8472149Z Prepare workflow directory
+2026-06-25T22:00:08.8541928Z ##[debug]Creating pipeline directory: '/home/runner/work/cpython'
+2026-06-25T22:00:08.8545592Z ##[debug]Creating workspace directory: '/home/runner/work/cpython/cpython'
+2026-06-25T22:00:08.8547350Z ##[debug]Update context data
+2026-06-25T22:00:08.8551548Z ##[debug]Evaluating job-level environment variables
+2026-06-25T22:00:08.8784703Z ##[debug]Evaluating job container
+2026-06-25T22:00:08.8788429Z ##[debug]Evaluating job service containers
+2026-06-25T22:00:08.8791738Z ##[debug]Evaluating job defaults
+2026-06-25T22:00:08.8824040Z Prepare all required actions
+2026-06-25T22:00:08.8865018Z Getting action download info
+2026-06-25T22:00:09.1280540Z Download action repository 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' (SHA:ed597411d8f924073f98dfc5c65a23a2325f34cd)
+2026-06-25T22:00:09.2249606Z ##[debug]Download 'https://codeload.github.com/actions/github-script/tar.gz/ed597411d8f924073f98dfc5c65a23a2325f34cd' to '/home/runner/work/_actions/_temp_de2a0048-3b73-402e-b558-ed18dbf0c586/0b4affae-61f0-4add-a108-49409b50ffef.tar.gz'
+2026-06-25T22:00:09.2838347Z ##[debug]Unwrap 'github-script-ed597411d8f924073f98dfc5c65a23a2325f34cd' to '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'
+2026-06-25T22:00:09.2937963Z ##[debug]Archive '/home/runner/work/_actions/_temp_de2a0048-3b73-402e-b558-ed18dbf0c586/0b4affae-61f0-4add-a108-49409b50ffef.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-06-25T22:00:09.3049513Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-06-25T22:00:09.3933781Z ##[debug]Set step '__actions_github-script' display name to: 'Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd'
+2026-06-25T22:00:09.3936000Z Complete job name: add-header
+2026-06-25T22:00:09.3948397Z ##[debug]Collect running processes for tracking orphan processes.
+2026-06-25T22:00:09.4253671Z ##[debug]Finishing: Set up job
+2026-06-25T22:00:09.4401890Z ##[debug]Evaluating condition for step: 'Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd'
+2026-06-25T22:00:09.4441529Z ##[debug]Evaluating: success()
+2026-06-25T22:00:09.4446972Z ##[debug]Evaluating success:
+2026-06-25T22:00:09.4463637Z ##[debug]=> true
+2026-06-25T22:00:09.4469603Z ##[debug]Result: true
+2026-06-25T22:00:09.4498100Z ##[debug]Starting: Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-06-25T22:00:09.4629576Z ##[debug]Loading inputs
+2026-06-25T22:00:09.4655470Z ##[debug]Evaluating: github.token
+2026-06-25T22:00:09.4656740Z ##[debug]Evaluating Index:
+2026-06-25T22:00:09.4658743Z ##[debug]..Evaluating github:
+2026-06-25T22:00:09.4660297Z ##[debug]..=> Object
+2026-06-25T22:00:09.4665769Z ##[debug]..Evaluating String:
+2026-06-25T22:00:09.4666689Z ##[debug]..=> 'token'
+2026-06-25T22:00:09.4675479Z ##[debug]=> '***'
+2026-06-25T22:00:09.4680997Z ##[debug]Result: '***'
+2026-06-25T22:00:09.4689110Z ##[debug]Evaluating: (runner.debug == '1')
+2026-06-25T22:00:09.4689837Z ##[debug]Evaluating Equal:
+2026-06-25T22:00:09.4691438Z ##[debug]..Evaluating Index:
+2026-06-25T22:00:09.4692000Z ##[debug]....Evaluating runner:
+2026-06-25T22:00:09.4692572Z ##[debug]....=> Object
+2026-06-25T22:00:09.4693119Z ##[debug]....Evaluating String:
+2026-06-25T22:00:09.4693650Z ##[debug]....=> 'debug'
+2026-06-25T22:00:09.4694317Z ##[debug]..=> '1'
+2026-06-25T22:00:09.4694813Z ##[debug]..Evaluating String:
+2026-06-25T22:00:09.4695341Z ##[debug]..=> '1'
+2026-06-25T22:00:09.4699047Z ##[debug]=> true
+2026-06-25T22:00:09.4701254Z ##[debug]Expanded: ('1' == '1')
+2026-06-25T22:00:09.4701813Z ##[debug]Result: true
+2026-06-25T22:00:09.4711942Z ##[debug]Loading env
+2026-06-25T22:00:09.4788082Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-06-25T22:00:09.4789181Z with:
+2026-06-25T22:00:09.4794179Z   script: // https://devguide.python.org/triage/labels/#type-labels
+const HEADERS = new Map([
+  ['type-bug', 'Bug report'],
+  ['type-crash', 'Crash report'],
+  ['type-feature', 'Feature or enhancement'],
+]);
+let issue_data = await github.rest.issues.get({
+  issue_number: context.issue.number,
+  owner: context.repo.owner,
+  repo: context.repo.repo
+}).then(issue => issue.data);
+let header = '';
+for (const label_data of issue_data.labels) {
+    const label_name = (typeof label_data === 'string') ? label_data : label_data.name;
+    if (HEADERS.has(label_name)) {
+        header = HEADERS.get(label_name);
+        break;
+    }
+}
+if (header !== '') {
+  console.log(`Setting new header: ${header}`);
+  await github.rest.issues.update({
+      issue_number: context.issue.number,
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      body: `# ${header}\n\n${issue_data.body.replaceAll('\r', '')}`
+  });
+}
+
+2026-06-25T22:00:09.4803002Z   github-token: ***
+2026-06-25T22:00:09.4803511Z   debug: true
+2026-06-25T22:00:09.4803977Z   user-agent: actions/github-script
+2026-06-25T22:00:09.4804531Z   result-encoding: json
+2026-06-25T22:00:09.4805002Z   retries: 0
+2026-06-25T22:00:09.4805495Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-06-25T22:00:09.4806452Z ##[endgroup]
+2026-06-25T22:00:09.5720394Z request {
+2026-06-25T22:00:09.5721400Z   method: 'GET',
+2026-06-25T22:00:09.5722270Z   baseUrl: 'https://api.github.com',
+2026-06-25T22:00:09.5723247Z   headers: {
+2026-06-25T22:00:09.5724077Z     accept: 'application/vnd.github.v3+json',
+2026-06-25T22:00:09.5725416Z     'user-agent': 'actions/github-script octokit-core.js/5.0.1 Node.js/24'
+2026-06-25T22:00:09.5726714Z   },
+2026-06-25T22:00:09.5727523Z   mediaType: { format: '', previews: [] },
+2026-06-25T22:00:09.5728561Z   request: {
+2026-06-25T22:00:09.5729321Z     agent: Agent {
+2026-06-25T22:00:09.5730447Z       _events: [Object: null prototype],
+2026-06-25T22:00:09.5731509Z       _eventsCount: 2,
+2026-06-25T22:00:09.5732370Z       _maxListeners: undefined,
+2026-06-25T22:00:09.5733384Z       options: [Object: null prototype],
+2026-06-25T22:00:09.5734409Z       defaultPort: 443,
+2026-06-25T22:00:09.5735833Z       protocol: 'https:',
+2026-06-25T22:00:09.5736879Z       requests: [Object: null prototype] {},
+2026-06-25T22:00:09.5738005Z       sockets: [Object: null prototype] {},
+2026-06-25T22:00:09.5739162Z       freeSockets: [Object: null prototype] {},
+2026-06-25T22:00:09.5740987Z       keepAliveMsecs: 1000,
+2026-06-25T22:00:09.5741926Z       keepAlive: true,
+2026-06-25T22:00:09.5742788Z       maxSockets: Infinity,
+2026-06-25T22:00:09.5743672Z       maxFreeSockets: 256,
+2026-06-25T22:00:09.5744587Z       scheduling: 'lifo',
+2026-06-25T22:00:09.5745505Z       maxTotalSockets: Infinity,
+2026-06-25T22:00:09.5746494Z       totalSocketCount: 0,
+2026-06-25T22:00:09.5747431Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-06-25T22:00:09.5748473Z       maxCachedSessions: 100,
+2026-06-25T22:00:09.5749425Z       _sessionCache: [Object],
+2026-06-25T22:00:09.5750634Z       Symbol(shapeMode): false,
+2026-06-25T22:00:09.5751586Z       Symbol(kCapture): false
+2026-06-25T22:00:09.5752467Z     },
+2026-06-25T22:00:09.5753248Z     fetch: [Function: proxyFetch],
+2026-06-25T22:00:09.5754235Z     hook: [Function: bound bound register]
+2026-06-25T22:00:09.5755159Z   },
+2026-06-25T22:00:09.5755979Z   url: '/repos/{owner}/{repo}/issues/{issue_number}',
+2026-06-25T22:00:09.5757116Z   issue_number: 152238,
+2026-06-25T22:00:09.5757988Z   owner: 'python',
+2026-06-25T22:00:09.5758774Z   repo: 'cpython'
+2026-06-25T22:00:09.5759500Z }
+2026-06-25T22:00:09.7788110Z GET /repos/python/cpython/issues/152238 - 200 in 209ms
+2026-06-25T22:00:09.7789644Z Setting new header: Bug report
+2026-06-25T22:00:09.7807735Z request {
+2026-06-25T22:00:09.7831749Z   method: 'PATCH',
+2026-06-25T22:00:09.7832767Z   baseUrl: 'https://api.github.com',
+2026-06-25T22:00:09.7833639Z   headers: {
+2026-06-25T22:00:09.7834133Z     accept: 'application/vnd.github.v3+json',
+2026-06-25T22:00:09.7834990Z     'user-agent': 'actions/github-script octokit-core.js/5.0.1 Node.js/24'
+2026-06-25T22:00:09.7835746Z   },
+2026-06-25T22:00:09.7836194Z   mediaType: { format: '', previews: [] },
+2026-06-25T22:00:09.7836867Z   request: {
+2026-06-25T22:00:09.7837312Z     agent: Agent {
+2026-06-25T22:00:09.7837800Z       _events: [Object: null prototype],
+2026-06-25T22:00:09.7838381Z       _eventsCount: 2,
+2026-06-25T22:00:09.7838953Z       _maxListeners: undefined,
+2026-06-25T22:00:09.7839617Z       options: [Object: null prototype],
+2026-06-25T22:00:09.7840557Z       defaultPort: 443,
+2026-06-25T22:00:09.7841068Z       protocol: 'https:',
+2026-06-25T22:00:09.7841608Z       requests: [Object: null prototype] {},
+2026-06-25T22:00:09.7842464Z       sockets: [Object: null prototype] {},
+2026-06-25T22:00:09.7843176Z       freeSockets: [Object: null prototype] {},
+2026-06-25T22:00:09.7843804Z       keepAliveMsecs: 1000,
+2026-06-25T22:00:09.7844327Z       keepAlive: true,
+2026-06-25T22:00:09.7844814Z       maxSockets: Infinity,
+2026-06-25T22:00:09.7845327Z       maxFreeSockets: 256,
+2026-06-25T22:00:09.7845861Z       scheduling: 'lifo',
+2026-06-25T22:00:09.7846368Z       maxTotalSockets: Infinity,
+2026-06-25T22:00:09.7846988Z       totalSocketCount: 0,
+2026-06-25T22:00:09.7847610Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-06-25T22:00:09.7848406Z       maxCachedSessions: 100,
+2026-06-25T22:00:09.7849156Z       _sessionCache: [Object],
+2026-06-25T22:00:09.7849820Z       Symbol(shapeMode): false,
+2026-06-25T22:00:09.7850684Z       Symbol(kCapture): false
+2026-06-25T22:00:09.7851262Z     },
+2026-06-25T22:00:09.7851718Z     fetch: [Function: proxyFetch],
+2026-06-25T22:00:09.7852391Z     hook: [Function: bound bound register]
+2026-06-25T22:00:09.7853035Z   },
+2026-06-25T22:00:09.7853572Z   url: '/repos/{owner}/{repo}/issues/{issue_number}',
+2026-06-25T22:00:09.7854328Z   issue_number: 152238,
+2026-06-25T22:00:09.7854849Z   owner: 'python',
+2026-06-25T22:00:09.7855334Z   repo: 'cpython',
+2026-06-25T22:00:09.7855828Z   body: '# Bug report\n' +
+2026-06-25T22:00:09.7856368Z     '\n' +
+2026-06-25T22:00:09.7856819Z     '### Bug description:\n' +
+2026-06-25T22:00:09.7857392Z     '\n' +
+2026-06-25T22:00:09.7861254Z     'GH-152200 fixes a deadlock but it introduces a data-race, resulting in a correctness bug.  [Demo of bug](https://github.com/python/cpython/issues/151593#issuecomment-4802991249) is linked to other issue.  Suggested fix is to revert the original optimization (GH-150490) and also the fix applied to it.\n' +
+2026-06-25T22:00:09.7864263Z     '\n' +
+2026-06-25T22:00:09.7864746Z     '### CPython versions tested on:\n' +
+2026-06-25T22:00:09.7865372Z     '\n' +
+2026-06-25T22:00:09.7865812Z     'CPython main branch\n' +
+2026-06-25T22:00:09.7866358Z     '\n' +
+2026-06-25T22:00:09.7866812Z     '### Operating systems tested on:\n' +
+2026-06-25T22:00:09.7867428Z     '\n' +
+2026-06-25T22:00:09.7867848Z     '_No response_'
+2026-06-25T22:00:09.7868302Z }
+2026-06-25T22:00:10.3206136Z [@octokit/request] "PATCH https://api.github.com/repos/python/cpython/issues/152238" is deprecated. It is scheduled to be removed on Fri, 10 Mar 2028 00:00:00 GMT. See https://docs.github.com/en/rest/about-the-rest-api/api-versions
+2026-06-25T22:00:10.3213223Z PATCH /repos/python/cpython/issues/152238 - 200 in 542ms
+2026-06-25T22:00:10.3296768Z ##[debug]Node Action run completed with exit code 0
+2026-06-25T22:00:10.3339867Z ##[debug]Set output result = 
+2026-06-25T22:00:10.3346874Z ##[debug]Finishing: Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-06-25T22:00:10.3447598Z ##[debug]Starting: Complete job
+2026-06-25T22:00:10.3452339Z Cleaning up orphan processes
+2026-06-25T22:00:10.3883957Z ##[debug]Finishing: Complete job
+2026-06-25T22:00:10.3929510Z ##[debug]Finishing: add-header
+
+2026-06-25T22:00:06.7270000Z Requested labels: ubuntu-latest
+2026-06-25T22:00:06.7270000Z Job defined at: python/cpython/.github/workflows/add-issue-header.yml@refs/heads/main
+2026-06-25T22:00:06.7270000Z Waiting for a runner to pick up this job...
+2026-06-25T22:00:06.7250000Z Evaluating add-header.if
+2026-06-25T22:00:06.7250000Z Evaluating: success()
+2026-06-25T22:00:06.7250000Z Result: true
+2026-06-25T22:00:07.2180000Z Job is about to start running on the hosted runner: GitHub Actions 1001634941
+2026-06-25T22:00:07.2170000Z Job is waiting for a hosted runner to come online.
