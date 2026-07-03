@@ -38,3 +38,21 @@ async def write_decision(
 
     with open(filepath, "w") as f:
         yaml.dump(data, f)
+
+
+async def update_outcome(path: str, event_id: str, outcome: str, latency_ms: int = 0, token_cost: float = 0.0):
+    filepath = Path(path)
+    if not filepath.exists():
+        return
+    with open(filepath) as f:
+        data = yaml.safe_load(f) or {"decisions": []}
+    for d in data["decisions"]:
+        if d["event_id"] == event_id:
+            d["outcome"] = outcome
+            if latency_ms:
+                d["latency_ms"] = latency_ms
+            if token_cost:
+                d["token_cost"] = token_cost
+            break
+    with open(filepath, "w") as f:
+        yaml.dump(data, f)
