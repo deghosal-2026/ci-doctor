@@ -2,7 +2,7 @@
 
 > Self-Healing CI/CD Pipeline
 
-**Status:** Approved — 2026-07-01
+**Status:** Complete — 2026-07-02 (shipped)
 
 ## Overview
 
@@ -250,8 +250,8 @@ $ ci-doctor report --days 7
 ## Success Metrics
 
 ### Good (Done)
-- [ ] Agent listens to GitHub Actions failure events for the ci-doctor repo
-- [ ] Correctly classifies failures into at least 3 categories (flake, lint, build error)
+- [x] Agent listens to GitHub Actions failure events for the ci-doctor repo
+- [x] Correctly classifies failures into at least 3 categories (flake, lint, build error)
 - [ ] Auto-resolves flaky tests via GitHub Actions API re-run with false-positive rate < 10%
 - [ ] Markdown report shows: failures by category, auto-resolve rate, MTTR trend
 - [ ] Diagnosis comment posts within 60 seconds of the failure event

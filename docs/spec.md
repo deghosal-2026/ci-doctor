@@ -2,7 +2,7 @@
 
 > Implementation details for the v1 self-healing CI/CD pipeline. See [`prd.md`](./prd.md) for the why and what.
 
-**Status:** Complete — 2026-07-01
+**Status:** Complete — 2026-07-02 (shipped)
 
 ## Tech Stack
 
