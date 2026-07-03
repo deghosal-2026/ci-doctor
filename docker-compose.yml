@@ -1,0 +1,20 @@
+services:
+  ci-doctor:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      GITHUB_TOKEN: ${GITHUB_TOKEN}
+      GITHUB_WEBHOOK_SECRET: ${GITHUB_WEBHOOK_SECRET}
+      MLX_ENDPOINT: ${MLX_ENDPOINT:-http://host.docker.internal:8000}
+      CLOUD_API_KEY: ${CLOUD_API_KEY}
+      CLOUD_MODEL: ${CLOUD_MODEL:-deepseek-v4-flash}
+    volumes:
+      - ./rules.yaml:/app/rules.yaml:ro
+      - kb_data:/app/knowledge_base.yaml
+      - decisions_data:/app/decisions.yaml
+    restart: unless-stopped
+
+volumes:
+  kb_data:
+  decisions_data:

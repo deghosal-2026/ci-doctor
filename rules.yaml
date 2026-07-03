@@ -1,0 +1,43 @@
+rules:
+  - category: flake
+    patterns:
+      - "FAILED .*re-run"
+      - "flaky test"
+      - "Test flaky"
+      - "assertion failed unexpectedly"
+    confidence: 0.95
+
+  - category: lint
+    patterns:
+      - "F401 .*imported but unused"
+      - "E501 line too long"
+      - "ruff .*error"
+      - "linter.*found.*error"
+    confidence: 0.90
+
+  - category: build
+    patterns:
+      - "Compilation error"
+      - "ModuleNotFoundError"
+      - "ImportError"
+      - "cannot find module"
+      - "build failed"
+    confidence: 0.90
+
+  - category: dependency
+    patterns:
+      - "version conflict"
+      - "package not found"
+      - "dependency resolution failed"
+      - "pip.*error"
+      - "No matching distribution"
+    confidence: 0.90
+
+  - category: infra_timeout
+    patterns:
+      - "The operation was canceled"
+      - "deadline exceeded"
+      - "context deadline exceeded"
+      - "job timed out"
+      - "runner.*timeout"
+    confidence: 0.95

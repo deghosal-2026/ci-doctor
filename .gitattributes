@@ -1,0 +1,2 @@
+tests/fixtures/logs/**/*.txt filter=lfs diff=lfs merge=lfs -text
+tests/fixtures/logs/**/*.part.* filter=lfs diff=lfs merge=lfs -text

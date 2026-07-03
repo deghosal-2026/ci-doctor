@@ -1,0 +1,9 @@
+# Ground-truth labels for eval corpus (1000 logs).
+# Populated during issue #56 — one entry per log file.
+# Format:
+#   eval/<category>/<filename>.txt:
+#     category: flake|lint|build|dependency|infra_timeout
+#     source_repo: owner/repo
+#     run_id: <id>
+#     notes: <optional context>
+labels: {}
