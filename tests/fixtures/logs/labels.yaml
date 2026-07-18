@@ -3,638 +3,774 @@
 
 labels:
   build/cpython_27303945910.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27304352909.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: assertion failure, module not found
     run_id: ''
     source_repo: ''
   build/cpython_27304428042.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27305074751.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: syntax error
     run_id: ''
     source_repo: ''
   build/cpython_27307885405.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27310597848.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27310652730.txt:
-    category: build
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout, job cancelled, deadline exceeded, infrastructure issue
     run_id: ''
     source_repo: ''
   build/cpython_27310652763.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27311239924.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27313056465.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: test_tools failed (1 error)
     run_id: ''
     source_repo: ''
   build/cpython_27313056520.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27475632814.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'AssertionError: Process return code is -6 (SIGABRT)'
     run_id: ''
     source_repo: ''
   build/cpython_27475632878.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27475808855.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'AttributeError: ''NoneType'' object has no attribute ''get_code_var_counts'''
     run_id: ''
     source_repo: ''
   build/cpython_27475952372.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: No module named '_tkinter'
     run_id: ''
     source_repo: ''
   build/cpython_27476421293.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27476972635.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27481919627.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: syntax error
     run_id: ''
     source_repo: ''
   build/cpython_27481922224.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: import error
     run_id: ''
     source_repo: ''
   build/cpython_27481923984.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27714645150.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27715329850.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27715331216.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27718852909.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: syntax error
     run_id: ''
     source_repo: ''
   build/cpython_27718857211.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27720329210.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27720817552.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27721882432.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27877878113.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27881942337.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27881943108.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27919000248.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: syntax error
     run_id: ''
     source_repo: ''
   build/cpython_27919011737.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27919016009.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27919359763.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27919785182.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27919994811.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: syntax error
     run_id: ''
     source_repo: ''
   build/cpython_27919994859.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27920001416.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27920887517.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27981430967.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27981445391.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: assertion failure
     run_id: ''
     source_repo: ''
   build/cpython_27987499956.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27991685290.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27991812842.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_27991813715.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_28131237369.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_28131237383.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: syntax error
     run_id: ''
     source_repo: ''
   build/cpython_28131242351.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: compilation error, import error, syntax error, assertion failure, module
+      not found
     run_id: ''
     source_repo: ''
   build/cpython_28132341882.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_28132469717.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: keyword match
     run_id: ''
     source_repo: ''
   build/cpython_28132636029.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_28133081178.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_28134787192.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_28134905357.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: compilation error, import error, syntax error, assertion failure, module
+      not found
     run_id: ''
     source_repo: ''
   build/cpython_28135003253.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_28136360391.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: syntax error
     run_id: ''
     source_repo: ''
   build/cpython_28136360433.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_28136360512.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: syntax error
     run_id: ''
     source_repo: ''
   build/cpython_28137379944.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_28554416225.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, non-deterministic failure, passes on retry
     run_id: ''
     source_repo: ''
   build/cpython_28554511589.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/cpython_28564085722.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/fastapi_27238113997.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/fastapi_27238341185.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/fastapi_27239020194.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27779410691.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: Compilation error, import error, syntax error, assertion failure, module
+      not found
     run_id: ''
     source_repo: ''
   build/pandas_27779410726.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_27780823330.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27781474955.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, non-deterministic failure, passes on retry
     run_id: ''
     source_repo: ''
   build/pandas_27781475881.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27782443408.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27782443425.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27782443460.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_27785463891.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, multiple consecutive 'Evaluating:' logs
     run_id: ''
     source_repo: ''
   build/pandas_27785589006.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: Compilation errors and linking issues during the compilation of pandas
     run_id: ''
     source_repo: ''
   build/pandas_27785589021.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_27785589025.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27787111420.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: compilation error, import error, syntax error, assertion failure, module
+      not found
     run_id: ''
     source_repo: ''
   build/pandas_27787111466.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting
     run_id: ''
     source_repo: ''
   build/pandas_27787315704.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27790961114.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_27793210065.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_27985868257.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: Compilation errors and linking issues during the compilation of C objects
+      for pandas library
     run_id: ''
     source_repo: ''
   build/pandas_27985868270.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27986293250.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_27986293257.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27986297528.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: Compilation errors and linking errors during the build process
     run_id: ''
     source_repo: ''
   build/pandas_27986358813.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting
     run_id: ''
     source_repo: ''
   build/pandas_27986358819.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_27986554676.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: Compilation error, import error, syntax error, assertion failure, module
+      not found
     run_id: ''
     source_repo: ''
   build/pandas_27986554702.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting
     run_id: ''
     source_repo: ''
   build/pandas_27986581579.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, non-deterministic failure, passes on retry
     run_id: ''
     source_repo: ''
   build/pandas_27986581655.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_27987364121.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27987364210.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: artifact upload failed
     run_id: ''
     source_repo: ''
   build/pandas_27987654191.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27988008184.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: No module named 'libarchive'
     run_id: ''
     source_repo: ''
   build/pandas_27988008247.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_27988015375.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation
     run_id: ''
     source_repo: ''
   build/pandas_27988015488.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: Download failed due to a missing package
     run_id: ''
     source_repo: ''
   build/pandas_27991167538.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_28055863201.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: compilation error, import error, syntax error, assertion failure, module
+      not found
     run_id: ''
     source_repo: ''
   build/pandas_28535381045.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_28535381069.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_28537251682.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_28537251847.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_28537634166.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation
     run_id: ''
     source_repo: ''
   build/pandas_28537725568.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_28547650642.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_28548524814.txt:
-    category: build
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   build/pandas_28548524842.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_28548524850.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: compilation error, import error, syntax error, assertion failure, module
+      not found
     run_id: ''
     source_repo: ''
   build/pandas_28550755692.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting
     run_id: ''
     source_repo: ''
   build/pandas_28550755717.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: 'No archive (yet): pandas-jupyterlite.tgz'
     run_id: ''
     source_repo: ''
   build/pandas_28551165474.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_28551165602.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: compilation error, import error, syntax error, assertion failure, module
+      not found
     run_id: ''
     source_repo: ''
   build/pandas_28551165625.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pandas_28553077193.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pydantic_26998227215.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pydantic_27006483375.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pydantic_27006549506.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pydantic_27006549520.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pydantic_27012315912.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pydantic_27012371142.txt:
     category: build
-    llm_labeled: false
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   build/pydantic_27012427463.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, multiple repeated lines of code
     run_id: ''
     source_repo: ''
   build/pydantic_27012427485.txt:
-    category: build
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   build/pydantic_27016005057.txt:
@@ -1403,218 +1539,262 @@ labels:
     run_id: ''
     source_repo: ''
   flake/node_27917555849.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting
     run_id: ''
     source_repo: ''
   flake/node_27917555852.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout, job cancelled, deadline exceeded, infrastructure issue
     run_id: ''
     source_repo: ''
   flake/node_27917555865.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   flake/node_27917647621.txt:
-    category: flake
-    llm_labeled: false
+    category: build
+    llm_labeled: true
+    reason: 'sh: line 1: ps: command not found'
     run_id: ''
     source_repo: ''
   flake/node_27917647626.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, non-deterministic failure, passes on retry
     run_id: ''
     source_repo: ''
   flake/node_27918719247.txt:
-    category: flake
-    llm_labeled: false
+    category: build
+    llm_labeled: true
+    reason: compilation error, import error, syntax error, assertion failure, module
+      not found
     run_id: ''
     source_repo: ''
   flake/node_27918719248.txt:
-    category: flake
-    llm_labeled: false
+    category: build
+    llm_labeled: true
+    reason: Skipping as node was compiled without inspector support
     run_id: ''
     source_repo: ''
   flake/node_27918719264.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting
     run_id: ''
     source_repo: ''
   flake/node_27919174965.txt:
-    category: flake
-    llm_labeled: false
+    category: build
+    llm_labeled: true
+    reason: All tests passed.
     run_id: ''
     source_repo: ''
   flake/node_27919174969.txt:
-    category: flake
-    llm_labeled: false
+    category: build
+    llm_labeled: true
+    reason: assertion failure
     run_id: ''
     source_repo: ''
   flake/node_27920152337.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   flake/node_27920152342.txt:
-    category: flake
-    llm_labeled: false
+    category: build
+    llm_labeled: true
+    reason: All tests passed.
     run_id: ''
     source_repo: ''
   flake/node_27920152349.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   flake/node_27920490344.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting
     run_id: ''
     source_repo: ''
   flake/node_27920490352.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, formatting, type checker error
     run_id: ''
     source_repo: ''
   flake/node_27920490354.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   flake/pandas_27779318518.txt:
-    category: flake
-    llm_labeled: false
+    category: build
+    llm_labeled: true
+    reason: artifact upload failed
     run_id: ''
     source_repo: ''
   flake/pip_26805790940.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   flake/pip_26816639223.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   flake/pip_26818808568.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   flake/pip_26819058986.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   flake/pip_27856152192.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   flake/pip_27859857481.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   flake/pip_27884032039.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   flake/pip_27920953626.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   flake/pip_28135189037.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   flake/pytest_27269120833.txt:
-    category: flake
-    llm_labeled: false
+    category: build
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   flake/pytest_27288707675.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout, job cancelled, deadline exceeded, infrastructure issue
     run_id: ''
     source_repo: ''
   flake/pytest_27290571631.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout, job cancelled, deadline exceeded, infrastructure issue
     run_id: ''
     source_repo: ''
   flake/pytest_27521414968.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout, job cancelled, deadline exceeded, infrastructure issue
     run_id: ''
     source_repo: ''
   flake/pytest_27521427526.txt:
-    category: flake
-    llm_labeled: false
+    category: build
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   flake/pytest_27522990572.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout, job cancelled, deadline exceeded, infrastructure issue
     run_id: ''
     source_repo: ''
   flake/pytest_27542646958.txt:
-    category: flake
-    llm_labeled: false
+    category: build
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   flake/pytest_27543387443.txt:
-    category: flake
-    llm_labeled: false
+    category: build
+    llm_labeled: true
+    reason: runner timeout
     run_id: ''
     source_repo: ''
   flake/pytest_27548407493.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout, job cancelled, deadline exceeded, infrastructure issue
     run_id: ''
     source_repo: ''
   flake/pytest_27551544802.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, non-deterministic failure, passes on retry
     run_id: ''
     source_repo: ''
   flake/pytest_27551560332.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout, job cancelled, deadline exceeded, infrastructure issue
     run_id: ''
     source_repo: ''
   flake/pytest_27554735730.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout, job cancelled, deadline exceeded, infrastructure issue
     run_id: ''
     source_repo: ''
   flake/pytest_27577012969.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, non-deterministic failure, passes on retry
     run_id: ''
     source_repo: ''
   flake/pytest_28307131479.txt:
-    category: flake
-    llm_labeled: false
+    category: infra_timeout
+    llm_labeled: true
+    reason: runner timeout, job cancelled, deadline exceeded, infrastructure issue
     run_id: ''
     source_repo: ''
   flake/pytest_28312043630.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   flake/pytest_28316439863.txt:
-    category: flake
-    llm_labeled: false
+    category: lint
+    llm_labeled: true
+    reason: style violation, non-deterministic failure, passes on retry
     run_id: ''
     source_repo: ''
   lint/cpython_27303944577.txt:
     category: lint
-    llm_labeled: false
+    llm_labeled: true
+    reason: style violation, unused import, formatting, type checker error
     run_id: ''
     source_repo: ''
   lint/cpython_27304431695.txt:
