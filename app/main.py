@@ -31,6 +31,9 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="ci-doctor", lifespan=lifespan)
 app.include_router(webhook_router)
 
+from app.mcp_api import router as mcp_router
+app.include_router(mcp_router)
+
 
 async def _handle_event(event):
     if cfg is None:
